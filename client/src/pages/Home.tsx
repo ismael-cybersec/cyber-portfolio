@@ -50,18 +50,11 @@ export default function Home() {
       descriptionComplete: "Projet d'intégration en cybersécurité (VortexOps Inc.). Cluster Proxmox VE avec 3 nœuds physiques, stockage NFS partagé (UNAS Pro 8), RAID 10 et RAID 5 pour haute disponibilité et sauvegardes pour plusieurs équipes (SOC, IAM, CyberRange). Résolution de problèmes complexes : corosync, défaillance matérielle, blocage NFS par WatchGuard, erreurs APT. 2e place CYBER-CCNB 2026 - Trophée d'argent.",
     },
     {
-      titre: "CyberSentinel - Système de Détection d'Intrusion",
-      description: "Système de détection d'intrusion en Python/Scapy avec détection comportementale (ICMP flood, TCP SYN scan, SSH brute-force) et réponse automatisée via iptables.",
-      tags: ["Python", "Scapy", "Détection d'Intrusion", "iptables", "Alertes JSON", "Sécurité Réseau"],
-      image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663382628638/WmRojeLpchBAbCWdyVAPFM/skills-background-HVL74F6V2325d9BYjLDV4y.webp",
-      descriptionComplete: "Système de détection d'intrusion avec détection comportementale : ICMP flood, TCP SYN scan, SSH brute-force avec sliding window, réponse automatisée via iptables et alertes JSON. Disponible sur github.com/ismael-cybersec/CyberSentinel",
-    },
-    {
-      titre: "Simulation de Sensibilisation à l'Hameçonnage",
-      description: "Conception et déploiement d'une campagne d'hameçonnage éducative à grande échelle ciblant les étudiants du CCNB (5 campus).",
-      tags: ["Sensibilisation", "Sécurité", "Hameçonnage", "Analyse Comportementale", "Éducation"],
+      titre: "Projet d'Ethical Hacking",
+      description: "Tests de pénétration avancés, reconnaissance active et exploitation de vulnérabilités critiques avec Nmap, GoPhish et Wireshark.",
+      tags: ["Ethical Hacking", "Pentest", "Nmap", "GoPhish", "Wireshark", "Sécurité"],
       image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663382628638/WmRojeLpchBAbCWdyVAPFM/hero-cybersecurity-dvbfngCY6SAPXZ4u5h4RAC.webp",
-      descriptionComplete: "Création d'un environnement de connexion simulé à des fins de sensibilisation. Analyse du comportement des utilisateurs face à une simulation d'hameçonnage. Projet réalisé dans un contexte réel avec impact sur plusieurs campus.",
+      descriptionComplete: "Tests de pénétration avancés, reconnaissance active complète, identification de vulnérabilités critiques, campagne de phishing GoPhish sophistiquée et analyse Wireshark approfondie du trafic réseau.",
     },
   ];
 
