@@ -9,8 +9,7 @@ import { SectionHeader } from "@/components/SectionHeader";
 import { SkillCard } from "@/components/SkillCard";
 import { ProjectCard } from "@/components/ProjectCard";
 import { CertificationCard } from "@/components/CertificationCard";
-import { TestimonialCard } from "@/components/TestimonialCard";
-import { useState } from "react";
+
 
 /**
  * Design Philosophy: Elegant Professional Modern - Dark Theme
@@ -73,18 +72,7 @@ export default function Home() {
     { name: "TryHackMe - Cyber Security 101", issuer: "TryHackMe", year: "2025" },
   ];
 
-  const temoignages = [
-    {
-      text: "Ismael a démontré une connaissance technique exceptionnelle lors de la mise en place de notre infrastructure de laboratoire. Son attention aux détails et sa documentation étaient remarquables.",
-      author: "Patrick Dambreville",
-      role: "Superviseur, CCNB",
-    },
-    {
-      text: "Travail impressionnant sur le projet VortexCore. L'implémentation du cluster Proxmox montre une compréhension profonde des principes d'infrastructure.",
-      author: "Meriem Oultache",
-      role: "Superviseur, CCNB",
-    },
-  ];
+
 
   return (
     <div className="min-h-screen bg-background text-foreground">
@@ -274,17 +262,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Témoignages Section */}
-      <section className="py-20 md:py-32">
-        <div className="container">
-          <SectionHeader title="Retours des Superviseurs" />
-          <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-            {temoignages.map((temoignage, idx) => (
-              <TestimonialCard key={idx} {...temoignage} />
-            ))}
-          </div>
-        </div>
-      </section>
+
 
       {/* CTA Section */}
       <section id="contact" className="py-20 md:py-32 bg-primary text-primary-foreground">

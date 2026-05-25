@@ -3,87 +3,28 @@ import { Shield } from "lucide-react";
 export function Footer() {
   const currentYear = new Date().getFullYear();
 
-  const footerLinks = {
-    services: [
-      { label: "Tests de Pénétration", href: "#" },
-      { label: "Audit de Sécurité", href: "#" },
-      { label: "Conformité", href: "#" },
-    ],
-    company: [
-      { label: "À Propos", href: "#" },
-      { label: "Blog", href: "#" },
-      { label: "Contact", href: "#" },
-    ],
-    connect: [
-      { label: "LinkedIn", href: "#" },
-      { label: "Twitter", href: "#" },
-      { label: "GitHub", href: "#" },
-    ],
-  };
-
   return (
     <footer className="bg-secondary/50 border-t border-border py-12">
       <div className="container">
-        <div className="grid md:grid-cols-4 gap-8 mb-8">
+        <div className="grid md:grid-cols-2 gap-8 mb-8">
           {/* Brand */}
           <div>
             <div className="flex items-center gap-2 mb-4">
               <Shield className="w-6 h-6 text-accent" />
-              <span className="font-bold text-primary">CyberSec</span>
+              <span className="font-bold text-primary">CyberSec Portfolio</span>
             </div>
             <p className="text-foreground/60 text-sm leading-relaxed">
-              Protéger les actifs numériques et construire une infrastructure de sécurité résiliente.
+              Portfolio professionnel d'Ismael Baby - Étudiant en Cybersécurité spécialisé en infrastructure et sécurité réseau.
             </p>
           </div>
 
-          {/* Services */}
+          {/* Contact Info */}
           <div>
-            <h4 className="font-semibold text-primary mb-4">Services</h4>
-            <ul className="space-y-2">
-              {footerLinks.services.map((link) => (
-                <li key={link.label}>
-                  <a
-                    href={link.href}
-                    className="text-foreground/60 hover:text-accent transition-colors text-sm"
-                  >
-                    {link.label}
-                  </a>
-                </li>
-              ))}
-            </ul>
-          </div>
-
-          {/* Company */}
-          <div>
-            <h4 className="font-semibold text-primary mb-4">Entreprise</h4>
-            <ul className="space-y-2">
-              {footerLinks.company.map((link) => (
-                <li key={link.label}>
-                  <a
-                    href={link.href}
-                    className="text-foreground/60 hover:text-accent transition-colors text-sm"
-                  >
-                    {link.label}
-                  </a>
-                </li>
-              ))}
-            </ul>
-          </div>
-
-          {/* Connect */}
-          <div>
-            <h4 className="font-semibold text-primary mb-4">Connexion</h4>
-            <ul className="space-y-2">
-              {footerLinks.connect.map((link) => (
-                <li key={link.label}>
-                  <a
-                    href={link.href}
-                    className="text-foreground/60 hover:text-accent transition-colors text-sm"
-                  >
-                    {link.label}
-                  </a>
-                </li>
-              ))}
+            <h4 className="font-semibold text-primary mb-4">Contact</h4>
+            <ul className="space-y-2 text-sm text-foreground/60">
+              <li>Email: babyismael03@gmail.com</li>
+              <li>Téléphone: (506) 962-1855</li>
+              <li>Localisation: Moncton, NB</li>
             </ul>
           </div>
         </div>
@@ -94,14 +35,6 @@ export function Footer() {
         {/* Bottom */}
         <div className="flex flex-col md:flex-row justify-between items-center text-sm text-foreground/60 gap-4">
           <p>&copy; {currentYear} Ismael Baby - Étudiant en Cybersécurité. Tous droits réservés.</p>
-          <div className="flex gap-6">
-            <a href="#" className="hover:text-accent transition-colors">
-              Politique de Confidentialité
-            </a>
-            <a href="#" className="hover:text-accent transition-colors">
-              Conditions d'Utilisation
-            </a>
-          </div>
         </div>
       </div>
     </footer>
