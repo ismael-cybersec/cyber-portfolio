@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Card } from "@/components/ui/card";
-import { ArrowRight, Github, Mail, MapPin } from "lucide-react";
+import { ArrowRight, Github, Mail, MapPin, Phone, Linkedin } from "lucide-react";
 import { Navigation } from "@/components/Navigation";
 import { Footer } from "@/components/Footer";
 import { HeroSection } from "@/components/HeroSection";
@@ -13,76 +13,77 @@ import { TestimonialCard } from "@/components/TestimonialCard";
 import { useState } from "react";
 
 /**
- * Design Philosophy: Elegant Professional Modern
+ * Design Philosophy: Elegant Professional Modern - Dark Theme
  * - Deep navy blue (#1e3a5f) as primary color
  * - Gold accents (#d4a574) for highlights
  * - Playfair Display for headings, Lato for body
  * - Soft shadows and subtle animations
+ * - Dark background with light text for readability
  */
 
 export default function Home() {
   const [selectedProject, setSelectedProject] = useState<number | null>(null);
 
-  const skills = [
+  const competences = [
     {
-      category: "Networking",
-      items: ["VLAN Configuration", "DHCP Server Setup", "NAT & Routing", "Cisco Packet Tracer", "Network Topology Design", "Inter-VLAN Routing"],
+      category: "Support Informatique",
+      items: ["Dépannage matériel et logiciel", "Diagnostic réseau", "Assistance technique", "Documentation", "Support utilisateur", "Gestion des tickets"],
     },
     {
-      category: "Cybersecurity",
-      items: ["Intrusion Detection Systems", "SSH Brute-Force Detection", "Network Packet Analysis", "Firewall Configuration", "Behavioral Threat Detection", "Automated Response Systems"],
+      category: "Réseaux",
+      items: ["TCP/IP", "VLAN", "DHCP", "NAT", "Cisco", "Ubiquiti", "WatchGuard", "Wi-Fi", "SSH", "ACL"],
     },
     {
-      category: "Infrastructure",
-      items: ["Cisco Equipment Configuration", "Server Setup & Management", "VLAN Segmentation", "Network Security", "Lab Infrastructure Design", "Equipment Inventory Management"],
+      category: "Virtualisation & Systèmes",
+      items: ["Proxmox VE", "VMware", "VirtualBox", "Windows Server", "Active Directory", "Clustering", "NFS", "RAID"],
     },
     {
-      category: "Tools & Technologies",
-      items: ["Cisco Packet Tracer", "Scapy (Python)", "iptables", "Kali Linux", "Ubuntu Server", "VirtualBox", "Hydra", "GitHub"],
+      category: "Cybersécurité",
+      items: ["Wireshark", "Wazuh", "Snort", "Kali Linux", "SIEM", "Pare-feux", "Sécurité réseau", "Surveillance réseau"],
     },
   ];
 
-  const projects = [
+  const projets = [
     {
-      title: "CyberSentinel v2 - Intrusion Detection System",
-      description: "Advanced behavioral intrusion detection prototype with SSH brute-force detection, real-time packet inspection, and automated firewall mitigation using Python and Scapy.",
-      tags: ["Python", "Scapy", "SSH Detection", "Automated Response", "Network Security"],
+      titre: "VortexCore - Cluster Proxmox VE",
+      description: "Cluster Proxmox VE 3 nœuds avec stockage NFS partagé (UNAS Pro 8), RAID 10 et RAID 5, haute disponibilité et sauvegardes pour plusieurs équipes (SOC, IAM, CyberRange).",
+      tags: ["Proxmox VE", "Clustering", "NFS", "RAID", "Haute Disponibilité", "Infrastructure"],
       image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663382628638/WmRojeLpchBAbCWdyVAPFM/projects-showcase-nuYrFuXjrhnULQRkyUKLiG.webp",
-      fullDescription: "CyberSentinel v2 represents an evolution from the initial behavioral intrusion detection prototype. The system monitors TCP SYN packets directed toward SSH (port 22) and tracks connection attempts within a 5-second sliding time window. Once the threshold is exceeded, the system automatically generates a CRITICAL severity alert, logs the event in structured JSON format, and dynamically inserts a firewall rule to block the attacker's IP address. Successfully tested against Hydra-based SSH brute-force attacks on Ubuntu Server.",
+      descriptionComplete: "Projet d'intégration en cybersécurité (VortexOps Inc.). Cluster Proxmox VE avec 3 nœuds physiques, stockage NFS partagé (UNAS Pro 8), RAID 10 et RAID 5 pour haute disponibilité et sauvegardes pour plusieurs équipes (SOC, IAM, CyberRange). Résolution de problèmes complexes : corosync, défaillance matérielle, blocage NFS par WatchGuard, erreurs APT. 2e place CYBER-CCNB 2026 - Trophée d'argent.",
     },
     {
-      title: "VLAN-DHCP-NAT Lab - Enterprise Network",
-      description: "Complete enterprise network simulation in Cisco Packet Tracer featuring VLAN segmentation, DHCP server, NAT configuration, and inter-VLAN routing for admin and student networks.",
-      tags: ["Cisco Packet Tracer", "VLAN", "DHCP", "NAT", "Routing", "Network Design"],
+      titre: "CyberSentinel - Système de Détection d'Intrusion",
+      description: "Système de détection d'intrusion en Python/Scapy avec détection comportementale (ICMP flood, TCP SYN scan, SSH brute-force) et réponse automatisée via iptables.",
+      tags: ["Python", "Scapy", "Détection d'Intrusion", "iptables", "Alertes JSON", "Sécurité Réseau"],
       image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663382628638/WmRojeLpchBAbCWdyVAPFM/skills-background-HVL74F6V2325d9BYjLDV4y.webp",
-      fullDescription: "This comprehensive lab demonstrates the design and configuration of a real small business network. The network includes VLAN 10 (Administration) and VLAN 20 (Students), DHCP server configuration for automatic IP distribution, NAT configuration for internet access, and inter-VLAN routing. All tests passed including ping between VLANs, DHCP IP assignment, and internet connectivity verification.",
+      descriptionComplete: "Système de détection d'intrusion avec détection comportementale : ICMP flood, TCP SYN scan, SSH brute-force avec sliding window, réponse automatisée via iptables et alertes JSON. Disponible sur github.com/ismael-cybersec/CyberSentinel",
     },
     {
-      title: "Laboratory Infrastructure Setup & Documentation",
-      description: "Lead role in designing and implementing a complete networking and cybersecurity laboratory infrastructure for educational purposes including equipment installation, cabling, and configuration.",
-      tags: ["Cisco", "Ubiquiti", "Infrastructure", "VLAN", "Proxmox", "Documentation"],
+      titre: "Simulation de Sensibilisation à l'Hameçonnage",
+      description: "Conception et déploiement d'une campagne d'hameçonnage éducative à grande échelle ciblant les étudiants du CCNB (5 campus).",
+      tags: ["Sensibilisation", "Sécurité", "Hameçonnage", "Analyse Comportementale", "Éducation"],
       image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663382628638/WmRojeLpchBAbCWdyVAPFM/hero-cybersecurity-dvbfngCY6SAPXZ4u5h4RAC.webp",
-      fullDescription: "6-week internship project involving the complete setup of a laboratory infrastructure for networking and cybersecurity courses. Responsibilities included physical infrastructure planning, network cabling with proper documentation, equipment configuration (Cisco, Ubiquiti, WatchGuard), VLAN design and implementation, server setup on Proxmox, and comprehensive technical documentation. Successfully delivered a fully operational laboratory environment for student practical work.",
+      descriptionComplete: "Création d'un environnement de connexion simulé à des fins de sensibilisation. Analyse du comportement des utilisateurs face à une simulation d'hameçonnage. Projet réalisé dans un contexte réel avec impact sur plusieurs campus.",
     },
   ];
 
   const certifications = [
-    { name: "Cybersecurity Specialization", issuer: "Educational Institution", year: "2026" },
-    { name: "Cisco Networking Fundamentals", issuer: "Cisco", year: "2025" },
-    { name: "Ethical Hacking Fundamentals", issuer: "Educational Institution", year: "2025" },
-    { name: "Network Security Essentials", issuer: "Educational Institution", year: "2026" },
+    { name: "Cisco Ethical Hacker", issuer: "Cisco", year: "2025" },
+    { name: "Cisco Network Technician Career Path", issuer: "Cisco", year: "2025" },
+    { name: "Cisco Cyber Threat Management", issuer: "Cisco", year: "2025" },
+    { name: "TryHackMe - Cyber Security 101", issuer: "TryHackMe", year: "2025" },
   ];
 
-  const testimonials = [
+  const temoignages = [
     {
-      text: "Ismael demonstrated exceptional technical knowledge in setting up our laboratory infrastructure. His attention to detail and documentation was outstanding.",
+      text: "Ismael a démontré une connaissance technique exceptionnelle lors de la mise en place de notre infrastructure de laboratoire. Son attention aux détails et sa documentation étaient remarquables.",
       author: "Patrick Dambreville",
-      role: "Supervisor, Educational Institution",
+      role: "Superviseur, CCNB",
     },
     {
-      text: "Impressive work on the CyberSentinel project. The implementation of service-aware detection shows deep understanding of network security principles.",
+      text: "Travail impressionnant sur le projet VortexCore. L'implémentation du cluster Proxmox montre une compréhension profonde des principes d'infrastructure.",
       author: "Meriem Oultache",
-      role: "Supervisor, Educational Institution",
+      role: "Superviseur, CCNB",
     },
   ];
 
@@ -91,57 +92,102 @@ export default function Home() {
       <Navigation onContactClick={() => window.location.href = "#contact"} />
 
       {/* Hero Section */}
-      <HeroSection
-        title="Ismael Baby"
-        subtitle="Cybersecurity Student & Network Security Enthusiast. Specialized in intrusion detection systems, network infrastructure, and enterprise security architecture."
-        backgroundImage="https://d2xsxph8kpxj0f.cloudfront.net/310519663382628638/WmRojeLpchBAbCWdyVAPFM/hero-cybersecurity-dvbfngCY6SAPXZ4u5h4RAC.webp"
-        primaryButtonText="View My Projects"
-        secondaryButtonText="GitHub Profile"
-      />
+      <section className="relative min-h-screen flex items-center justify-center pt-20 pb-20 overflow-hidden">
+        <div className="absolute inset-0 z-0">
+          <img
+            src="https://d2xsxph8kpxj0f.cloudfront.net/310519663382628638/WmRojeLpchBAbCWdyVAPFM/hero-cybersecurity-dvbfngCY6SAPXZ4u5h4RAC.webp"
+            alt="Hero Background"
+            className="w-full h-full object-cover opacity-20"
+          />
+          <div className="absolute inset-0 bg-gradient-to-r from-background via-background/80 to-background/60"></div>
+        </div>
 
-      {/* About Section */}
-      <section id="about" className="py-20 md:py-32 bg-secondary/30">
+        <div className="container relative z-10">
+          <div className="grid md:grid-cols-2 gap-12 items-center">
+            <div className="animate-fade-in-up">
+              <h1 className="text-5xl md:text-6xl font-bold text-primary mb-6">Ismael Baby</h1>
+              <p className="text-2xl text-accent mb-4">Étudiant en Cybersécurité</p>
+              <p className="text-lg text-foreground/80 mb-8 leading-relaxed">
+                Support informatique | Réseaux et infrastructures TI | Spécialisé en systèmes de détection d'intrusion et architecture de sécurité d'entreprise.
+              </p>
+              <div className="flex flex-col sm:flex-row gap-4 mb-8">
+                <Button size="lg" className="bg-accent hover:bg-accent/90 text-accent-foreground gap-2">
+                  Voir Mes Projets <ArrowRight className="w-4 h-4" />
+                </Button>
+                <Button size="lg" variant="outline" className="border-primary text-primary hover:bg-primary/10">
+                  Télécharger CV
+                </Button>
+              </div>
+              <div className="flex gap-6">
+                <a href="https://github.com/ismael-cybersec" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-accent hover:text-accent/80 transition-colors">
+                  <Github className="w-5 h-5" /> GitHub
+                </a>
+                <a href="mailto:babyismael03@gmail.com" className="flex items-center gap-2 text-accent hover:text-accent/80 transition-colors">
+                  <Mail className="w-5 h-5" /> Email
+                </a>
+                <a href="https://linkedin.com/in/ismael-abdallah-baby-5b7304318" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-accent hover:text-accent/80 transition-colors">
+                  <Linkedin className="w-5 h-5" /> LinkedIn
+                </a>
+              </div>
+            </div>
+
+            <div className="relative animate-slide-in-right">
+              <div className="relative w-80 h-80 mx-auto">
+                <div className="absolute inset-0 bg-gradient-to-br from-accent/20 to-primary/20 rounded-full blur-3xl"></div>
+                <img
+                  src="/manus-storage/ismael-profile.png"
+                  alt="Ismael Baby"
+                  className="relative w-full h-full object-cover rounded-full shadow-2xl border-4 border-accent/30"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* À Propos Section */}
+      <section id="about" className="py-20 md:py-32 bg-secondary/20">
         <div className="container">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
-              <h2 className="text-4xl md:text-5xl font-bold text-primary mb-6">About Me</h2>
+              <h2 className="text-4xl md:text-5xl font-bold text-primary mb-6">À Propos de Moi</h2>
               <div className="section-divider mb-6"></div>
               <p className="text-lg text-foreground/80 mb-4 leading-relaxed">
-                I'm a passionate cybersecurity professional with hands-on experience in network infrastructure, intrusion detection systems, and enterprise security architecture. Currently completing my cybersecurity specialization with focus on practical lab work and real-world security implementations.
+                Je suis un étudiant en cybersécurité au CCNB avec une expérience pratique en support informatique, réseaux et infrastructures TI. Actuellement en stage en support informatique et réseautique où je participe à l'installation, la configuration et le dépannage d'environnements informatiques.
               </p>
               <p className="text-lg text-foreground/80 mb-6 leading-relaxed">
-                My expertise spans network configuration, behavioral threat detection, automated response systems, and infrastructure design. I'm committed to building secure, resilient systems and staying ahead of emerging security threats.
+                Je suis intéressé par les postes de soutien technique, support TI et infrastructures junior. Mon expertise couvre la virtualisation, la configuration de réseaux d'entreprise, et les systèmes de détection d'intrusion.
               </p>
               <div className="flex gap-8 mb-8">
                 <div>
                   <div className="text-3xl font-bold text-accent">15+</div>
-                  <p className="text-foreground/60 text-sm">Projects Completed</p>
+                  <p className="text-foreground/60 text-sm">Projets Complétés</p>
                 </div>
                 <div>
                   <div className="text-3xl font-bold text-accent">25+</div>
-                  <p className="text-foreground/60 text-sm">Labs Completed</p>
+                  <p className="text-foreground/60 text-sm">Labs Complétés</p>
                 </div>
                 <div>
                   <div className="text-3xl font-bold text-accent">2</div>
-                  <p className="text-foreground/60 text-sm">Years Experience</p>
+                  <p className="text-foreground/60 text-sm">Ans d'Expérience</p>
                 </div>
               </div>
-              <div className="flex gap-4">
-                <a href="https://github.com/ismael-cybersec" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-accent hover:text-accent/80 transition-colors">
-                  <Github className="w-5 h-5" /> GitHub
-                </a>
-                <a href="mailto:ismael.baby@example.com" className="flex items-center gap-2 text-accent hover:text-accent/80 transition-colors">
-                  <Mail className="w-5 h-5" /> Email
-                </a>
-                <div className="flex items-center gap-2 text-foreground/60">
-                  <MapPin className="w-5 h-5" /> Canada
+              <div className="flex flex-col gap-2 text-foreground/70">
+                <div className="flex items-center gap-2">
+                  <MapPin className="w-5 h-5 text-accent" /> Moncton, NB
+                </div>
+                <div className="flex items-center gap-2">
+                  <Phone className="w-5 h-5 text-accent" /> (506) 962-1855
+                </div>
+                <div className="flex items-center gap-2">
+                  <Mail className="w-5 h-5 text-accent" /> babyismael03@gmail.com
                 </div>
               </div>
             </div>
             <div className="relative">
               <img
                 src="https://d2xsxph8kpxj0f.cloudfront.net/310519663382628638/WmRojeLpchBAbCWdyVAPFM/skills-background-HVL74F6V2325d9BYjLDV4y.webp"
-                alt="About"
+                alt="À Propos"
                 className="rounded-lg shadow-lg"
               />
             </div>
@@ -149,39 +195,44 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Skills Section */}
+      {/* Compétences Section */}
       <section id="skills" className="py-20 md:py-32">
         <div className="container">
-          <SectionHeader title="Core Competencies" />
+          <SectionHeader title="Compétences Principales" />
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {skills.map((skillGroup) => (
-              <SkillCard key={skillGroup.category} {...skillGroup} />
+            {competences.map((comp) => (
+              <SkillCard key={comp.category} category={comp.category} items={comp.items} />
             ))}
           </div>
         </div>
       </section>
 
-      {/* Projects Section */}
-      <section id="projects" className="py-20 md:py-32 bg-secondary/30">
+      {/* Projets Section */}
+      <section id="projects" className="py-20 md:py-32 bg-secondary/20">
         <div className="container">
-          <SectionHeader title="Featured Projects" />
+          <SectionHeader title="Projets Vedettes" />
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {projects.map((project, idx) => (
+            {projets.map((projet, idx) => (
               <div key={idx} onClick={() => setSelectedProject(idx)} className="cursor-pointer">
-                <ProjectCard {...project} />
+                <ProjectCard
+                  title={projet.titre}
+                  description={projet.description}
+                  tags={projet.tags}
+                  image={projet.image}
+                />
               </div>
             ))}
           </div>
 
-          {/* Project Details Modal */}
+          {/* Détails du Projet Modal */}
           {selectedProject !== null && (
-            <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/50" onClick={() => setSelectedProject(null)}>
-              <Card className="card-elegant max-w-2xl w-full max-h-96 overflow-y-auto">
+            <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/70" onClick={() => setSelectedProject(null)}>
+              <Card className="card-elegant max-w-2xl w-full max-h-96 overflow-y-auto bg-card text-card-foreground">
                 <div className="p-8">
-                  <h3 className="text-2xl font-bold text-primary mb-4">{projects[selectedProject].title}</h3>
-                  <p className="text-foreground/80 mb-6 leading-relaxed">{projects[selectedProject].fullDescription}</p>
+                  <h3 className="text-2xl font-bold text-primary mb-4">{projets[selectedProject].titre}</h3>
+                  <p className="text-foreground/80 mb-6 leading-relaxed">{projets[selectedProject].descriptionComplete}</p>
                   <div className="flex flex-wrap gap-2 mb-6">
-                    {projects[selectedProject].tags.map((tag) => (
+                    {projets[selectedProject].tags.map((tag) => (
                       <Badge key={tag} variant="secondary" className="bg-accent/10 text-accent border-accent/30">
                         {tag}
                       </Badge>
@@ -191,7 +242,7 @@ export default function Home() {
                     onClick={() => setSelectedProject(null)}
                     className="text-accent hover:text-accent/80 transition-colors underline-accent"
                   >
-                    Close
+                    Fermer
                   </button>
                 </div>
               </Card>
@@ -203,22 +254,43 @@ export default function Home() {
       {/* Certifications Section */}
       <section className="py-20 md:py-32">
         <div className="container">
-          <SectionHeader title="Certifications & Training" />
+          <SectionHeader title="Certifications & Formations" />
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
             {certifications.map((cert) => (
-              <CertificationCard key={cert.name} {...cert} />
+              <CertificationCard key={cert.name} name={cert.name} issuer={cert.issuer} year={cert.year} />
             ))}
           </div>
         </div>
       </section>
 
-      {/* Testimonials Section */}
-      <section className="py-20 md:py-32 bg-gradient-to-b from-secondary/30 to-background">
+      {/* Récompenses Section */}
+      <section className="py-20 md:py-32 bg-secondary/20">
         <div className="container">
-          <SectionHeader title="Supervisor Feedback" />
+          <SectionHeader title="Prix et Distinctions" />
           <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-            {testimonials.map((testimonial, idx) => (
-              <TestimonialCard key={idx} {...testimonial} />
+            <Card className="card-elegant p-6 bg-card/50">
+              <Badge className="mb-4 bg-accent/20 text-accent border-accent/30">2e Place</Badge>
+              <h3 className="text-xl font-bold text-primary mb-2">CYBER-CCNB 2026 - VortexCore</h3>
+              <p className="text-foreground/70 mb-2">Trophée d'argent</p>
+              <p className="text-foreground/60 text-sm">Avril 2026 - Projet d'intégration en cybersécurité</p>
+            </Card>
+            <Card className="card-elegant p-6 bg-card/50">
+              <Badge className="mb-4 bg-accent/20 text-accent border-accent/30">Reconnaissance</Badge>
+              <h3 className="text-xl font-bold text-primary mb-2">Prix Jeune Excellence</h3>
+              <p className="text-foreground/70 mb-2">Reconnaissance du dynamisme et de l'engagement</p>
+              <p className="text-foreground/60 text-sm">Avril 2026 - CYBER-CCNB 2026</p>
+            </Card>
+          </div>
+        </div>
+      </section>
+
+      {/* Témoignages Section */}
+      <section className="py-20 md:py-32">
+        <div className="container">
+          <SectionHeader title="Retours des Superviseurs" />
+          <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+            {temoignages.map((temoignage, idx) => (
+              <TestimonialCard key={idx} {...temoignage} />
             ))}
           </div>
         </div>
@@ -227,19 +299,19 @@ export default function Home() {
       {/* CTA Section */}
       <section id="contact" className="py-20 md:py-32 bg-primary text-primary-foreground">
         <div className="container text-center">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6">Let's Connect</h2>
+          <h2 className="text-4xl md:text-5xl font-bold mb-6">Parlons de Cybersécurité</h2>
           <p className="text-xl mb-8 opacity-90 max-w-2xl mx-auto">
-            Interested in discussing cybersecurity projects, network infrastructure, or collaboration opportunities? Feel free to reach out!
+            Intéressé par une collaboration, un stage ou une opportunité d'emploi ? N'hésitez pas à me contacter !
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a href="https://github.com/ismael-cybersec" target="_blank" rel="noopener noreferrer">
               <Button size="lg" className="bg-accent hover:bg-accent/90 text-accent-foreground gap-2 w-full sm:w-auto">
-                Visit GitHub <ArrowRight className="w-4 h-4" />
+                Visiter GitHub <ArrowRight className="w-4 h-4" />
               </Button>
             </a>
-            <a href="mailto:ismael.baby@example.com">
+            <a href="mailto:babyismael03@gmail.com">
               <Button size="lg" variant="outline" className="border-primary-foreground text-primary-foreground hover:bg-primary-foreground/10 w-full sm:w-auto">
-                Send Email
+                Envoyer un Email
               </Button>
             </a>
           </div>

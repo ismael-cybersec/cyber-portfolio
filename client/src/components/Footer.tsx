@@ -5,12 +5,12 @@ export function Footer() {
 
   const footerLinks = {
     services: [
-      { label: "Penetration Testing", href: "#" },
-      { label: "Security Audit", href: "#" },
-      { label: "Compliance", href: "#" },
+      { label: "Tests de Pénétration", href: "#" },
+      { label: "Audit de Sécurité", href: "#" },
+      { label: "Conformité", href: "#" },
     ],
     company: [
-      { label: "About", href: "#" },
+      { label: "À Propos", href: "#" },
       { label: "Blog", href: "#" },
       { label: "Contact", href: "#" },
     ],
@@ -32,7 +32,7 @@ export function Footer() {
               <span className="font-bold text-primary">CyberSec</span>
             </div>
             <p className="text-foreground/60 text-sm leading-relaxed">
-              Protecting digital assets and building resilient security infrastructure worldwide.
+              Protéger les actifs numériques et construire une infrastructure de sécurité résiliente.
             </p>
           </div>
 
@@ -55,7 +55,7 @@ export function Footer() {
 
           {/* Company */}
           <div>
-            <h4 className="font-semibold text-primary mb-4">Company</h4>
+            <h4 className="font-semibold text-primary mb-4">Entreprise</h4>
             <ul className="space-y-2">
               {footerLinks.company.map((link) => (
                 <li key={link.label}>
@@ -72,7 +72,7 @@ export function Footer() {
 
           {/* Connect */}
           <div>
-            <h4 className="font-semibold text-primary mb-4">Connect</h4>
+            <h4 className="font-semibold text-primary mb-4">Connexion</h4>
             <ul className="space-y-2">
               {footerLinks.connect.map((link) => (
                 <li key={link.label}>
@@ -93,13 +93,13 @@ export function Footer() {
 
         {/* Bottom */}
         <div className="flex flex-col md:flex-row justify-between items-center text-sm text-foreground/60 gap-4">
-          <p>&copy; {currentYear} Cybersecurity Professional. All rights reserved.</p>
+          <p>&copy; {currentYear} Ismael Baby - Étudiant en Cybersécurité. Tous droits réservés.</p>
           <div className="flex gap-6">
             <a href="#" className="hover:text-accent transition-colors">
-              Privacy Policy
+              Politique de Confidentialité
             </a>
             <a href="#" className="hover:text-accent transition-colors">
-              Terms of Service
+              Conditions d'Utilisation
             </a>
           </div>
         </div>

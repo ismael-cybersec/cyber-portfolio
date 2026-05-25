@@ -10,9 +10,9 @@ export function Navigation({ onContactClick }: NavigationProps) {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   const navLinks = [
-    { label: "About", href: "#about" },
-    { label: "Skills", href: "#skills" },
-    { label: "Projects", href: "#projects" },
+    { label: "À Propos", href: "#about" },
+    { label: "Compétences", href: "#skills" },
+    { label: "Projets", href: "#projects" },
     { label: "Contact", href: "#contact" },
   ];
 
@@ -43,7 +43,7 @@ export function Navigation({ onContactClick }: NavigationProps) {
             className="bg-accent hover:bg-accent/90 text-accent-foreground"
             onClick={onContactClick}
           >
-            Get in Touch
+            Me Contacter
           </Button>
         </div>
 
@@ -81,7 +81,7 @@ export function Navigation({ onContactClick }: NavigationProps) {
                 setMobileMenuOpen(false);
               }}
             >
-              Get in Touch
+              Me Contacter
             </Button>
           </div>
         </div>
