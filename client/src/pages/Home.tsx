@@ -22,7 +22,6 @@ import { useState } from "react";
  */
 
 export default function Home() {
-  const [selectedProject, setSelectedProject] = useState<number | null>(null);
 
   const competences = [
     {
@@ -132,12 +131,12 @@ export default function Home() {
             </div>
 
             <div className="relative animate-slide-in-right">
-              <div className="relative w-80 h-80 mx-auto">
-                <div className="absolute inset-0 bg-gradient-to-br from-accent/20 to-primary/20 rounded-full blur-3xl"></div>
+              <div className="relative w-96 h-96 mx-auto">
+                <div className="absolute inset-0 bg-gradient-to-br from-accent/30 to-primary/30 rounded-full blur-3xl"></div>
                 <img
                   src="/manus-storage/ismael-profile.png"
                   alt="Ismael Baby"
-                  className="relative w-full h-full object-cover rounded-full shadow-2xl border-4 border-accent/30"
+                  className="relative w-full h-full object-cover rounded-full shadow-2xl border-4 border-accent/50"
                 />
               </div>
             </div>
@@ -169,7 +168,7 @@ export default function Home() {
                 </div>
                 <div>
                   <div className="text-3xl font-bold text-accent">2</div>
-                  <p className="text-foreground/60 text-sm">Ans d'Expérience</p>
+                  <p className="text-foreground/60 text-sm">Ans d'Études</p>
                 </div>
               </div>
               <div className="flex flex-col gap-2 text-foreground/70">
@@ -212,42 +211,33 @@ export default function Home() {
         <div className="container">
           <SectionHeader title="Projets Vedettes" />
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {projets.map((projet, idx) => (
-              <div key={idx} onClick={() => setSelectedProject(idx)} className="cursor-pointer">
-                <ProjectCard
-                  title={projet.titre}
-                  description={projet.description}
-                  tags={projet.tags}
-                  image={projet.image}
-                />
-              </div>
-            ))}
+            <a href="/projects/vortexcore" className="cursor-pointer">
+              <ProjectCard
+                title="VortexCore"
+                description="Cluster Proxmox VE 3 nœuds avec stockage NFS partagé, RAID 10 et RAID 5, haute disponibilité et sauvegardes pour plusieurs équipes."
+                tags={["Proxmox VE", "Clustering", "NFS", "RAID", "Haute Disponibilité"]}
+                image="https://d2xsxph8kpxj0f.cloudfront.net/310519663382628638/WmRojeLpchBAbCWdyVAPFM/projects-showcase-nuYrFuXjrhnULQRkyUKLiG.webp"
+              />
+            </a>
+            <a href="/projects/cybersentinel" className="cursor-pointer">
+              <ProjectCard
+                title="CyberSentinel v2"
+                description="Système de détection d'intrusion en Python/Scapy avec détection comportementale (ICMP flood, TCP SYN scan, SSH brute-force) et réponse automatisée."
+                tags={["Python", "Scapy", "Détection d'Intrusion", "iptables", "Sécurité"]}
+                image="https://d2xsxph8kpxj0f.cloudfront.net/310519663382628638/WmRojeLpchBAbCWdyVAPFM/skills-background-HVL74F6V2325d9BYjLDV4y.webp"
+              />
+            </a>
+            <a href="/projects/vlan" className="cursor-pointer">
+              <ProjectCard
+                title="VLAN-DHCP-NAT Lab"
+                description="Configuration complète d'un réseau d'entreprise avec segmentation VLAN, routage inter-VLAN, DHCP, NAT/PAT et ACL."
+                tags={["VLAN", "DHCP", "NAT", "Cisco", "ACL"]}
+                image="https://d2xsxph8kpxj0f.cloudfront.net/310519663382628638/WmRojeLpchBAbCWdyVAPFM/hero-cybersecurity-dvbfngCY6SAPXZ4u5h4RAC.webp"
+              />
+            </a>
           </div>
 
-          {/* Détails du Projet Modal */}
-          {selectedProject !== null && (
-            <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/70" onClick={() => setSelectedProject(null)}>
-              <Card className="card-elegant max-w-2xl w-full max-h-96 overflow-y-auto bg-card text-card-foreground">
-                <div className="p-8">
-                  <h3 className="text-2xl font-bold text-primary mb-4">{projets[selectedProject].titre}</h3>
-                  <p className="text-foreground/80 mb-6 leading-relaxed">{projets[selectedProject].descriptionComplete}</p>
-                  <div className="flex flex-wrap gap-2 mb-6">
-                    {projets[selectedProject].tags.map((tag) => (
-                      <Badge key={tag} variant="secondary" className="bg-accent/10 text-accent border-accent/30">
-                        {tag}
-                      </Badge>
-                    ))}
-                  </div>
-                  <button
-                    onClick={() => setSelectedProject(null)}
-                    className="text-accent hover:text-accent/80 transition-colors underline-accent"
-                  >
-                    Fermer
-                  </button>
-                </div>
-              </Card>
-            </div>
-          )}
+
         </div>
       </section>
 
