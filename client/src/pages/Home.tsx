@@ -223,6 +223,110 @@ export default function Home() {
                 image="https://d2xsxph8kpxj0f.cloudfront.net/310519663382628638/WmRojeLpchBAbCWdyVAPFM/hero-cybersecurity-dvbfngCY6SAPXZ4u5h4RAC.webp"
               />
             </a>
+            <a href="/projects/stage" className="cursor-pointer">
+              <ProjectCard
+                title="Stage - Laboratoire de Réseautique"
+                description="Stage complet couvrant la configuration d'infrastructures réseau, la sécurité réseau et l'administration de réseaux."
+                tags={["Stage", "Réseautique", "Infrastructure", "Sécurité"]}
+                image="https://d2xsxph8kpxj0f.cloudfront.net/310519663382628638/WmRojeLpchBAbCWdyVAPFM/hero-cybersecurity-dvbfngCY6SAPXZ4u5h4RAC.webp"
+              />
+            </a>
+            <a href="/projects/integration" className="cursor-pointer">
+              <ProjectCard
+                title="Projet d'Intégration"
+                description="Projet d'intégration en cybersécurité couvrant la conception et la mise en place d'une infrastructure de sécurité complète."
+                tags={["Intégration", "Cybersécurité", "Infrastructure", "VortexOps"]}
+                image="https://d2xsxph8kpxj0f.cloudfront.net/310519663382628638/WmRojeLpchBAbCWdyVAPFM/projects-showcase-nuYrFuXjrhnULQRkyUKLiG.webp"
+              />
+            </a>
+            <a href="/projects/phishing" className="cursor-pointer">
+              <ProjectCard
+                title="Simulation de Sensibilisation à l'Hameçonnage"
+                description="Campagne d'hameçonnage éducative à grande échelle ciblant les étudiants du CCNB (5 campus)."
+                tags={["Sensibilisation", "Hameçonnage", "Sécurité", "Éducation"]}
+                image="https://d2xsxph8kpxj0f.cloudfront.net/310519663382628638/WmRojeLpchBAbCWdyVAPFM/hero-cybersecurity-dvbfngCY6SAPXZ4u5h4RAC.webp"
+              />
+            </a>
+            <a href="/projects/ethical-hacking" className="cursor-pointer">
+              <ProjectCard
+                title="Ethical Hacking Lab"
+                description="Formation pratique en techniques de sécurité offensive et tests de pénétration avec Metasploit et Burp Suite."
+                tags={["Ethical Hacking", "Pénétration", "Metasploit", "Kali Linux"]}
+                image="https://d2xsxph8kpxj0f.cloudfront.net/310519663382628638/WmRojeLpchBAbCWdyVAPFM/skills-background-HVL74F6V2325d9BYjLDV4y.webp"
+              />
+            </a>
+            <a href="/projects/secs1025" className="cursor-pointer">
+              <ProjectCard
+                title="SECS1025 - Laboratoire 2"
+                description="Sécurité des systèmes et gestion des risques avec frameworks ISO 27001 et NIST."
+                tags={["Sécurité", "Gestion des Risques", "ISO 27001", "NIST"]}
+                image="https://d2xsxph8kpxj0f.cloudfront.net/310519663382628638/WmRojeLpchBAbCWdyVAPFM/hero-cybersecurity-dvbfngCY6SAPXZ4u5h4RAC.webp"
+              />
+            </a>
+            <a href="/projects/baby-lab-1-ad" className="cursor-pointer">
+              <ProjectCard
+                title="Baby Lab 1 - Active Directory"
+                description="Introduction pratique à la configuration et administration d'Active Directory avec création d'utilisateurs et politiques de groupe."
+                tags={["Active Directory", "Windows Server", "GPO", "Gestion d'Identités"]}
+                image="https://d2xsxph8kpxj0f.cloudfront.net/310519663382628638/WmRojeLpchBAbCWdyVAPFM/projects-showcase-nuYrFuXjrhnULQRkyUKLiG.webp"
+              />
+            </a>
+            <a href="/projects/baby-lab-2-ad" className="cursor-pointer">
+              <ProjectCard
+                title="Baby Lab 2 - Active Directory Avancé"
+                description="Concepts avancés d'Active Directory : réplication, gestion des sites, sécurité avancée et haute disponibilité."
+                tags={["Active Directory", "Réplication", "Haute Disponibilité", "Sécurité"]}
+                image="https://d2xsxph8kpxj0f.cloudfront.net/310519663382628638/WmRojeLpchBAbCWdyVAPFM/skills-background-HVL74F6V2325d9BYjLDV4y.webp"
+              />
+            </a>
+            <a href="/projects/examen-final" className="cursor-pointer">
+              <ProjectCard
+                title="Examen Final"
+                description="Évaluation complète des compétences en cybersécurité couvrant tous les domaines du programme d'études."
+                tags={["Examen", "Évaluation", "Cybersécurité", "Compétences"]}
+                image="https://d2xsxph8kpxj0f.cloudfront.net/310519663382628638/WmRojeLpchBAbCWdyVAPFM/hero-cybersecurity-dvbfngCY6SAPXZ4u5h4RAC.webp"
+              />
+            </a>
+            <a href="/projects/evaluation-final" className="cursor-pointer">
+              <ProjectCard
+                title="Évaluation Final"
+                description="Réflexion critique sur les apprentissages acquis et planification stratégique de la carrière en cybersécurité."
+                tags={["Évaluation", "Réflexion", "Carrière", "Apprentissage"]}
+                image="https://d2xsxph8kpxj0f.cloudfront.net/310519663382628638/WmRojeLpchBAbCWdyVAPFM/projects-showcase-nuYrFuXjrhnULQRkyUKLiG.webp"
+              />
+            </a>
+            <a href="/projects/osse" className="cursor-pointer">
+              <ProjectCard
+                title="Projet OSSE"
+                description="Projet spécialisé en sécurité offensive et techniques avancées de pénétration."
+                tags={["OSSE", "Offensive", "Pénétration", "Avancé"]}
+                image="https://d2xsxph8kpxj0f.cloudfront.net/310519663382628638/WmRojeLpchBAbCWdyVAPFM/skills-background-HVL74F6V2325d9BYjLDV4y.webp"
+              />
+            </a>
+            <a href="/projects/cybersentinel-v1" className="cursor-pointer">
+              <ProjectCard
+                title="CyberSentinel v1"
+                description="Version initiale du système de détection d'intrusion avec fonctionnalités de base et alertes."
+                tags={["CyberSentinel", "IDS", "Détection", "v1"]}
+                image="https://d2xsxph8kpxj0f.cloudfront.net/310519663382628638/WmRojeLpchBAbCWdyVAPFM/hero-cybersecurity-dvbfngCY6SAPXZ4u5h4RAC.webp"
+              />
+            </a>
+            <a href="/projects/cahier-charges" className="cursor-pointer">
+              <ProjectCard
+                title="Cahier des Charges - Stage"
+                description="Document fondateur définissant les objectifs, livrables et attentes pour le stage en laboratoire de réseautique."
+                tags={["Cahier des Charges", "Planification", "Stage", "Spécifications"]}
+                image="https://d2xsxph8kpxj0f.cloudfront.net/310519663382628638/WmRojeLpchBAbCWdyVAPFM/projects-showcase-nuYrFuXjrhnULQRkyUKLiG.webp"
+              />
+            </a>
+            <a href="/projects/labs-additionnels" className="cursor-pointer">
+              <ProjectCard
+                title="Labs et Projets Additionnels"
+                description="Collection de laboratoires et projets pratiques couvrant tous les domaines majeurs de la cybersécurité."
+                tags={["Labs", "Projets", "Pratique", "Apprentissage"]}
+                image="https://d2xsxph8kpxj0f.cloudfront.net/310519663382628638/WmRojeLpchBAbCWdyVAPFM/skills-background-HVL74F6V2325d9BYjLDV4y.webp"
+              />
+            </a>
           </div>
 
 
