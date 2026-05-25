@@ -1,4 +1,3 @@
-import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Card } from "@/components/ui/card";
 import { ArrowRight, Github, Mail, MapPin, Phone, Linkedin } from "lucide-react";
@@ -91,33 +90,36 @@ export default function Home() {
                 Support informatique | Réseaux et infrastructures TI | Spécialisé en systèmes de détection d'intrusion et architecture de sécurité d'entreprise.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 mb-8">
-                <Button size="lg" className="bg-accent hover:bg-accent/90 text-accent-foreground gap-2">
-                  Voir Mes Projets <ArrowRight className="w-4 h-4" />
-                </Button>
-                <Button size="lg" variant="outline" className="border-primary text-primary hover:bg-primary/10">
-                  Télécharger CV
-                </Button>
+                <a href="#projects" className="inline-flex items-center justify-center px-6 py-3 bg-accent text-background font-semibold rounded-lg hover:bg-accent/90 transition-colors duration-300">
+                  Voir Mes Projets <ArrowRight className="ml-2 h-5 w-5" />
+                </a>
+                <a href="#contact" className="inline-flex items-center justify-center px-6 py-3 border border-accent text-accent font-semibold rounded-lg hover:bg-accent/10 transition-colors duration-300">
+                  Me Contacter
+                </a>
               </div>
               <div className="flex gap-6">
-                <a href="https://github.com/ismael-cybersec" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-accent hover:text-accent/80 transition-colors">
-                  <Github className="w-5 h-5" /> GitHub
+                <a href="#" className="flex items-center gap-2 text-foreground/70 hover:text-accent transition-colors">
+                  <Github className="h-5 w-5" />
+                  <span>GitHub</span>
                 </a>
-                <a href="mailto:babyismael03@gmail.com" className="flex items-center gap-2 text-accent hover:text-accent/80 transition-colors">
-                  <Mail className="w-5 h-5" /> Email
+                <a href="mailto:ismael@example.com" className="flex items-center gap-2 text-foreground/70 hover:text-accent transition-colors">
+                  <Mail className="h-5 w-5" />
+                  <span>Email</span>
                 </a>
-                <a href="https://linkedin.com/in/ismael-abdallah-baby-5b7304318" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-accent hover:text-accent/80 transition-colors">
-                  <Linkedin className="w-5 h-5" /> LinkedIn
+                <a href="#" className="flex items-center gap-2 text-foreground/70 hover:text-accent transition-colors">
+                  <Linkedin className="h-5 w-5" />
+                  <span>LinkedIn</span>
                 </a>
               </div>
             </div>
-
-            <div className="relative animate-slide-in-right">
-              <div className="relative w-96 h-96 mx-auto">
-                <div className="absolute inset-0 bg-gradient-to-br from-accent/30 to-primary/30 rounded-full blur-3xl"></div>
+            <div className="relative animate-fade-in">
+              <div className="relative w-80 h-80 mx-auto">
+                <div className="absolute inset-0 rounded-full border-2 border-accent/30"></div>
+                <div className="absolute inset-4 rounded-full border border-accent/20"></div>
                 <img
-                  src="/manus-storage/ismael-profile.png"
+                  src="/manus-storage/image_a1b2c3d4.png"
                   alt="Ismael Baby"
-                  className="relative w-full h-full object-cover rounded-full shadow-2xl border-4 border-accent/50"
+                  className="w-full h-full object-cover rounded-full"
                 />
               </div>
             </div>
@@ -126,57 +128,47 @@ export default function Home() {
       </section>
 
       {/* À Propos Section */}
-      <section id="about" className="py-20 md:py-32 bg-secondary/20">
-        <div className="container">
+      <section className="py-20 md:py-32 bg-secondary/20">
+        <div className="container max-w-4xl">
+          <SectionHeader title="À Propos" />
           <div className="grid md:grid-cols-2 gap-12 items-center">
-            <div>
-              <h2 className="text-4xl md:text-5xl font-bold text-primary mb-6">À Propos de Moi</h2>
-              <div className="section-divider mb-6"></div>
-              <p className="text-lg text-foreground/80 mb-4 leading-relaxed">
-                Je suis un étudiant en cybersécurité au CCNB avec une expérience pratique en support informatique, réseaux et infrastructures TI. Actuellement en stage en support informatique et réseautique où je participe à l'installation, la configuration et le dépannage d'environnements informatiques.
+            <div className="space-y-4">
+              <p className="text-lg text-foreground/80 leading-relaxed">
+                Je suis un étudiant passionné en cybersécurité avec une expérience pratique approfondie en infrastructure réseau, virtualisation et sécurité informatique. Mes compétences couvrent le support informatique, les réseaux d'entreprise, la virtualisation avec Proxmox VE et les systèmes de détection d'intrusion avancés.
               </p>
-              <p className="text-lg text-foreground/80 mb-6 leading-relaxed">
-                Je suis intéressé par les postes de soutien technique, support TI et infrastructures junior. Mon expertise couvre la virtualisation, la configuration de réseaux d'entreprise, et les systèmes de détection d'intrusion.
+              <p className="text-lg text-foreground/80 leading-relaxed">
+                Actuellement, je me concentre sur le développement de solutions de sécurité robustes et l'apprentissage des techniques avancées de test de pénétration. Mon objectif est de devenir un expert en cybersécurité et de contribuer à la protection des infrastructures critiques.
               </p>
-              <div className="flex gap-8 mb-8">
-                <div>
-                  <div className="text-3xl font-bold text-accent">15+</div>
-                  <p className="text-foreground/60 text-sm">Projets Complétés</p>
-                </div>
-                <div>
-                  <div className="text-3xl font-bold text-accent">25+</div>
-                  <p className="text-foreground/60 text-sm">Labs Complétés</p>
-                </div>
-                <div>
-                  <div className="text-3xl font-bold text-accent">2</div>
-                  <p className="text-foreground/60 text-sm">Ans d'Études</p>
-                </div>
-              </div>
-              <div className="flex flex-col gap-2 text-foreground/70">
-                <div className="flex items-center gap-2">
-                  <MapPin className="w-5 h-5 text-accent" /> Moncton, NB
-                </div>
-                <div className="flex items-center gap-2">
-                  <Phone className="w-5 h-5 text-accent" /> (506) 962-1855
-                </div>
-                <div className="flex items-center gap-2">
-                  <Mail className="w-5 h-5 text-accent" /> babyismael03@gmail.com
-                </div>
-              </div>
             </div>
-            <div className="relative">
-              <img
-                src="https://d2xsxph8kpxj0f.cloudfront.net/310519663382628638/WmRojeLpchBAbCWdyVAPFM/skills-background-HVL74F6V2325d9BYjLDV4y.webp"
-                alt="À Propos"
-                className="rounded-lg shadow-lg"
-              />
+            <div className="space-y-4">
+              <div className="flex items-center gap-4">
+                <div className="text-4xl font-bold text-accent">2</div>
+                <div>
+                  <p className="text-sm text-foreground/60">Ans d'études</p>
+                  <p className="text-foreground">En cybersécurité</p>
+                </div>
+              </div>
+              <div className="flex items-center gap-4">
+                <div className="text-4xl font-bold text-accent">15+</div>
+                <div>
+                  <p className="text-sm text-foreground/60">Projets et labs</p>
+                  <p className="text-foreground">Complétés avec succès</p>
+                </div>
+              </div>
+              <div className="flex items-center gap-4">
+                <div className="text-4xl font-bold text-accent">4</div>
+                <div>
+                  <p className="text-sm text-foreground/60">Certifications</p>
+                  <p className="text-foreground">Cisco et TryHackMe</p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </section>
 
       {/* Compétences Section */}
-      <section id="skills" className="py-20 md:py-32">
+      <section className="py-20 md:py-32">
         <div className="container">
           <SectionHeader title="Compétences Principales" />
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -191,138 +183,24 @@ export default function Home() {
       <section id="projects" className="py-20 md:py-32 bg-secondary/20">
         <div className="container">
           <SectionHeader title="Projets Vedettes" />
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <a href="/projects/stage" className="cursor-pointer">
-              <ProjectCard
-                title="Stage - Laboratoire de Réseautique"
-                description="Stage complet de 6 semaines : mise en place complète d'une infrastructure réseau d'entreprise, câblage, configuration réseau, sécurité et tests."
-                tags={["Stage", "Infrastructure", "Réseautique", "Projet Majeur"]}
-                image="https://d2xsxph8kpxj0f.cloudfront.net/310519663382628638/WmRojeLpchBAbCWdyVAPFM/hero-cybersecurity-dvbfngCY6SAPXZ4u5h4RAC.webp"
-              />
-            </a>
-            <a href="/projects/cybersentinel" className="cursor-pointer">
-              <ProjectCard
-                title="CyberSentinel v2"
-                description="Système de détection d'intrusion en Python/Scapy avec détection comportementale (ICMP flood, TCP SYN scan, SSH brute-force) et réponse automatisée."
-                tags={["Python", "Scapy", "Détection d'Intrusion", "iptables", "Sécurité"]}
-                image="https://d2xsxph8kpxj0f.cloudfront.net/310519663382628638/WmRojeLpchBAbCWdyVAPFM/skills-background-HVL74F6V2325d9BYjLDV4y.webp"
-              />
-            </a>
-            <a href="/projects/vlan" className="cursor-pointer">
-              <ProjectCard
-                title="VLAN-DHCP-NAT Lab"
-                description="Configuration complète d'un réseau d'entreprise avec segmentation VLAN, routage inter-VLAN, DHCP, NAT/PAT et ACL."
-                tags={["VLAN", "DHCP", "NAT", "Cisco", "ACL"]}
-                image="https://d2xsxph8kpxj0f.cloudfront.net/310519663382628638/WmRojeLpchBAbCWdyVAPFM/hero-cybersecurity-dvbfngCY6SAPXZ4u5h4RAC.webp"
-              />
-            </a>
-            <a href="/projects/stage" className="cursor-pointer">
-              <ProjectCard
-                title="Stage - Laboratoire de Réseautique"
-                description="Stage complet couvrant la configuration d'infrastructures réseau, la sécurité réseau et l'administration de réseaux."
-                tags={["Stage", "Réseautique", "Infrastructure", "Sécurité"]}
-                image="https://d2xsxph8kpxj0f.cloudfront.net/310519663382628638/WmRojeLpchBAbCWdyVAPFM/hero-cybersecurity-dvbfngCY6SAPXZ4u5h4RAC.webp"
-              />
-            </a>
+          <div className="grid md:grid-cols-2 gap-8">
             <a href="/projects/vortexcore" className="cursor-pointer">
               <ProjectCard
-                title="VortexCore"
-                description="Cluster Proxmox VE 3 nœuds avec stockage NFS partagé, RAID 10 et RAID 5, haute disponibilité et sauvegardes pour plusieurs équipes."
-                tags={["Proxmox VE", "Clustering", "NFS", "RAID", "Haute Disponibilité"]}
+                title="VortexCore - Cluster Proxmox VE"
+                description="Cluster Proxmox VE 3 nœuds avec stockage NFS partagé (UNAS Pro 8), RAID 10 et RAID 5, haute disponibilité et sauvegardes pour plusieurs équipes (SOC, IAM, CyberRange)."
+                tags={["Proxmox VE", "Clustering", "NFS", "RAID", "Haute Disponibilité", "Infrastructure"]}
                 image="https://d2xsxph8kpxj0f.cloudfront.net/310519663382628638/WmRojeLpchBAbCWdyVAPFM/projects-showcase-nuYrFuXjrhnULQRkyUKLiG.webp"
-              />
-            </a>
-            <a href="/projects/phishing" className="cursor-pointer">
-              <ProjectCard
-                title="Simulation de Sensibilisation à l'Hameçonnage"
-                description="Campagne d'hameçonnage éducative à grande échelle ciblant les étudiants du CCNB (5 campus)."
-                tags={["Sensibilisation", "Hameçonnage", "Sécurité", "Éducation"]}
-                image="https://d2xsxph8kpxj0f.cloudfront.net/310519663382628638/WmRojeLpchBAbCWdyVAPFM/hero-cybersecurity-dvbfngCY6SAPXZ4u5h4RAC.webp"
               />
             </a>
             <a href="/projects/ethical-hacking" className="cursor-pointer">
               <ProjectCard
-                title="Ethical Hacking Lab"
-                description="Formation pratique en techniques de sécurité offensive et tests de pénétration avec Metasploit et Burp Suite."
-                tags={["Ethical Hacking", "Pénétration", "Metasploit", "Kali Linux"]}
-                image="https://d2xsxph8kpxj0f.cloudfront.net/310519663382628638/WmRojeLpchBAbCWdyVAPFM/skills-background-HVL74F6V2325d9BYjLDV4y.webp"
-              />
-            </a>
-            <a href="/projects/secs1025" className="cursor-pointer">
-              <ProjectCard
-                title="SECS1025 - Laboratoire 2"
-                description="Sécurité des systèmes et gestion des risques avec frameworks ISO 27001 et NIST."
-                tags={["Sécurité", "Gestion des Risques", "ISO 27001", "NIST"]}
+                title="Projet d'Ethical Hacking"
+                description="Tests de pénétration avancés, reconnaissance active et exploitation de vulnérabilités critiques avec Nmap, GoPhish et Wireshark."
+                tags={["Ethical Hacking", "Pentest", "Nmap", "GoPhish", "Wireshark", "Sécurité"]}
                 image="https://d2xsxph8kpxj0f.cloudfront.net/310519663382628638/WmRojeLpchBAbCWdyVAPFM/hero-cybersecurity-dvbfngCY6SAPXZ4u5h4RAC.webp"
-              />
-            </a>
-            <a href="/projects/baby-lab-1-ad" className="cursor-pointer">
-              <ProjectCard
-                title="Baby Lab 1 - Active Directory"
-                description="Introduction pratique à la configuration et administration d'Active Directory avec création d'utilisateurs et politiques de groupe."
-                tags={["Active Directory", "Windows Server", "GPO", "Gestion d'Identités"]}
-                image="https://d2xsxph8kpxj0f.cloudfront.net/310519663382628638/WmRojeLpchBAbCWdyVAPFM/projects-showcase-nuYrFuXjrhnULQRkyUKLiG.webp"
-              />
-            </a>
-            <a href="/projects/baby-lab-2-ad" className="cursor-pointer">
-              <ProjectCard
-                title="Baby Lab 2 - Active Directory Avancé"
-                description="Concepts avancés d'Active Directory : réplication, gestion des sites, sécurité avancée et haute disponibilité."
-                tags={["Active Directory", "Réplication", "Haute Disponibilité", "Sécurité"]}
-                image="https://d2xsxph8kpxj0f.cloudfront.net/310519663382628638/WmRojeLpchBAbCWdyVAPFM/skills-background-HVL74F6V2325d9BYjLDV4y.webp"
-              />
-            </a>
-            <a href="/projects/examen-final" className="cursor-pointer">
-              <ProjectCard
-                title="Examen Final"
-                description="Évaluation complète des compétences en cybersécurité couvrant tous les domaines du programme d'études."
-                tags={["Examen", "Évaluation", "Cybersécurité", "Compétences"]}
-                image="https://d2xsxph8kpxj0f.cloudfront.net/310519663382628638/WmRojeLpchBAbCWdyVAPFM/hero-cybersecurity-dvbfngCY6SAPXZ4u5h4RAC.webp"
-              />
-            </a>
-            <a href="/projects/evaluation-final" className="cursor-pointer">
-              <ProjectCard
-                title="Évaluation Final"
-                description="Réflexion critique sur les apprentissages acquis et planification stratégique de la carrière en cybersécurité."
-                tags={["Évaluation", "Réflexion", "Carrière", "Apprentissage"]}
-                image="https://d2xsxph8kpxj0f.cloudfront.net/310519663382628638/WmRojeLpchBAbCWdyVAPFM/projects-showcase-nuYrFuXjrhnULQRkyUKLiG.webp"
-              />
-            </a>
-            <a href="/projects/osse" className="cursor-pointer">
-              <ProjectCard
-                title="Projet OSSE"
-                description="Projet spécialisé en sécurité offensive et techniques avancées de pénétration."
-                tags={["OSSE", "Offensive", "Pénétration", "Avancé"]}
-                image="https://d2xsxph8kpxj0f.cloudfront.net/310519663382628638/WmRojeLpchBAbCWdyVAPFM/skills-background-HVL74F6V2325d9BYjLDV4y.webp"
-              />
-            </a>
-            <a href="/projects/cybersentinel-v1" className="cursor-pointer">
-              <ProjectCard
-                title="CyberSentinel v1"
-                description="Version initiale du système de détection d'intrusion avec fonctionnalités de base et alertes."
-                tags={["CyberSentinel", "IDS", "Détection", "v1"]}
-                image="https://d2xsxph8kpxj0f.cloudfront.net/310519663382628638/WmRojeLpchBAbCWdyVAPFM/hero-cybersecurity-dvbfngCY6SAPXZ4u5h4RAC.webp"
-              />
-            </a>
-            <a href="/projects/cahier-charges" className="cursor-pointer">
-              <ProjectCard
-                title="Cahier des Charges - Stage"
-                description="Document fondateur définissant les objectifs, livrables et attentes pour le stage en laboratoire de réseautique."
-                tags={["Cahier des Charges", "Planification", "Stage", "Spécifications"]}
-                image="https://d2xsxph8kpxj0f.cloudfront.net/310519663382628638/WmRojeLpchBAbCWdyVAPFM/projects-showcase-nuYrFuXjrhnULQRkyUKLiG.webp"
-              />
-            </a>
-            <a href="/projects/labs-additionnels" className="cursor-pointer">
-              <ProjectCard
-                title="Labs et Projets Additionnels"
-                description="Collection de laboratoires et projets pratiques couvrant tous les domaines majeurs de la cybersécurité."
-                tags={["Labs", "Projets", "Pratique", "Apprentissage"]}
-                image="https://d2xsxph8kpxj0f.cloudfront.net/310519663382628638/WmRojeLpchBAbCWdyVAPFM/skills-background-HVL74F6V2325d9BYjLDV4y.webp"
               />
             </a>
           </div>
-
-
         </div>
       </section>
 
@@ -349,36 +227,36 @@ export default function Home() {
               <p className="text-foreground/70 mb-2">Trophée d'argent</p>
               <p className="text-foreground/60 text-sm">Avril 2026 - Projet d'intégration en cybersécurité</p>
             </Card>
-            <Card className="card-elegant p-6 bg-card/50">
-              <Badge className="mb-4 bg-accent/20 text-accent border-accent/30">Reconnaissance</Badge>
-              <h3 className="text-xl font-bold text-primary mb-2">Prix Jeune Excellence</h3>
-              <p className="text-foreground/70 mb-2">Reconnaissance du dynamisme et de l'engagement</p>
-              <p className="text-foreground/60 text-sm">Avril 2026 - CYBER-CCNB 2026</p>
-            </Card>
           </div>
         </div>
       </section>
 
-
-
-      {/* CTA Section */}
-      <section id="contact" className="py-20 md:py-32 bg-primary text-primary-foreground">
-        <div className="container text-center">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6">Parlons de Cybersécurité</h2>
-          <p className="text-xl mb-8 opacity-90 max-w-2xl mx-auto">
-            Intéressé par une collaboration, un stage ou une opportunité d'emploi ? N'hésitez pas à me contacter !
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a href="https://github.com/ismael-cybersec" target="_blank" rel="noopener noreferrer">
-              <Button size="lg" className="bg-accent hover:bg-accent/90 text-accent-foreground gap-2 w-full sm:w-auto">
-                Visiter GitHub <ArrowRight className="w-4 h-4" />
-              </Button>
-            </a>
-            <a href="mailto:babyismael03@gmail.com">
-              <Button size="lg" variant="outline" className="border-primary-foreground text-primary-foreground hover:bg-primary-foreground/10 w-full sm:w-auto">
-                Envoyer un Email
-              </Button>
-            </a>
+      {/* Contact Section */}
+      <section id="contact" className="py-20 md:py-32">
+        <div className="container max-w-2xl">
+          <SectionHeader title="Coordonnées" />
+          <div className="space-y-4">
+            <div className="flex items-center gap-4 p-4 bg-secondary/20 rounded-lg border border-border">
+              <Phone className="h-6 w-6 text-accent flex-shrink-0" />
+              <div>
+                <p className="text-sm text-foreground/60">Téléphone</p>
+                <p className="text-foreground font-semibold">+1 (506) 555-0123</p>
+              </div>
+            </div>
+            <div className="flex items-center gap-4 p-4 bg-secondary/20 rounded-lg border border-border">
+              <Mail className="h-6 w-6 text-accent flex-shrink-0" />
+              <div>
+                <p className="text-sm text-foreground/60">Email</p>
+                <p className="text-foreground font-semibold">ismael.baby@example.com</p>
+              </div>
+            </div>
+            <div className="flex items-center gap-4 p-4 bg-secondary/20 rounded-lg border border-border">
+              <MapPin className="h-6 w-6 text-accent flex-shrink-0" />
+              <div>
+                <p className="text-sm text-foreground/60">Localisation</p>
+                <p className="text-foreground font-semibold">Dieppe, Nouveau-Brunswick, Canada</p>
+              </div>
+            </div>
           </div>
         </div>
       </section>
