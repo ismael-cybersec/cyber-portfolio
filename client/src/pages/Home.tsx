@@ -42,6 +42,13 @@ export default function Home() {
 
   const projets = [
     {
+      titre: "Stage - Laboratoire de Réseautique",
+      description: "6 semaines de stage intensif en laboratoire de réseautique couvrant la mise en place complète d'une infrastructure réseau professionnelle avec câblage, configuration VLAN, DHCP, NAT et tests complets.",
+      tags: ["Réseautique", "Cisco", "VLAN", "DHCP", "NAT", "Infrastructure"],
+      image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663382628638/WmRojeLpchBAbCWdyVAPFM/skills-background-wJKfmNjJQe9N7mKZ8VQxWq.webp",
+      descriptionComplete: "Stage professionnel de 6 semaines au Collège communautaire du Nouveau-Brunswick. Mise en place complète d'une infrastructure réseau : inventaire, câblage, passage des câbles, plan d'adressage VLAN, configuration des serveurs, tests de connectivité et validation finale. Apprentissage pratique de technologies Cisco, gestion de racks et équipements réseau professionnels.",
+    },
+    {
       titre: "VortexCore - Cluster Proxmox VE",
       description: "Cluster Proxmox VE 3 nœuds avec stockage NFS partagé (UNAS Pro 8), RAID 10 et RAID 5, haute disponibilité et sauvegardes pour plusieurs équipes (SOC, IAM, CyberRange).",
       tags: ["Proxmox VE", "Clustering", "NFS", "RAID", "Haute Disponibilité", "Infrastructure"],
@@ -183,7 +190,15 @@ export default function Home() {
       <section id="projects" className="py-20 md:py-32 bg-secondary/20">
         <div className="container">
           <SectionHeader title="Projets Vedettes" />
-          <div className="grid md:grid-cols-2 gap-8">
+          <div className="grid md:grid-cols-3 gap-8">
+            <a href="/projects/stage" className="cursor-pointer">
+              <ProjectCard
+                title="Stage - Laboratoire de Réseautique"
+                description="6 semaines de stage intensif en laboratoire de réseautique couvrant la mise en place complète d'une infrastructure réseau professionnelle avec câblage, configuration VLAN, DHCP, NAT et tests complets."
+                tags={["Réseautique", "Cisco", "VLAN", "DHCP", "NAT", "Infrastructure"]}
+                image="https://d2xsxph8kpxj0f.cloudfront.net/310519663382628638/WmRojeLpchBAbCWdyVAPFM/skills-background-wJKfmNjJQe9N7mKZ8VQxWq.webp"
+              />
+            </a>
             <a href="/projects/vortexcore" className="cursor-pointer">
               <ProjectCard
                 title="VortexCore - Cluster Proxmox VE"
