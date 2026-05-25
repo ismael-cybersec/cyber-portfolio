@@ -1,5 +1,6 @@
-import { Badge } from "@/components/ui/badge";
+import { Button } from "@/components/ui/button";
 import { ArrowLeft } from "lucide-react";
+import { Link } from "wouter";
 import { Navigation } from "@/components/Navigation";
 import { Footer } from "@/components/Footer";
 
@@ -8,133 +9,289 @@ export default function ProjectEvaluationFinal() {
     <div className="min-h-screen bg-background text-foreground">
       <Navigation />
 
-      <section className="py-20 bg-gradient-to-r from-primary/10 to-accent/10 border-b border-border">
-        <div className="container">
-          <div className="flex items-center gap-4 mb-6">
-            <a href="/" className="text-accent hover:text-accent/80 transition-colors flex items-center gap-2">
-              <ArrowLeft className="w-5 h-5" /> Retour au Portfolio
-            </a>
-          </div>
-          <h1 className="text-5xl font-bold text-primary mb-4">Évaluation Final - Synthèse des Apprentissages</h1>
-          <p className="text-2xl text-accent mb-6">Réflexion Critique sur les Compétences Acquises</p>
-          <div className="flex flex-wrap gap-2 mb-6">
-            <Badge className="bg-accent/20 text-accent border-accent/30">Évaluation</Badge>
-            <Badge className="bg-accent/20 text-accent border-accent/30">Réflexion</Badge>
-            <Badge className="bg-accent/20 text-accent border-accent/30">Apprentissages</Badge>
-            <Badge className="bg-accent/20 text-accent border-accent/30">Synthèse</Badge>
-          </div>
-        </div>
-      </section>
-
-      <section className="py-20">
-        <div className="container max-w-4xl mx-auto">
-          <div className="prose prose-invert max-w-none">
-            <h2 className="text-3xl font-bold text-primary mb-6">Vue d'Ensemble de l'Évaluation</h2>
-            
-            <p className="text-foreground/80 leading-relaxed mb-6">
-              L'évaluation final représente une réflexion critique sur les apprentissages acquis tout au long du programme d'études en cybersécurité. Cette évaluation a impliqué une synthèse de toutes les compétences, connaissances, et expériences acquises, ainsi qu'une réflexion sur la croissance personnelle et professionnelle. L'évaluation a fourni l'opportunité de documenter les réalisations, d'identifier les domaines de croissance, et de planifier les prochaines étapes de la carrière en cybersécurité.
-            </p>
-
-            <h3 className="text-2xl font-bold text-primary mb-4 mt-8">Synthèse des Apprentissages</h3>
-            <p className="text-foreground/80 leading-relaxed mb-4">
-              L'évaluation a impliqué une synthèse complète de tous les apprentissages acquis :
-            </p>
-
-            <p className="text-foreground/80 leading-relaxed mb-4">
-              <strong>Compétences Techniques Acquises :</strong> Le programme d'études a fourni une formation complète dans les compétences techniques essentielles en cybersécurité. Les compétences acquises incluent la configuration et l'administration des équipements réseau (Cisco), la gestion des systèmes d'exploitation (Windows Server, Linux), la virtualisation (Proxmox VE, VMware), la détection d'intrusion (Snort, Wazuh), et les tests de pénétration (Kali Linux, Metasploit). Ces compétences techniques constituent la base pour une carrière réussie en cybersécurité.
-            </p>
-
-            <p className="text-foreground/80 leading-relaxed mb-4">
-              <strong>Compétences Conceptuelles Acquises :</strong> Le programme d'études a fourni une compréhension profonde des concepts fondamentaux de la cybersécurité. Les concepts acquis incluent les principes de sécurité (CIA), les types de menaces et d'attaques, les mesures de défense, la gestion des risques, la conformité, et les cadres de sécurité (ISO 27001, NIST). Cette compréhension conceptuelle est essentielle pour appliquer les compétences techniques de manière efficace et pour adapter les solutions de sécurité à différents contextes.
-            </p>
-
-            <p className="text-foreground/80 leading-relaxed mb-4">
-              <strong>Expérience Pratique Acquise :</strong> Le programme d'études a fourni une expérience pratique extensive à travers les laboratoires et les projets. L'expérience pratique a inclus la configuration d'infrastructures complètes, la résolution de problèmes techniques complexes, la conception de solutions de sécurité, et la gestion de projets. Cette expérience pratique a transformé les connaissances théoriques en compétences pratiques applicables.
-            </p>
-
-            <h3 className="text-2xl font-bold text-primary mb-4 mt-8">Croissance Personnelle et Professionnelle</h3>
-            <p className="text-foreground/80 leading-relaxed mb-4">
-              Au-delà des compétences techniques et conceptuelles, le programme d'études a contribué à une croissance personnelle et professionnelle significative :
-            </p>
-
-            <p className="text-foreground/80 leading-relaxed mb-4">
-              <strong>Développement de la Pensée Critique :</strong> Le programme d'études a développé la capacité à penser de manière critique et à résoudre des problèmes complexes. Les laboratoires et les projets ont présenté des problèmes sans solutions évidentes, nécessitant une analyse approfondie et une pensée créative. Cette capacité de pensée critique est essentielle pour identifier les vulnérabilités de sécurité et concevoir des solutions efficaces.
-            </p>
-
-            <p className="text-foreground/80 leading-relaxed mb-4">
-              <strong>Développement de la Communication :</strong> Le programme d'études a développé les compétences en communication à travers la documentation technique, les présentations de projets, et la collaboration en équipe. La capacité à communiquer efficacement les concepts techniques complexes est essentielle pour travailler dans une équipe de sécurité et pour communiquer avec les parties prenantes non techniques.
-            </p>
-
-            <p className="text-foreground/80 leading-relaxed mb-4">
-              <strong>Développement du Leadership :</strong> Le programme d'études a développé les compétences en leadership à travers les projets de groupe et la gestion de projets. La capacité à diriger une équipe et à coordonner les efforts collectifs est essentielle pour les rôles de leadership en cybersécurité.
-            </p>
-
-            <p className="text-foreground/80 leading-relaxed mb-4">
-              <strong>Développement de l'Éthique Professionnelle :</strong> Le programme d'études a développé une compréhension de l'éthique professionnelle en cybersécurité. Les concepts éthiques incluent le respect de la vie privée, la responsabilité, la transparence, et l'intégrité. Cette éthique professionnelle est fondamentale pour exercer la cybersécurité de manière responsable.
-            </p>
-
-            <h3 className="text-2xl font-bold text-primary mb-4 mt-8">Réalisations Majeures</h3>
-            <p className="text-foreground/80 leading-relaxed mb-4">
-              Le programme d'études a inclus plusieurs réalisations majeures qui démontrent la croissance et la maîtrise :
-            </p>
-            <ul className="list-disc list-inside text-foreground/80 mb-4 space-y-2">
-              <li>Conception et déploiement d'une infrastructure de cybersécurité complète (VortexCore)</li>
-              <li>Développement d'un système de détection d'intrusion avancé (CyberSentinel v2)</li>
-              <li>Conception d'une campagne de sensibilisation à la sécurité à grande échelle</li>
-              <li>Configuration complète d'Active Directory et gestion des identités</li>
-              <li>Réussite de l'examen final en cybersécurité</li>
-              <li>2e place à CYBER-CCNB 2026 pour le projet d'intégration</li>
-              <li>Création d'une documentation technique complète pour les projets</li>
-            </ul>
-
-            <h3 className="text-2xl font-bold text-primary mb-4 mt-8">Domaines de Force</h3>
-            <p className="text-foreground/80 leading-relaxed mb-4">
-              L'évaluation a identifié plusieurs domaines de force qui constituent des avantages compétitifs :
-            </p>
-            <ul className="list-disc list-inside text-foreground/80 mb-4 space-y-2">
-              <li><strong>Infrastructure et Virtualisation :</strong> Maîtrise complète de la conception et du déploiement d'infrastructures virtualisées hautement disponibles</li>
-              <li><strong>Détection d'Intrusion :</strong> Compréhension approfondie des systèmes de détection d'intrusion et des techniques de détection comportementale</li>
-              <li><strong>Gestion des Identités :</strong> Compétences complètes en configuration et administration d'Active Directory</li>
-              <li><strong>Sécurité des Réseaux :</strong> Maîtrise de la configuration sécurisée des équipements réseau et des principes de sécurité réseau</li>
-              <li><strong>Gestion de Projets :</strong> Capacité à gérer des projets complexes de cybersécurité de manière efficace</li>
-            </ul>
-
-            <h3 className="text-2xl font-bold text-primary mb-4 mt-8">Domaines de Croissance</h3>
-            <p className="text-foreground/80 leading-relaxed mb-4">
-              L'évaluation a également identifié plusieurs domaines où une croissance continue est souhaitable :
-            </p>
-            <ul className="list-disc list-inside text-foreground/80 mb-4 space-y-2">
-              <li><strong>Sécurité des Applications :</strong> Approfondissement des connaissances en sécurité des applications et en techniques de test de sécurité des applications</li>
-              <li><strong>Forensique Numérique :</strong> Développement des compétences en forensique numérique et en analyse des incidents</li>
-              <li><strong>Conformité et Audit :</strong> Approfondissement des connaissances en conformité réglementaire et en audit de sécurité</li>
-              <li><strong>Gestion des Risques Avancée :</strong> Développement d'une expertise en gestion des risques à l'échelle de l'entreprise</li>
-              <li><strong>Certifications Professionnelles :</strong> Obtention de certifications reconnues dans l'industrie (CEH, CISSP, OSCP)</li>
-            </ul>
-
-            <h3 className="text-2xl font-bold text-primary mb-4 mt-8">Prochaines Étapes et Objectifs Futurs</h3>
-            <p className="text-foreground/80 leading-relaxed mb-4">
-              L'évaluation finale a fourni une base pour planifier les prochaines étapes de la carrière en cybersécurité :
-            </p>
-
-            <p className="text-foreground/80 leading-relaxed mb-4">
-              <strong>Court Terme (0-6 mois) :</strong> Obtenir des certifications professionnelles reconnues (CEH, CompTIA Security+) pour valider les compétences et améliorer la crédibilité professionnelle. Chercher un rôle d'entrée en cybersécurité (analyste de sécurité, administrateur de sécurité) pour appliquer les compétences acquises dans un environnement professionnel.
-            </p>
-
-            <p className="text-foreground/80 leading-relaxed mb-4">
-              <strong>Moyen Terme (6-18 mois) :</strong> Accumuler une expérience professionnelle en cybersécurité et développer une expertise dans un domaine spécifique (détection d'intrusion, gestion des identités, sécurité des applications). Contribuer à des projets de sécurité majeurs et démontrer la capacité à gérer des projets complexes.
-            </p>
-
-            <p className="text-foreground/80 leading-relaxed mb-4">
-              <strong>Long Terme (18+ mois) :</strong> Progresser vers des rôles de leadership en cybersécurité (architecte de sécurité, responsable de la sécurité informatique). Obtenir des certifications avancées (CISSP, OSCP) pour valider l'expertise avancée. Contribuer à la communauté de la cybersécurité à travers la publication, l'enseignement, ou la participation à des conférences.
-            </p>
-
-            <h3 className="text-2xl font-bold text-primary mb-4 mt-8">Conclusion</h3>
-            <p className="text-foreground/80 leading-relaxed mb-4">
-              L'évaluation final en cybersécurité a fourni une synthèse complète des apprentissages acquis et une validation de la préparation pour une carrière en cybersécurité. Le programme d'études a fourni une base solide en compétences techniques, en concepts théoriques, et en expérience pratique. La croissance personnelle et professionnelle a préparé à relever les défis d'une carrière en cybersécurité. Les réalisations majeures et les domaines de force constituent des avantages compétitifs significants. Avec une planification stratégique et un engagement envers l'apprentissage continu, une carrière réussie et gratifiante en cybersécurité est bien à portée de main.
-            </p>
+      <main className="container py-12 max-w-4xl">
+        {/* Header */}
+        <div className="mb-8">
+          <Link href="/">
+            <Button variant="ghost" size="sm" className="gap-2 mb-6">
+              <ArrowLeft className="h-4 w-4" />
+              Retour aux projets
+            </Button>
+          </Link>
+          <h1 className="text-4xl font-bold text-accent mb-4">Évaluation Final : Hacking éthique et Contre-mesures</h1>
+          <div className="space-y-2 text-muted-foreground text-sm">
+            <p><strong>Étudiant :</strong> Ismael Baby</p>
+            <p><strong>Cours :</strong> Hacking éthique et Contre-mesures</p>
+            <p><strong>Professeur :</strong> Kevin MONKAM</p>
+            <p><strong>Établissement :</strong> CCNB - Campus Dieppe</p>
+            <p><strong>Date :</strong> 30-11-2025</p>
           </div>
         </div>
-      </section>
+
+        {/* Introduction */}
+        <section className="mb-12 space-y-4">
+          <h2 className="text-2xl font-bold text-accent">Introduction</h2>
+          <p className="text-justify leading-relaxed">
+            L'évaluation final du cours "Hacking éthique et Contre-mesures" représente une démonstration pratique des compétences acquises en matière de test de pénétration, d'exploitation de vulnérabilités et de mise en place de mesures de sécurité. Cette évaluation combine plusieurs étapes de développement d'une infrastructure web vulnérable et de sa compromission, illustrant les principes fondamentaux du hacking éthique et de la défense contre les attaques.
+          </p>
+        </section>
+
+        {/* ÉTAPE 1 */}
+        <section className="mb-12 space-y-6">
+          <h2 className="text-2xl font-bold text-accent">ÉTAPE 1 : DÉPLOIEMENT DU SERVEUR</h2>
+          <p className="text-justify leading-relaxed">
+            La première étape de l'évaluation consistait à déployer une infrastructure web fonctionnelle sur une machine Ubuntu Server. Cette étape démontre la capacité à configurer et administrer les composants essentiels d'une infrastructure web moderne.
+          </p>
+
+          <div className="space-y-4">
+            <h3 className="text-xl font-semibold text-accent">1.1 INSTALLATION D'UBUNTU SERVER</h3>
+            <p className="text-justify leading-relaxed">
+              Ubuntu Server 22.04 LTS a été installé sur une machine virtuelle. Ubuntu Server est une distribution Linux populaire pour les serveurs en production, offrant stabilité, sécurité et support à long terme.
+            </p>
+
+            <div className="space-y-3">
+              <h4 className="font-semibold text-foreground">Configuration réalisée :</h4>
+              <ul className="list-disc list-inside space-y-1 text-sm ml-4">
+                <li>Déploiement d'une machine virtuelle Ubuntu Server 22.04 LTS</li>
+                <li>Configuration réseau avec adresse IP statique</li>
+                <li>Configuration du hostname et des paramètres système</li>
+                <li>Mise à jour des packages système</li>
+              </ul>
+            </div>
+
+            <div className="bg-muted p-4 rounded-lg border border-border">
+              <p className="text-sm font-mono text-muted-foreground">
+                [Espace pour capture d'écran : Installation d'Ubuntu Server]
+              </p>
+            </div>
+          </div>
+
+          <div className="space-y-4">
+            <h3 className="text-xl font-semibold text-accent">1.2 INSTALLATION DES COMPOSANTS WEB</h3>
+            <p className="text-justify leading-relaxed">
+              Les composants essentiels d'une infrastructure web ont été installés : Apache2 (serveur web), PHP (langage de scripting côté serveur) et MySQL (système de gestion de base de données).
+            </p>
+
+            <div className="space-y-3">
+              <h4 className="font-semibold text-foreground">Composants installés :</h4>
+              <ul className="list-disc list-inside space-y-1 text-sm ml-4">
+                <li><strong>Apache2 :</strong> Serveur web HTTP/HTTPS pour servir les pages web</li>
+                <li><strong>PHP :</strong> Langage de scripting côté serveur pour développer des applications web dynamiques</li>
+                <li><strong>MySQL :</strong> Système de gestion de base de données pour stocker les données de l'application</li>
+              </ul>
+            </div>
+
+            <div className="bg-muted p-4 rounded-lg border border-border">
+              <p className="text-sm font-mono text-muted-foreground">
+                [Espace pour capture d'écran : Installation d'Apache, PHP et MySQL]
+              </p>
+            </div>
+
+            <p className="text-justify leading-relaxed">
+              <strong>Vérification du déploiement :</strong> Une fois l'installation terminée, le serveur web a été vérifié en accédant à la page par défaut d'Apache via un navigateur web. La page par défaut confirme que le serveur Apache fonctionne correctement.
+            </p>
+
+            <div className="bg-muted p-4 rounded-lg border border-border">
+              <p className="text-sm font-mono text-muted-foreground">
+                [Espace pour capture d'écran : Page par défaut d'Apache]
+              </p>
+            </div>
+          </div>
+        </section>
+
+        {/* ÉTAPE 2 */}
+        <section className="mb-12 space-y-6">
+          <h2 className="text-2xl font-bold text-accent">ÉTAPE 2 : CRÉATION D'UNE PAGE HTML/CSS POUR L'UPLOAD</h2>
+          <p className="text-justify leading-relaxed">
+            La deuxième étape consistait à créer une page HTML avec un formulaire d'upload de fichiers. Cette page servira de point d'entrée pour l'exploitation ultérieure.
+          </p>
+
+          <div className="space-y-4">
+            <h3 className="text-xl font-semibold text-accent">2.1 CONCEPTION DE LA PAGE HTML</h3>
+            <p className="text-justify leading-relaxed">
+              Une page HTML a été créée avec un formulaire d'upload simple. Le formulaire inclut un champ d'entrée pour sélectionner un fichier et un bouton pour soumettre le formulaire.
+            </p>
+
+            <div className="space-y-3">
+              <h4 className="font-semibold text-foreground">Éléments de la page :</h4>
+              <ul className="list-disc list-inside space-y-1 text-sm ml-4">
+                <li>Titre de la page</li>
+                <li>Formulaire HTML avec méthode POST</li>
+                <li>Champ d'entrée de fichier (type="file")</li>
+                <li>Bouton de soumission</li>
+              </ul>
+            </div>
+
+            <div className="bg-muted p-4 rounded-lg border border-border">
+              <p className="text-sm font-mono text-muted-foreground">
+                [Espace pour capture d'écran : Page HTML avec formulaire d'upload]
+              </p>
+            </div>
+          </div>
+
+          <div className="space-y-4">
+            <h3 className="text-xl font-semibold text-accent">2.2 AJOUT DE STYLES CSS</h3>
+            <p className="text-justify leading-relaxed">
+              Des styles CSS ont été ajoutés pour améliorer l'apparence de la page. Le design inclut des couleurs, des espacements et des effets de hover pour rendre la page plus attrayante.
+            </p>
+
+            <div className="bg-muted p-4 rounded-lg border border-border">
+              <p className="text-sm font-mono text-muted-foreground">
+                [Espace pour capture d'écran : Page HTML stylisée avec CSS]
+              </p>
+            </div>
+          </div>
+        </section>
+
+        {/* ÉTAPE 3 */}
+        <section className="mb-12 space-y-6">
+          <h2 className="text-2xl font-bold text-accent">ÉTAPE 3 : DÉVELOPPEMENT DU SCRIPT PHP D'UPLOAD</h2>
+          <p className="text-justify leading-relaxed">
+            La troisième étape consistait à développer un script PHP qui reçoit et stocke les fichiers uploadés. Ce script contient intentionnellement des vulnérabilités de sécurité pour démontrer les risques de l'upload de fichiers non sécurisé.
+          </p>
+
+          <div className="space-y-4">
+            <h3 className="text-xl font-semibold text-accent">3.1 STRUCTURE DU SCRIPT PHP</h3>
+            <p className="text-justify leading-relaxed">
+              Le script PHP reçoit le fichier uploadé, effectue quelques vérifications basiques et le stocke dans un répertoire accessible via le web.
+            </p>
+
+            <div className="space-y-3">
+              <h4 className="font-semibold text-foreground">Fonctionnalités du script :</h4>
+              <ul className="list-disc list-inside space-y-1 text-sm ml-4">
+                <li>Réception du fichier uploadé via $_FILES</li>
+                <li>Vérification basique du fichier (taille, type)</li>
+                <li>Stockage du fichier dans le répertoire /uploads</li>
+                <li>Affichage d'un message de succès ou d'erreur</li>
+              </ul>
+            </div>
+
+            <div className="bg-muted p-4 rounded-lg border border-border">
+              <p className="text-sm font-mono text-muted-foreground">
+                [Espace pour capture d'écran : Code PHP du script d'upload]
+              </p>
+            </div>
+          </div>
+
+          <div className="space-y-4">
+            <h3 className="text-xl font-semibold text-accent">3.2 VULNÉRABILITÉS INTENTIONNELLES</h3>
+            <p className="text-justify leading-relaxed">
+              Le script PHP contient plusieurs vulnérabilités de sécurité intentionnelles pour démontrer les risques de l'upload de fichiers non sécurisé :
+            </p>
+
+            <div className="space-y-3">
+              <h4 className="font-semibold text-foreground">Vulnérabilités :</h4>
+              <ul className="list-disc list-inside space-y-1 text-sm ml-4">
+                <li><strong>Pas de restriction sur le type de fichier :</strong> N'importe quel type de fichier peut être uploadé</li>
+                <li><strong>Pas de validation du contenu du fichier :</strong> Le contenu du fichier n'est pas vérifié</li>
+                <li><strong>Répertoire accessible via le web :</strong> Les fichiers uploadés sont stockés dans un répertoire accessible via HTTP</li>
+                <li><strong>Pas de renommage du fichier :</strong> Le fichier conserve son nom original</li>
+              </ul>
+            </div>
+          </div>
+
+          <div className="space-y-4">
+            <h3 className="text-xl font-semibold text-accent">3.3 CRÉATION DU RÉPERTOIRE D'UPLOAD</h3>
+            <p className="text-justify leading-relaxed">
+              Le répertoire /var/www/html/uploads a été créé avec les permissions 777 pour permettre l'écriture de fichiers. Cette configuration est intentionnellement insécurisée pour démontrer les risques.
+            </p>
+
+            <div className="bg-muted p-4 rounded-lg border border-border">
+              <p className="text-sm font-mono text-muted-foreground">
+                [Espace pour capture d'écran : Création du répertoire uploads avec permissions 777]
+              </p>
+            </div>
+          </div>
+        </section>
+
+        {/* ÉTAPE 4 */}
+        <section className="mb-12 space-y-6">
+          <h2 className="text-2xl font-bold text-accent">ÉTAPE 4 : EXPLOITATION AVEC PENTESTMONKEY PHP SHELL</h2>
+          <p className="text-justify leading-relaxed">
+            La quatrième étape consistait à exploiter les vulnérabilités du script PHP en uploadant un shell PHP malveillant. Pentestmonkey PHP Reverse Shell est un script PHP populaire utilisé par les testeurs de pénétration pour obtenir un accès shell à un serveur web.
+          </p>
+
+          <div className="space-y-4">
+            <h3 className="text-xl font-semibold text-accent">4.1 PRÉPARATION DU PENTESTMONKEY PHP SHELL</h3>
+            <p className="text-justify leading-relaxed">
+              Le Pentestmonkey PHP Reverse Shell a été configuré avec l'adresse IP de l'attaquant et le port d'écoute. Ce shell établira une connexion inverse vers la machine de l'attaquant.
+            </p>
+
+            <div className="space-y-3">
+              <h4 className="font-semibold text-foreground">Configuration du shell :</h4>
+              <ul className="list-disc list-inside space-y-1 text-sm ml-4">
+                <li>Adresse IP de l'attaquant (LHOST)</li>
+                <li>Port d'écoute (LPORT)</li>
+                <li>Type de shell (bash, sh, etc.)</li>
+              </ul>
+            </div>
+
+            <div className="bg-muted p-4 rounded-lg border border-border">
+              <p className="text-sm font-mono text-muted-foreground">
+                [Espace pour capture d'écran : Configuration du Pentestmonkey PHP Shell]
+              </p>
+            </div>
+          </div>
+
+          <div className="space-y-4">
+            <h3 className="text-xl font-semibold text-accent">4.2 UPLOAD DU SHELL</h3>
+            <p className="text-justify leading-relaxed">
+              Le Pentestmonkey PHP Shell a été uploadé via le formulaire d'upload. Comme le script PHP ne valide pas le type de fichier, le shell PHP a été accepté et stocké dans le répertoire /uploads.
+            </p>
+
+            <div className="bg-muted p-4 rounded-lg border border-border">
+              <p className="text-sm font-mono text-muted-foreground">
+                [Espace pour capture d'écran : Upload du Pentestmonkey PHP Shell]
+              </p>
+            </div>
+          </div>
+
+          <div className="space-y-4">
+            <h3 className="text-xl font-semibold text-accent">4.3 EXÉCUTION DU SHELL</h3>
+            <p className="text-justify leading-relaxed">
+              Une fois uploadé, le shell PHP a été exécuté en accédant à son URL via le navigateur web. L'exécution du shell a établi une connexion inverse vers la machine de l'attaquant.
+            </p>
+
+            <div className="bg-muted p-4 rounded-lg border border-border">
+              <p className="text-sm font-mono text-muted-foreground">
+                [Espace pour capture d'écran : Accès au shell PHP uploadé]
+              </p>
+            </div>
+          </div>
+
+          <div className="space-y-4">
+            <h3 className="text-xl font-semibold text-accent">4.4 ÉTABLISSEMENT D'UNE CONNEXION INVERSE</h3>
+            <p className="text-justify leading-relaxed">
+              Une fois le shell exécuté, une connexion inverse a été établie vers la machine de l'attaquant. Cette connexion fournit un accès shell complet au serveur web compromis.
+            </p>
+
+            <div className="bg-muted p-4 rounded-lg border border-border">
+              <p className="text-sm font-mono text-muted-foreground">
+                [Espace pour capture d'écran : Connexion inverse établie avec le shell]
+              </p>
+            </div>
+
+            <p className="text-justify leading-relaxed">
+              <strong>Accès obtenu :</strong> Une fois la connexion établie, l'attaquant a accès complet au serveur web. L'attaquant peut exécuter des commandes système, explorer le système de fichiers, et effectuer d'autres actions malveillantes.
+            </p>
+          </div>
+        </section>
+
+        {/* Conclusion */}
+        <section className="mb-12 space-y-4">
+          <h2 className="text-2xl font-bold text-accent">Conclusion</h2>
+          <p className="text-justify leading-relaxed">
+            L'évaluation final a démontré avec succès les compétences acquises en matière de déploiement d'infrastructure web, de développement d'applications web et d'exploitation de vulnérabilités. Cette évaluation illustre l'importance critique de la sécurité dans le développement web et la nécessité de valider et de sécuriser tous les uploads de fichiers. Les techniques démontrées dans cette évaluation sont essentielles pour les professionnels de la cybersécurité qui doivent identifier et corriger les vulnérabilités dans les applications web.
+          </p>
+        </section>
+
+        {/* Navigation Footer */}
+        <div className="flex justify-between pt-8 border-t border-border">
+          <Link href="/">
+            <Button variant="outline">← Retour aux projets</Button>
+          </Link>
+        </div>
+      </main>
 
       <Footer />
     </div>
