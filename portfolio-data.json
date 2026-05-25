@@ -1,0 +1,152 @@
+{
+  "profile": {
+    "name": "Ismael Baby",
+    "title": "Cybersecurity Student & Network Security Enthusiast",
+    "bio": "Passionate cybersecurity professional with hands-on experience in network infrastructure, intrusion detection systems, and enterprise security architecture. Currently completing a cybersecurity specialization with focus on practical lab work and real-world security implementations.",
+    "github": "https://github.com/ismael-cybersec",
+    "email": "ismael.baby@example.com",
+    "location": "Canada"
+  },
+  "skills": {
+    "Networking": [
+      "VLAN Configuration",
+      "DHCP Server Setup",
+      "NAT & Routing",
+      "Cisco Packet Tracer",
+      "Network Topology Design",
+      "Inter-VLAN Routing"
+    ],
+    "Cybersecurity": [
+      "Intrusion Detection Systems",
+      "SSH Brute-Force Detection",
+      "Network Packet Analysis",
+      "Firewall Configuration",
+      "Behavioral Threat Detection",
+      "Automated Response Systems"
+    ],
+    "Infrastructure": [
+      "Cisco Equipment Configuration",
+      "Server Setup & Management",
+      "VLAN Segmentation",
+      "Network Security",
+      "Lab Infrastructure Design",
+      "Equipment Inventory Management"
+    ],
+    "Tools & Technologies": [
+      "Cisco Packet Tracer",
+      "Scapy (Python)",
+      "iptables",
+      "Kali Linux",
+      "Ubuntu Server",
+      "VirtualBox",
+      "Hydra",
+      "GitHub"
+    ]
+  },
+  "projects": [
+    {
+      "id": 1,
+      "title": "CyberSentinel v2 - Behavioral Intrusion Detection System",
+      "description": "Advanced network intrusion detection and automated response prototype featuring service-aware detection capabilities. Implements SSH brute-force detection, real-time packet inspection, and automated firewall-based mitigation using Python and Scapy.",
+      "longDescription": "CyberSentinel v2 represents an evolution from the initial behavioral intrusion detection prototype. While version 1 focused on generic network-level detection mechanisms such as ICMP flood and TCP SYN scanning, version 2 introduces service-aware detection capabilities. The primary enhancement is the implementation of SSH brute-force detection, enabling the system to identify targeted credential-based attacks in real time. The system monitors TCP SYN packets directed toward destination port 22 (SSH) and tracks connection attempts within a 5-second sliding time window. Once the threshold is exceeded, CyberSentinel automatically generates a CRITICAL severity alert, logs the event in structured JSON format, and dynamically inserts a firewall rule to block the attacker's IP address.",
+      "technologies": ["Python", "Scapy", "iptables", "SSH", "Network Detection", "Automated Response"],
+      "keyFeatures": [
+        "Real-time packet inspection using Scapy",
+        "SSH brute-force detection with configurable thresholds",
+        "Automated firewall-based mitigation",
+        "Structured JSON alert logging",
+        "Service-aware threat classification",
+        "CRITICAL severity threat scoring"
+      ],
+      "testingDetails": "Attack simulation using Hydra on Kali Linux against Ubuntu Server running CyberSentinel v2. Successfully detected and blocked SSH brute-force attempts with automatic iptables rule insertion.",
+      "status": "Completed - v2.0",
+      "date": "February 2026",
+      "image": "https://d2xsxph8kpxj0f.cloudfront.net/310519663382628638/WmRojeLpchBAbCWdyVAPFM/projects-showcase-nuYrFuXjrhnULQRkyUKLiG.webp"
+    },
+    {
+      "id": 2,
+      "title": "VLAN-DHCP-NAT Lab - Enterprise Network Configuration",
+      "description": "Complete configuration of a simulated enterprise network in Cisco Packet Tracer featuring VLANs, DHCP server, NAT, and inter-VLAN routing. Demonstrates network segmentation and access control for admin and student networks.",
+      "longDescription": "This comprehensive lab project demonstrates the design and configuration of a real small business network using Cisco Packet Tracer. The network includes VLAN segmentation (Administration VLAN 10 and Student VLAN 20), DHCP server configuration for automatic IP distribution, NAT configuration for internet access, and inter-VLAN routing. The topology includes 2 routers, 1 switch, and 4 PCs organized into separate VLANs with proper access control. All tests including ping between VLANs, DHCP IP assignment, and internet connectivity were successfully validated.",
+      "technologies": ["Cisco Packet Tracer", "VLAN", "DHCP", "NAT", "Routing", "Network Design"],
+      "keyFeatures": [
+        "VLAN segmentation (Admin & Student networks)",
+        "DHCP server configuration",
+        "NAT configuration for internet access",
+        "Inter-VLAN routing",
+        "Access control implementation",
+        "Network topology design"
+      ],
+      "testingDetails": "All connectivity tests passed: PC IP assignment via DHCP, inter-VLAN communication, internet connectivity via NAT, and routing verification.",
+      "status": "Completed - v1.0",
+      "date": "May 2025",
+      "image": "https://d2xsxph8kpxj0f.cloudfront.net/310519663382628638/WmRojeLpchBAbCWdyVAPFM/skills-background-HVL74F6V2325d9BYjLDV4y.webp"
+    },
+    {
+      "id": 3,
+      "title": "Laboratory Infrastructure Setup & Documentation",
+      "description": "Lead role in designing and implementing a complete networking and cybersecurity laboratory infrastructure for educational purposes. Includes equipment installation, network cabling, VLAN configuration, server setup, and comprehensive documentation.",
+      "longDescription": "6-week internship project involving the complete setup of a laboratory infrastructure for networking and cybersecurity courses. Responsibilities included: physical infrastructure planning and installation, network cabling with proper documentation, equipment configuration (Cisco, Ubiquiti, WatchGuard), VLAN design and implementation, server setup on Proxmox, security access management, and comprehensive technical documentation. The project involved coordination with supervisors and team members to deliver a fully operational laboratory environment for student practical work.",
+      "technologies": ["Cisco Equipment", "Ubiquiti", "WatchGuard", "Network Cabling", "VLAN", "Proxmox", "Infrastructure Design"],
+      "keyFeatures": [
+        "Physical infrastructure planning and installation",
+        "Network cabling and organization",
+        "Equipment inventory and management",
+        "VLAN architecture design",
+        "Server configuration and management",
+        "Technical documentation",
+        "Security access implementation"
+      ],
+      "testingDetails": "Comprehensive testing including connectivity verification, VLAN isolation, internet access, wireless network functionality, and multi-user access scenarios.",
+      "status": "Completed",
+      "date": "April - June 2026",
+      "image": "https://d2xsxph8kpxj0f.cloudfront.net/310519663382628638/WmRojeLpchBAbCWdyVAPFM/hero-cybersecurity-dvbfngCY6SAPXZ4u5h4RAC.webp"
+    }
+  ],
+  "certifications": [
+    {
+      "name": "Cybersecurity Specialization",
+      "issuer": "Educational Institution",
+      "year": "2026",
+      "status": "In Progress"
+    },
+    {
+      "name": "Cisco Networking Fundamentals",
+      "issuer": "Cisco",
+      "year": "2025",
+      "status": "Completed"
+    },
+    {
+      "name": "Ethical Hacking Fundamentals",
+      "issuer": "Educational Institution",
+      "year": "2025",
+      "status": "Completed"
+    },
+    {
+      "name": "Network Security Essentials",
+      "issuer": "Educational Institution",
+      "year": "2026",
+      "status": "Completed"
+    }
+  ],
+  "experience": [
+    {
+      "role": "Cybersecurity Intern & Lab Infrastructure Lead",
+      "organization": "Educational Institution",
+      "duration": "April - June 2026",
+      "description": "Led the design and implementation of a complete networking and cybersecurity laboratory infrastructure. Responsibilities included physical infrastructure setup, network configuration, VLAN design, server management, and technical documentation."
+    },
+    {
+      "role": "Cybersecurity Student",
+      "organization": "Educational Institution",
+      "duration": "2024 - Present",
+      "description": "Pursuing specialization in cybersecurity with focus on network security, intrusion detection, and hands-on lab work. Completed multiple projects including IDS development, network configuration, and infrastructure setup."
+    }
+  ],
+  "highlights": {
+    "projectsCompleted": 15,
+    "vulnerabilitiesIdentified": 50,
+    "labsCompleted": 25,
+    "yearsExperience": 2
+  }
+}
