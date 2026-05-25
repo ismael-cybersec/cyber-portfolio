@@ -19,6 +19,8 @@ import ProjectExamenFinal from "./pages/ProjectExamenFinal";
 import ProjectEvaluationFinal from "./pages/ProjectEvaluationFinal";
 import ProjectOSSE from "./pages/ProjectOSSE";
 import ProjectCyberSentinelV1 from "./pages/ProjectCyberSentinelV1";
+import ProjectCahierCharges from "./pages/ProjectCahierCharges";
+import ProjectLabsAdditionnels from "./pages/ProjectLabsAdditionnels";
 
 function Router() {
   return (
@@ -38,6 +40,8 @@ function Router() {
       <Route path="/projects/evaluation-final" component={ProjectEvaluationFinal} />
       <Route path="/projects/osse" component={ProjectOSSE} />
       <Route path="/projects/cybersentinel-v1" component={ProjectCyberSentinelV1} />
+      <Route path="/projects/cahier-charges" component={ProjectCahierCharges} />
+      <Route path="/projects/labs-additionnels" component={ProjectLabsAdditionnels} />
       <Route path="/404" component={NotFound} />
       <Route component={NotFound} />
     </Switch>
