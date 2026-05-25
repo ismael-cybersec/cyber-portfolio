@@ -8,7 +8,6 @@ export default function ProjectStage() {
     <div className="min-h-screen bg-background text-foreground">
       <Navigation />
 
-      {/* Header */}
       <section className="py-20 bg-gradient-to-r from-primary/10 to-accent/10 border-b border-border">
         <div className="container">
           <div className="flex items-center gap-4 mb-6">
@@ -17,153 +16,249 @@ export default function ProjectStage() {
             </a>
           </div>
           <h1 className="text-5xl font-bold text-primary mb-4">Stage - Laboratoire de Réseautique</h1>
-          <p className="text-2xl text-accent mb-6">Support Informatique et Configuration Réseau d'Entreprise</p>
+          <p className="text-2xl text-accent mb-6">Mise en Place Complète d'une Infrastructure Réseau d'Entreprise</p>
           <div className="flex flex-wrap gap-2 mb-6">
-            <Badge className="bg-accent/20 text-accent border-accent/30">Support Informatique</Badge>
-            <Badge className="bg-accent/20 text-accent border-accent/30">Réseaux</Badge>
+            <Badge className="bg-accent/20 text-accent border-accent/30">Stage</Badge>
             <Badge className="bg-accent/20 text-accent border-accent/30">Infrastructure</Badge>
-            <Badge className="bg-accent/20 text-accent border-accent/30">Cisco</Badge>
-            <Badge className="bg-accent/20 text-accent border-accent/30">Configuration</Badge>
-            <Badge className="bg-accent/20 text-accent border-accent/30">Dépannage</Badge>
+            <Badge className="bg-accent/20 text-accent border-accent/30">Réseautique</Badge>
+            <Badge className="bg-accent/20 text-accent border-accent/30">Projet Majeur</Badge>
+            <Badge className="bg-accent/20 text-accent border-accent/30">6 Semaines</Badge>
           </div>
-          <p className="text-foreground/80 max-w-4xl">
-            Stage en support informatique et réseautique - Laboratoire de Réseautique du CCNB - 2025-2026
-          </p>
         </div>
       </section>
 
-      {/* Content */}
       <section className="py-20">
         <div className="container max-w-4xl mx-auto">
           <div className="prose prose-invert max-w-none">
             <h2 className="text-3xl font-bold text-primary mb-6">Vue d'Ensemble du Stage</h2>
             
             <p className="text-foreground/80 leading-relaxed mb-6">
-              Le stage en laboratoire de réseautique représente une expérience pratique immersive dans le domaine du support informatique et de l'administration réseau d'entreprise. Ce stage a été réalisé au Collège communautaire du Nouveau-Brunswick (CCNB) et a fourni une opportunité précieuse d'appliquer les connaissances théoriques acquises en classe à des situations réelles d'infrastructure informatique. Le stage a couverts tous les aspects essentiels du support informatique, de la configuration réseau, de la gestion des systèmes et de la résolution de problèmes techniques complexes. Cette expérience a été fondamentale pour développer les compétences pratiques nécessaires à une carrière réussie en informatique et en cybersécurité.
+              Le stage au Laboratoire de Réseautique a constitué un projet majeur de 6 semaines (27 avril au 5 juin 2026) visant à mettre en place une infrastructure réseau d'entreprise complète et fonctionnelle. Ce stage a couvert l'ensemble du cycle de vie d'un projet d'infrastructure : de la planification initiale à la mise en service finale, en passant par l'installation physique, le câblage, la configuration réseau, la sécurité et les tests complets. Le projet a impliqué la coordination avec plusieurs départements (Maintenance, TI), la gestion de contraintes physiques et techniques, et la documentation complète de l'infrastructure pour utilisation future.
             </p>
 
-            <h3 className="text-2xl font-bold text-primary mb-4 mt-8">Contexte et Objectifs du Stage</h3>
+            <h3 className="text-2xl font-bold text-primary mb-4 mt-8">Semaine 1 : Prise de Connaissance et Préparation (27/04 - 01/05)</h3>
+            
             <p className="text-foreground/80 leading-relaxed mb-4">
-              Le laboratoire de réseautique du CCNB est un environnement d'apprentissage pratique conçu pour préparer les étudiants aux défis réels de l'administration informatique et réseau. L'objectif principal du stage était de développer une compréhension pratique des technologies informatiques modernes et de maîtriser les compétences essentielles pour un rôle de support informatique junior ou d'administrateur réseau débutant. Les objectifs spécifiques incluaient :
-            </p>
-            <ul className="list-disc list-inside text-foreground/80 mb-4 space-y-2">
-              <li>Maîtriser le dépannage matériel et logiciel des postes de travail et des serveurs</li>
-              <li>Acquérir une expérience pratique avec les technologies réseau Cisco et autres équipements réseau</li>
-              <li>Apprendre la configuration et l'administration des serveurs Windows et Linux</li>
-              <li>Développer les compétences en gestion des tickets d'assistance technique</li>
-              <li>Comprendre les principes de sécurité informatique et de conformité</li>
-              <li>Acquérir une expérience en virtualisation et en gestion des ressources informatiques</li>
-              <li>Développer les compétences en documentation technique et communication</li>
-              <li>Apprendre les meilleures pratiques en support utilisateur et service à la clientèle</li>
-            </ul>
-
-            <h3 className="text-2xl font-bold text-primary mb-4 mt-8">Responsabilités et Tâches Principales</h3>
-            <p className="text-foreground/80 leading-relaxed mb-4">
-              Durant le stage, j'ai été responsable de plusieurs tâches essentielles en support informatique et administration réseau :
+              La première semaine a été consacrée à la prise de connaissance complète des lieux et des équipements disponibles. Cette phase était cruciale pour comprendre l'environnement physique, identifier les contraintes et planifier les étapes suivantes.
             </p>
 
             <p className="text-foreground/80 leading-relaxed mb-4">
-              <strong>1. Support Utilisateur et Dépannage :</strong> Fourniture d'assistance technique aux utilisateurs finaux pour la résolution de problèmes informatiques. Cela incluait le diagnostic et la résolution de problèmes logiciels, la configuration de postes de travail, l'installation de logiciels, la gestion des accès utilisateurs et la formation des utilisateurs sur les outils informatiques. J'ai traité des tickets d'assistance variés, allant des problèmes simples de connectivité à des problèmes plus complexes de configuration système. Une documentation détaillée était maintenue pour chaque ticket, permettant le suivi et la résolution efficace des problèmes.
-            </p>
-
-            <p className="text-foreground/80 leading-relaxed mb-4">
-              <strong>2. Configuration et Maintenance Réseau :</strong> Configuration et maintenance des équipements réseau Cisco, y compris les commutateurs et les routeurs. Cela incluait la configuration des VLAN, le routage inter-VLAN, la configuration des ACL pour la sécurité réseau, et la résolution de problèmes de connectivité réseau. J'ai également participé à la mise à jour des configurations réseau et à la documentation des changements pour assurer la traçabilité et la conformité.
-            </p>
-
-            <p className="text-foreground/80 leading-relaxed mb-4">
-              <strong>3. Installation et Configuration de Serveurs :</strong> Installation et configuration de serveurs Windows Server et Linux pour supporter les services informatiques. Cela incluait l'installation du système d'exploitation, la configuration des services réseau (DHCP, DNS, Active Directory), la gestion des utilisateurs et des groupes, et la configuration de la sécurité du serveur. J'ai également participé à la mise en place de sauvegardes et à la planification de la récupération après sinistre.
-            </p>
-
-            <p className="text-foreground/80 leading-relaxed mb-4">
-              <strong>4. Gestion des Ressources Informatiques :</strong> Gestion de l'inventaire informatique, y compris le suivi des équipements, des licences logicielles et des ressources informatiques. Cela incluait la documentation des équipements, la gestion des cycles de vie des équipements, et la planification des remplacements. J'ai également participé à l'optimisation des ressources informatiques pour améliorer l'efficacité et réduire les coûts.
-            </p>
-
-            <p className="text-foreground/80 leading-relaxed mb-4">
-              <strong>5. Virtualisation et Infrastructure :</strong> Configuration et gestion de l'infrastructure virtualisée utilisant Proxmox VE et VMware. Cela incluait la création et la gestion des machines virtuelles, la configuration du stockage virtuel, la gestion des ressources de calcul, et la mise en place de la haute disponibilité. J'ai également participé à la migration des services vers l'infrastructure virtualisée et à l'optimisation des performances.
-            </p>
-
-            <p className="text-foreground/80 leading-relaxed mb-4">
-              <strong>6. Sécurité Informatique :</strong> Implémentation et maintenance des mesures de sécurité informatique, y compris la configuration des pare-feu, la gestion des accès utilisateurs, la mise en place de politiques de sécurité, et la sensibilisation à la sécurité. J'ai également participé à des audits de sécurité et à l'identification des vulnérabilités informatiques.
-            </p>
-
-            <h3 className="text-2xl font-bold text-primary mb-4 mt-8">Technologies et Outils Utilisés</h3>
-            <p className="text-foreground/80 leading-relaxed mb-4">
-              Le stage a fourni une expérience pratique avec un large éventail de technologies et d'outils informatiques :
+              <strong>Activités Principales :</strong>
             </p>
             <ul className="list-disc list-inside text-foreground/80 mb-4 space-y-2">
-              <li><strong>Équipements Réseau Cisco :</strong> Configuration et dépannage de commutateurs Cisco (Catalyst 2960, 3560), routeurs Cisco (2911, 2921), et autres équipements réseau</li>
-              <li><strong>Systèmes d'Exploitation :</strong> Windows Server 2016/2019/2022, Windows 10/11, Ubuntu Linux, CentOS</li>
-              <li><strong>Virtualisation :</strong> Proxmox VE, VMware vSphere, VirtualBox, Hyper-V</li>
-              <li><strong>Services Réseau :</strong> DHCP, DNS, Active Directory, NTP, SNMP</li>
-              <li><strong>Sécurité :</strong> Pare-feu WatchGuard, Cisco ASA, VPN, certificats SSL/TLS</li>
-              <li><strong>Outils de Diagnostic :</strong> Wireshark, Cisco CLI, PuTTY, Remote Desktop, TeamViewer</li>
-              <li><strong>Gestion Informatique :</strong> Active Directory, Group Policy, WSUS, Antivirus/Antimalware</li>
-              <li><strong>Documentation :</strong> Cisco Packet Tracer, Visio, documentation technique en Markdown</li>
+              <li>Visite complète des salles de classe et du laboratoire pour identifier les espaces disponibles</li>
+              <li>Identification et catalogage des équipements Cisco, Ubiquiti, serveurs, racks, outillage et accessoires</li>
+              <li>Création d'un inventaire global physique des équipements par type et catégorie</li>
+              <li>Inventaire détaillé incluant numéro de série, marque et numéro d'inventaire pour chaque équipement</li>
+              <li>Réinitialisation des équipements réseau pour démarrer avec une configuration vierge</li>
+              <li>Identification des emplacements optimaux pour les racks dans le laboratoire</li>
+              <li>Ouverture de tickets de maintenance pour la fixation des racks au sol</li>
+              <li>Supervision de la fixation des racks et mise à terre pour la sécurité</li>
+              <li>Élaboration du document d'architecture v1 incluant plans des salles et schémas logiques de base</li>
+              <li>Ouverture de tickets auprès des TI pour une ligne Internet directe et le passage des câbles</li>
+              <li>Mise à jour de la documentation des serveurs et des plages d'adresses pour les VLANs</li>
+              <li>Documentation des équipements Ubiquiti et WatchGuard</li>
+              <li>Placement des patch panels pour l'interconnexion des câbles</li>
+              <li>Placement des serveurs sur les racks selon le plan d'architecture</li>
+              <li>Placement du premier UPS pour alimentation redondante des serveurs</li>
+              <li>Placement du KVM (Keyboard Video Mouse) pour accès centralisé</li>
+              <li>Placement du SAN (Storage Area Network) sur le rack avec les serveurs</li>
+              <li>Placement du DAS (Direct Attached Storage) pour stockage supplémentaire</li>
+              <li>Libération du Switch Ubiquiti et du point d'accès de l'armoire CYSE</li>
+              <li>Réinitialisation du WatchGuard (pare-feu)</li>
             </ul>
 
-            <h3 className="text-2xl font-bold text-primary mb-4 mt-8">Projets et Initiatives Principales</h3>
             <p className="text-foreground/80 leading-relaxed mb-4">
-              Plusieurs projets majeurs ont été réalisés durant le stage :
+              <strong>Défis Identifiés :</strong> L'UPS s'éteignait régulièrement, soulevant des questions sur la charge ou le voltage de la prise murale. Une barre métallique devait être retirée du grand rack pour placer les supports des serveurs. Des vis et une barre métallique à découper étaient manquantes pour la fixation finale.
             </p>
 
             <p className="text-foreground/80 leading-relaxed mb-4">
-              <strong>1. Mise à Jour de l'Infrastructure Réseau :</strong> Participation à la mise à jour complète de l'infrastructure réseau du laboratoire, y compris le remplacement des équipements obsolètes, la reconfiguration des VLAN, et l'optimisation des performances réseau. Ce projet a impliqué la planification minutieuse, la coordination avec les équipes, et la documentation détaillée de tous les changements. Le projet a été réalisé avec un temps d'arrêt minimal et a amélioré significativement les performances et la fiabilité du réseau.
-            </p>
-
-            <p className="text-foreground/80 leading-relaxed mb-4">
-              <strong>2. Déploiement de Proxmox VE :</strong> Conception et déploiement d'une infrastructure de virtualisation basée sur Proxmox VE pour supporter les services du laboratoire. Ce projet a impliqué la sélection du matériel, l'installation et la configuration de Proxmox VE, la migration des services existants vers la plateforme virtualisée, et la mise en place de la haute disponibilité. Le projet a permis une meilleure utilisation des ressources informatiques et une amélioration de la flexibilité opérationnelle.
-            </p>
-
-            <p className="text-foreground/80 leading-relaxed mb-4">
-              <strong>3. Mise en Place d'Active Directory :</strong> Configuration et déploiement d'Active Directory pour la gestion centralisée des utilisateurs et des ressources informatiques. Cela incluait la création de la structure organisationnelle, la configuration des politiques de groupe, la gestion des accès utilisateurs, et la mise en place de la sécurité. Active Directory a amélioré significativement la gestion des utilisateurs et des ressources informatiques.
-            </p>
-
-            <p className="text-foreground/80 leading-relaxed mb-4">
-              <strong>4. Documentation Technique :</strong> Création et maintenance d'une documentation technique complète pour l'infrastructure informatique du laboratoire. Cela incluait la documentation des configurations réseau, des serveurs, des services, et des procédures de dépannage. Une documentation bien maintenue a facilité le dépannage et la maintenance de l'infrastructure.
-            </p>
-
-            <h3 className="text-2xl font-bold text-primary mb-4 mt-8">Défis Rencontrés et Solutions</h3>
-            <p className="text-foreground/80 leading-relaxed mb-4">
-              Le stage a présenté plusieurs défis techniques qui ont nécessité des solutions créatives et une compréhension approfondie des technologies informatiques :
-            </p>
-
-            <p className="text-foreground/80 leading-relaxed mb-4">
-              <strong>1. Problèmes de Connectivité Réseau :</strong> Des problèmes intermittents de connectivité réseau ont été identifiés, causant des interruptions de service. L'investigation a révélé que le problème était causé par une configuration incorrecte des VLAN et par une saturation du lien réseau. La solution a impliqué la reconfiguration des VLAN, l'optimisation de la bande passante, et l'ajout de liens réseau supplémentaires. Ces changements ont éliminé les problèmes de connectivité et amélioré la stabilité du réseau.
-            </p>
-
-            <p className="text-foreground/80 leading-relaxed mb-4">
-              <strong>2. Performance du Serveur :</strong> Les serveurs présentaient des performances dégradées, causant des ralentissements des services. L'investigation a révélé que le problème était causé par une utilisation excessive des ressources (CPU, mémoire, disque). La solution a impliqué l'optimisation des services, l'ajout de ressources supplémentaires, et la virtualisation de certains services pour une meilleure utilisation des ressources. Ces changements ont amélioré significativement les performances du serveur.
-            </p>
-
-            <p className="text-foreground/80 leading-relaxed mb-4">
-              <strong>3. Sécurité et Conformité :</strong> Des vulnérabilités de sécurité ont été identifiées dans l'infrastructure informatique. La solution a impliqué l'implémentation de mesures de sécurité supplémentaires, y compris la mise à jour des systèmes, la configuration des pare-feu, la gestion des accès utilisateurs, et la mise en place de politiques de sécurité. Ces mesures ont amélioré significativement la posture de sécurité de l'infrastructure.
-            </p>
-
-            <h3 className="text-2xl font-bold text-primary mb-4 mt-8">Apprentissages et Compétences Développées</h3>
-            <p className="text-foreground/80 leading-relaxed mb-4">
-              Le stage a permis de développer et de consolider plusieurs compétences essentielles en support informatique et administration réseau :
+              <strong>Livrables Semaine 1 :</strong>
             </p>
             <ul className="list-disc list-inside text-foreground/80 mb-4 space-y-2">
-              <li>Dépannage pratique de problèmes informatiques complexes et résolution efficace</li>
-              <li>Configuration avancée d'équipements réseau Cisco et autres technologies réseau</li>
-              <li>Administration de serveurs Windows Server et Linux</li>
-              <li>Gestion de l'infrastructure virtualisée avec Proxmox VE et VMware</li>
-              <li>Implémentation de mesures de sécurité informatique et de conformité</li>
-              <li>Gestion des tickets d'assistance technique et suivi des problèmes</li>
-              <li>Documentation technique détaillée et communication efficace</li>
-              <li>Travail en équipe et collaboration avec d'autres professionnels informatiques</li>
-              <li>Gestion du temps et des priorités dans un environnement de support actif</li>
-              <li>Apprentissage continu et adaptation aux nouvelles technologies</li>
+              <li>Document d'architecture v1 (topologie physique et logique, connexions, emplacements)</li>
+              <li>Rapport v1 retraçant l'état initial, les contraintes identifiées et les premières décisions</li>
+              <li>Inventaire complet des équipements</li>
             </ul>
 
-            <h3 className="text-2xl font-bold text-primary mb-4 mt-8">Impact et Reconnaissance</h3>
+            <h3 className="text-2xl font-bold text-primary mb-4 mt-8">Semaine 2-3 : Câblage et Connectivité (04/05 - 15/05)</h3>
+            
             <p className="text-foreground/80 leading-relaxed mb-4">
-              Le stage a eu un impact significatif sur le développement professionnel et a été reconnu par les superviseurs et les collègues. Les contributions au stage incluaient l'amélioration de l'infrastructure informatique, la mise en place de nouvelles technologies, et l'amélioration de la documentation technique. Ces contributions ont démontré une compréhension solide des technologies informatiques et une capacité à résoudre des problèmes complexes de manière efficace et professionnelle.
+              Les semaines 2 et 3 ont été consacrées au câblage complet du laboratoire, une tâche complexe impliquant la planification détaillée, la préparation des câbles et leur installation dans les salles de classe.
+            </p>
+
+            <p className="text-foreground/80 leading-relaxed mb-4">
+              <strong>Activités Principales :</strong>
+            </p>
+            <ul className="list-disc list-inside text-foreground/80 mb-4 space-y-2">
+              <li>Planification détaillée du câblage : répartition des câbles, chemins, longueurs et routes</li>
+              <li>Identification des emplacements des connecteurs côté salle de classe (2 connecteurs par bureau d'étudiant, 4 pour bureaux enseignants)</li>
+              <li>Préparation des câbles : étiquetage des deux extrémités, organisation par paquets</li>
+              <li>Passage des câbles dans la salle 1106-D en respectant les règles de tirage et cheminements clairs</li>
+              <li>Passage des câbles dans la salle 1109 en respectant les règles de tirage et cheminements clairs</li>
+              <li>Passage de deux câbles du 1106-E vers le 1101-H pour Internet</li>
+              <li>Passage de deux câbles du 1106-E vers le 1103 pour Internet</li>
+              <li>Déplacement de l'équipement Juniper vers le 1106-E</li>
+              <li>Tests de connectivité Internet</li>
+              <li>Nettoyage des anciens câbles pour organisation</li>
+              <li>Achat des goulottes, prises murales, crochets, trays pour finaliser le câblage</li>
+              <li>Placement des crochets et trays pour support des câbles</li>
+              <li>Demande d'une adresse IP publique statique auprès des TI</li>
+              <li>Placement du deuxième UPS pour redondance complète</li>
+              <li>Mise en place des câbles du faux plafond sur les crochets</li>
+              <li>Alignement des câbles du 1106-E sur les trays</li>
+              <li>Découpe des câbles selon les longueurs adéquates</li>
+              <li>Pose des connecteurs RJ-45 aux deux extrémités de chaque câble</li>
+              <li>Raccordement des câbles des salles aux patch panels avec étiquetage cohérent</li>
+              <li>Tests de continuité pour vérifier chaque câble et identifier les erreurs</li>
+              <li>Remplacement des câbles défectueux</li>
+              <li>Organisation claire et professionnelle des racks</li>
+            </ul>
+
+            <p className="text-foreground/80 leading-relaxed mb-4">
+              <strong>Défis Rencontrés :</strong> L'achat des matériaux (goulottes, prises, crochets, trays) était en cours, retardant légèrement la finalisation. La coordination avec la maintenance pour le placement des crochets et trays a nécessité la création de tickets spécifiques.
+            </p>
+
+            <p className="text-foreground/80 leading-relaxed mb-4">
+              <strong>Livrables Semaines 2-3 :</strong>
+            </p>
+            <ul className="list-disc list-inside text-foreground/80 mb-4 space-y-2">
+              <li>Document d'architecture v2 (plan mis à jour, schéma, connexions, tableau d'étiquetage)</li>
+              <li>Rapport v2 décrivant l'avancement, les constats, les écarts et les corrections</li>
+              <li>Infrastructure de câblage complète et testée</li>
+            </ul>
+
+            <h3 className="text-2xl font-bold text-primary mb-4 mt-8">Semaine 4-5 : Configuration Réseau et Sécurité (18/05 - 29/05)</h3>
+            
+            <p className="text-foreground/80 leading-relaxed mb-4">
+              Les semaines 4 et 5 ont marqué la transition de l'infrastructure physique à la configuration logique, avec mise en place du plan d'adressage, configuration des équipements réseau et mise en place de la sécurité.
+            </p>
+
+            <p className="text-foreground/80 leading-relaxed mb-4">
+              <strong>Activités Principales :</strong>
+            </p>
+            <ul className="list-disc list-inside text-foreground/80 mb-4 space-y-2">
+              <li>Élaboration du plan d'adressage par VLAN incluant VLANs étudiants, enseignants, sans fil</li>
+              <li>Prévision de l'évolutivité avec possibilité d'ajouter des VLANs futurs</li>
+              <li>Documentation détaillée des sous-réseaux : masques, passerelles, plages DHCP, adresses statiques</li>
+              <li>Installation des équipements réseau et sécurité dans les racks</li>
+              <li>Branchement de tous les équipements de l'infrastructure</li>
+              <li>Branchement de l'alimentation principale et redondante de tous les équipements</li>
+              <li>Intégration des équipements sans fil (points d'accès Ubiquiti)</li>
+              <li>Configuration du réseau filaire (routeurs, commutateurs, VLAN)</li>
+              <li>Configuration du réseau sans fil (SSID, sécurité WPA2/WPA3)</li>
+              <li>Configuration des serveurs Proxmox pour virtualisation</li>
+              <li>Gestion des accès : création de profils pour étudiants et enseignants</li>
+              <li>Mise en place des accès d'administration sécurisés (SSH, console, accès web limité)</li>
+              <li>Configuration des pare-feu WatchGuard pour sécurité réseau</li>
+              <li>Mise en place de la segmentation réseau par VLAN</li>
+              <li>Configuration du routage inter-VLAN</li>
+              <li>Configuration des services DHCP pour attribution automatique d'adresses</li>
+            </ul>
+
+            <p className="text-foreground/80 leading-relaxed mb-4">
+              <strong>Livrables Semaines 4-5 :</strong>
+            </p>
+            <ul className="list-disc list-inside text-foreground/80 mb-4 space-y-2">
+              <li>Plan d'adressage détaillé (VLAN, sous-réseaux, plages DHCP, adresses statiques)</li>
+              <li>Documentation des accès (comptes administrateurs, mots de passe, notes de sécurité)</li>
+              <li>Documentation technique complète de l'architecture réseau</li>
+              <li>Manuel d'utilisation du laboratoire (architecture, rôles, règles de sécurité)</li>
+            </ul>
+
+            <h3 className="text-2xl font-bold text-primary mb-4 mt-8">Semaine 6 : Tests et Finalisation (01/06 - 05/06)</h3>
+            
+            <p className="text-foreground/80 leading-relaxed mb-4">
+              La dernière semaine a été consacrée aux tests complets de l'infrastructure, aux ajustements finaux et à la documentation complète pour la remise du laboratoire opérationnel.
+            </p>
+
+            <p className="text-foreground/80 leading-relaxed mb-4">
+              <strong>Tests Complets :</strong>
+            </p>
+            <ul className="list-disc list-inside text-foreground/80 mb-4 space-y-2">
+              <li>Tests de connectivité : ping, routage, accès internet, VLAN, sans fil, serveurs</li>
+              <li>Tests de performance de base : bande passante, Wi-Fi, latence</li>
+              <li>Tests de scénarios pédagogiques : connexion multiple, changement de VLAN, accès aux serveurs</li>
+              <li>Vérification et validation finale de l'inventaire</li>
+              <li>Tests de basculement des UPS et redondance</li>
+              <li>Tests de sécurité : vérification des pare-feu, ACL, segmentation VLAN</li>
+            </ul>
+
+            <p className="text-foreground/80 leading-relaxed mb-4">
+              <strong>Ajustements et Optimisations :</strong>
+            </p>
+            <ul className="list-disc list-inside text-foreground/80 mb-4 space-y-2">
+              <li>Correction des erreurs identifiées (câblage, configuration, sécurité, documentation)</li>
+              <li>Optimisations identifiées durant les tests</li>
+              <li>Revue finale du projet avec superviseurs</li>
+              <li>Validation fonctionnelle complète du laboratoire</li>
+            </ul>
+
+            <p className="text-foreground/80 leading-relaxed mb-4">
+              <strong>Documentation Finale :</strong>
+            </p>
+            <ul className="list-disc list-inside text-foreground/80 mb-4 space-y-2">
+              <li>Version finale du document d'architecture</li>
+              <li>Manuel d'utilisation complet du laboratoire (étudiants + enseignants)</li>
+              <li>Inventaire à jour avec schéma de câblage et étiquetage</li>
+              <li>Tableau des adresses IP réservées</li>
+              <li>Procédures de maintenance minimale</li>
+              <li>Procédures de dépannage courant</li>
+            </ul>
+
+            <p className="text-foreground/80 leading-relaxed mb-4">
+              <strong>Livrables Semaine 6 :</strong>
+            </p>
+            <ul className="list-disc list-inside text-foreground/80 mb-4 space-y-2">
+              <li>Tests validés et rapport de tests complet</li>
+              <li>Laboratoire opérationnel et documenté</li>
+              <li>Documentation finale complète et mise à jour</li>
+              <li>Présentation finale du projet</li>
+            </ul>
+
+            <h3 className="text-2xl font-bold text-primary mb-4 mt-8">Compétences Développées</h3>
+            <p className="text-foreground/80 leading-relaxed mb-4">
+              Ce stage a développé une large gamme de compétences professionnelles :
+            </p>
+            <ul className="list-disc list-inside text-foreground/80 mb-4 space-y-2">
+              <li>Planification et gestion de projets d'infrastructure complexes</li>
+              <li>Installation et configuration d'équipements réseau professionnels</li>
+              <li>Câblage structuré et respect des normes de l'industrie</li>
+              <li>Configuration de réseaux VLAN et routage inter-VLAN</li>
+              <li>Configuration de services DHCP et DNS</li>
+              <li>Configuration de pare-feu et sécurité réseau</li>
+              <li>Configuration de points d'accès sans fil</li>
+              <li>Configuration de serveurs Proxmox pour virtualisation</li>
+              <li>Tests et validation d'infrastructure réseau</li>
+              <li>Documentation technique professionnelle</li>
+              <li>Gestion des accès et sécurité des systèmes</li>
+              <li>Coordination avec d'autres départements (Maintenance, TI)</li>
+              <li>Résolution de problèmes techniques complexes</li>
+              <li>Gestion des contraintes physiques et techniques</li>
+            </ul>
+
+            <h3 className="text-2xl font-bold text-primary mb-4 mt-8">Impact et Résultats</h3>
+            <p className="text-foreground/80 leading-relaxed mb-4">
+              Le stage a abouti à la mise en place d'une infrastructure réseau d'entreprise complète et fonctionnelle, prête à être utilisée par les étudiants et enseignants. L'infrastructure supporte plusieurs VLANs, offre une redondance par UPS, dispose d'une sécurité appropriée via pare-feu, et est entièrement documentée pour utilisation et maintenance futures. Le laboratoire est maintenant un environnement d'apprentissage professionnel où les étudiants peuvent acquérir une expérience pratique en réseautique et cybersécurité. Ce projet a démontré la capacité à gérer un projet d'infrastructure complexe du début à la fin, en respectant les délais et en livrant une solution de qualité professionnelle.
             </p>
 
             <h3 className="text-2xl font-bold text-primary mb-4 mt-8">Conclusion</h3>
             <p className="text-foreground/80 leading-relaxed mb-4">
-              Le stage en laboratoire de réseautique a été une expérience formative et enrichissante qui a fourni une base solide pour une carrière en support informatique et administration réseau. L'expérience pratique acquise durant le stage a validé les connaissances théoriques et a développé les compétences pratiques nécessaires pour réussir dans le domaine informatique. Cette expérience constitue un atout majeur pour les rôles en support informatique junior, administrateur réseau débutant, ou technicien en infrastructure informatique. Les compétences développées lors de ce stage sont directement applicables à des environnements d'entreprise réels et sont hautement demandées par les employeurs dans le domaine des technologies de l'information.
+              Le stage au Laboratoire de Réseautique a constitué une expérience pratique complète et enrichissante couvrant tous les aspects de la mise en place d'une infrastructure réseau d'entreprise. De la planification initiale à la mise en service finale, en passant par l'installation physique, le câblage, la configuration réseau et les tests complets, ce projet a fourni une compréhension holistique de la réseautique professionnelle. Les compétences développées et l'expérience acquise constituent une base solide pour une carrière réussie en réseautique et en cybersécurité.
+            </p>
+
+            <h3 className="text-2xl font-bold text-primary mb-4 mt-8">Emplacements pour Captures d'Écran</h3>
+            <p className="text-foreground/80 leading-relaxed mb-4">
+              [Insérez ici les captures d'écran du document d'architecture v1 et v2]
+            </p>
+            <p className="text-foreground/80 leading-relaxed mb-4">
+              [Insérez ici les photos de l'infrastructure physique : racks, équipements, câblage]
+            </p>
+            <p className="text-foreground/80 leading-relaxed mb-4">
+              [Insérez ici les captures d'écran des configurations réseau : VLAN, routage, pare-feu]
+            </p>
+            <p className="text-foreground/80 leading-relaxed mb-4">
+              [Insérez ici les résultats des tests de connectivité et performance]
             </p>
           </div>
         </div>

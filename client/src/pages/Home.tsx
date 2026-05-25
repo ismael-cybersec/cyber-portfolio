@@ -199,12 +199,12 @@ export default function Home() {
         <div className="container">
           <SectionHeader title="Projets Vedettes" />
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <a href="/projects/vortexcore" className="cursor-pointer">
+            <a href="/projects/stage" className="cursor-pointer">
               <ProjectCard
-                title="VortexCore"
-                description="Cluster Proxmox VE 3 nœuds avec stockage NFS partagé, RAID 10 et RAID 5, haute disponibilité et sauvegardes pour plusieurs équipes."
-                tags={["Proxmox VE", "Clustering", "NFS", "RAID", "Haute Disponibilité"]}
-                image="https://d2xsxph8kpxj0f.cloudfront.net/310519663382628638/WmRojeLpchBAbCWdyVAPFM/projects-showcase-nuYrFuXjrhnULQRkyUKLiG.webp"
+                title="Stage - Laboratoire de Réseautique"
+                description="Stage complet de 6 semaines : mise en place complète d'une infrastructure réseau d'entreprise, câblage, configuration réseau, sécurité et tests."
+                tags={["Stage", "Infrastructure", "Réseautique", "Projet Majeur"]}
+                image="https://d2xsxph8kpxj0f.cloudfront.net/310519663382628638/WmRojeLpchBAbCWdyVAPFM/hero-cybersecurity-dvbfngCY6SAPXZ4u5h4RAC.webp"
               />
             </a>
             <a href="/projects/cybersentinel" className="cursor-pointer">
@@ -231,11 +231,11 @@ export default function Home() {
                 image="https://d2xsxph8kpxj0f.cloudfront.net/310519663382628638/WmRojeLpchBAbCWdyVAPFM/hero-cybersecurity-dvbfngCY6SAPXZ4u5h4RAC.webp"
               />
             </a>
-            <a href="/projects/integration" className="cursor-pointer">
+            <a href="/projects/vortexcore" className="cursor-pointer">
               <ProjectCard
-                title="Projet d'Intégration"
-                description="Projet d'intégration en cybersécurité couvrant la conception et la mise en place d'une infrastructure de sécurité complète."
-                tags={["Intégration", "Cybersécurité", "Infrastructure", "VortexOps"]}
+                title="VortexCore"
+                description="Cluster Proxmox VE 3 nœuds avec stockage NFS partagé, RAID 10 et RAID 5, haute disponibilité et sauvegardes pour plusieurs équipes."
+                tags={["Proxmox VE", "Clustering", "NFS", "RAID", "Haute Disponibilité"]}
                 image="https://d2xsxph8kpxj0f.cloudfront.net/310519663382628638/WmRojeLpchBAbCWdyVAPFM/projects-showcase-nuYrFuXjrhnULQRkyUKLiG.webp"
               />
             </a>
