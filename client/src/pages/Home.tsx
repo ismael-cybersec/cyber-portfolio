@@ -190,7 +190,7 @@ export default function Home() {
       <section id="projects" className="py-20 md:py-32 bg-secondary/20">
         <div className="container">
           <SectionHeader title="Projets Vedettes" />
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             <a href="/projects/stage" className="cursor-pointer">
               <ProjectCard
                 title="Stage - Laboratoire de Réseautique"
@@ -212,6 +212,14 @@ export default function Home() {
                 title="Projet d'Ethical Hacking"
                 description="Tests de pénétration avancés, reconnaissance active et exploitation de vulnérabilités critiques avec Nmap, GoPhish et Wireshark."
                 tags={["Ethical Hacking", "Pentest", "Nmap", "GoPhish", "Wireshark", "Sécurité"]}
+                image="https://d2xsxph8kpxj0f.cloudfront.net/310519663382628638/WmRojeLpchBAbCWdyVAPFM/hero-cybersecurity-dvbfngCY6SAPXZ4u5h4RAC.webp"
+              />
+            </a>
+            <a href="/projects/phishing" className="cursor-pointer">
+              <ProjectCard
+                title="Projet de Simulation de Phishing"
+                description="Campagne de sensibilisation aux techniques d'ingénierie sociale et d'hameçonnage avec analyse des secteurs vulnérables au Canada."
+                tags={["Phishing", "Sensibilisation", "Ingénierie Sociale", "SECS1026", "Groupe"]}
                 image="https://d2xsxph8kpxj0f.cloudfront.net/310519663382628638/WmRojeLpchBAbCWdyVAPFM/hero-cybersecurity-dvbfngCY6SAPXZ4u5h4RAC.webp"
               />
             </a>

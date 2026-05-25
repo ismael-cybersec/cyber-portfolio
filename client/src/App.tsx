@@ -8,6 +8,7 @@ import Home from "./pages/Home";
 import ProjectStage from "./pages/ProjectStage";
 import ProjectVortexCore from "./pages/ProjectVortexCore";
 import ProjectEthicalHacking from "./pages/ProjectEthicalHacking";
+import ProjectPhishing from "./pages/ProjectPhishing";
 
 function Router() {
   return (
@@ -16,6 +17,7 @@ function Router() {
       <Route path="/projects/stage" component={ProjectStage} />
       <Route path="/projects/vortexcore" component={ProjectVortexCore} />
       <Route path="/projects/ethical-hacking" component={ProjectEthicalHacking} />
+      <Route path="/projects/phishing" component={ProjectPhishing} />
       <Route path="/404" component={NotFound} />
       <Route component={NotFound} />
     </Switch>

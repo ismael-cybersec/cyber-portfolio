@@ -16,188 +16,191 @@ export default function ProjectPhishing() {
               <ArrowLeft className="w-5 h-5" /> Retour au Portfolio
             </a>
           </div>
-          <h1 className="text-5xl font-bold text-primary mb-4">Simulation de Sensibilisation à l'Hameçonnage</h1>
-          <p className="text-2xl text-accent mb-6">Campagne Éducative Multi-Campus de Sensibilisation aux Menaces Phishing</p>
+          <h1 className="text-5xl font-bold text-primary mb-4">Projet de Simulation de Phishing Éducatif</h1>
+          <p className="text-2xl text-accent mb-6">Campagne de Sensibilisation aux Techniques d'Ingénierie Sociale</p>
           <div className="flex flex-wrap gap-2 mb-6">
+            <Badge className="bg-accent/20 text-accent border-accent/30">Phishing</Badge>
             <Badge className="bg-accent/20 text-accent border-accent/30">Sensibilisation</Badge>
-            <Badge className="bg-accent/20 text-accent border-accent/30">Sécurité</Badge>
-            <Badge className="bg-accent/20 text-accent border-accent/30">Hameçonnage</Badge>
+            <Badge className="bg-accent/20 text-accent border-accent/30">Ingénierie Sociale</Badge>
             <Badge className="bg-accent/20 text-accent border-accent/30">Éducation</Badge>
-            <Badge className="bg-accent/20 text-accent border-accent/30">Analyse Comportementale</Badge>
+            <Badge className="bg-accent/20 text-accent border-accent/30">SECS1026</Badge>
             <Badge className="bg-accent/20 text-accent border-accent/30">Projet Groupe</Badge>
           </div>
           <p className="text-foreground/80 max-w-4xl">
-            Projet de groupe - Conception et déploiement d'une campagne d'hameçonnage éducative à grande échelle - 2025
+            Cours: SECS1026 | Équipe: Patrick Kouembi, Aymen Mamoudi, Ismael Baby, Charles-Etienne Robichaud, Kossi Agbemavi | Avril 2026
           </p>
         </div>
       </section>
 
       {/* Content */}
       <section className="py-20">
-        <div className="container max-w-4xl mx-auto">
+        <div className="container max-w-4xl mx-auto space-y-12">
+          
+          {/* Introduction */}
           <div className="prose prose-invert max-w-none">
-            <h2 className="text-3xl font-bold text-primary mb-6">Vue d'Ensemble du Projet</h2>
+            <h2 className="text-3xl font-bold text-primary mb-6">Introduction</h2>
+            <p className="text-foreground/80 leading-relaxed mb-4">
+              Dans le cadre de notre projet de groupe en cybersécurité, nous avons conçu et développé une campagne de simulation d'hameçonnage (phishing) ciblant l'ensemble des étudiants du Collège communautaire du Nouveau-Brunswick (CCNB). Cette initiative représente une approche pédagogique moderne et efficace pour sensibiliser les utilisateurs aux menaces de sécurité informatique qui évoluent constamment dans le paysage numérique actuel.
+            </p>
+            <p className="text-foreground/80 leading-relaxed mb-4">
+              L'objectif principal de cette simulation est éducatif : sensibiliser les étudiants aux techniques d'ingénierie sociale les plus courantes tout en leur permettant de reconnaître les signes d'une attaque de phishing réaliste. Le phishing demeure l'une des techniques d'attaque les plus efficaces et les plus utilisées par les cybercriminels, car il exploite la confiance et la psychologie humaine plutôt que des vulnérabilités techniques complexes.
+            </p>
+            <p className="text-foreground/80 leading-relaxed mb-4">
+              Le scénario choisi repose sur une urgence technique liée à la plateforme Ardoise, le système officiel de gestion des cours du CCNB. Cette approche permet de créer un contexte très proche de la réalité quotidienne des étudiants, augmentant ainsi l'efficacité pédagogique de la campagne. En exploitant leur dépendance à cette plateforme et leur confiance envers les communications officielles du collège, nous avons créé un scénario particulièrement pertinent et crédible.
+            </p>
+            <p className="text-foreground/80 leading-relaxed mb-4">
+              Le courriel a été rédigé entièrement en français, utilisant le logo officiel du CCNB et les couleurs institutionnelles (orange et bleu) pour maximiser la crédibilité. Le message contient également un avertissement de sécurité subtil provenant de l'extérieur de l'organisation, ce qui permet de désigner aux étudiants de vérifier attentivement les détails. Le lien redirige vers une fausse page de connexion Microsoft très réaliste avec le logo CCNB en arrière-plan, simulant une authentification légitime.
+            </p>
+          </div>
+
+          {/* Choix de la Campagne */}
+          <div className="prose prose-invert max-w-none">
+            <h2 className="text-3xl font-bold text-primary mb-6">Choix de la Campagne par Rapport au Public Cible</h2>
+            <p className="text-foreground/80 leading-relaxed mb-4">
+              <span className="font-semibold">Public Cible Défini:</span> Notre campagne cible tous les étudiants et étudiantes du Collège communautaire du Nouveau-Brunswick, indépendamment de leur programme d'études ou de leur campus. Cette approche inclusive garantit une couverture maximale et permet une sensibilisation uniforme à l'ensemble de la communauté étudiante.
+            </p>
+            <p className="text-foreground/80 leading-relaxed mb-4">
+              <span className="font-semibold">Thème de la Campagne:</span> "Problème avec Ardoise – Corruption partielle des données suite à une mise à jour". Ce thème a été sélectionné stratégiquement pour maximiser l'impact émotionnel et la probabilité d'engagement des étudiants.
+            </p>
+            <p className="text-foreground/80 leading-relaxed mb-4">
+              <span className="font-semibold">Justification du Choix:</span> La plateforme Ardoise est utilisée quotidiennement par l'ensemble des étudiants du CCNB pour accéder à leurs cours, consulter leurs notes, soumettre leurs travaux et communiquer avec leurs instructeurs. Cette utilisation quotidienne crée une dépendance naturelle et une confiance envers la plateforme. Un message indiquant une "corruption partielle des données" crée immédiatement un sentiment d'urgence légitime, car les étudiants craignent la perte d'accès à leurs cours et données académiques.
+            </p>
+            <p className="text-foreground/80 leading-relaxed mb-4">
+              Le courriel a été rédigé entièrement en français, utilisant le logo officiel du CCNB et les couleurs institutionnelles (orange et bleu), ainsi que la signature "Direction des technologies de l'Information – Services administratifs – CCNB". Cette attention aux détails augmente considérablement la crédibilité du message. Le lien redirige vers une fausse page de connexion Microsoft très réaliste avec le logo CCNB en arrière-plan, simulant une authentification légitime. Cette page demande aux utilisateurs de saisir leurs identifiants de connexion, reproduisant les techniques modernes de spear-phishing et de typosquatting.
+            </p>
+          </div>
+
+          {/* Raison de Distinction */}
+          <div className="prose prose-invert max-w-none">
+            <h2 className="text-3xl font-bold text-primary mb-6">Raison pour Laquelle Notre Campagne se Démarque des Autres</h2>
             
-            <p className="text-foreground/80 leading-relaxed mb-6">
-              Le projet de simulation de sensibilisation à l'hameçonnage représente une initiative éducative majeure visant à sensibiliser les utilisateurs aux menaces de phishing et à améliorer leur capacité à identifier et à éviter les attaques par hameçonnage. Ce projet a été réalisé en collaboration avec d'autres étudiants et a impliqué la conception et le déploiement d'une campagne d'hameçonnage simulée à grande échelle ciblant les étudiants du Collège communautaire du Nouveau-Brunswick (CCNB) sur 5 campus. Le projet a démontré une compréhension profonde des techniques de phishing, de la psychologie de la manipulation, et de l'importance de la sensibilisation à la sécurité dans la défense contre les menaces de sécurité modernes.
-            </p>
+            <div className="space-y-6">
+              <div>
+                <h3 className="text-2xl font-bold text-primary mb-3">1. Hyper-Localisation Contextuelle</h3>
+                <p className="text-foreground/80 leading-relaxed">
+                  Notre simulation se distingue des campagnes génériques de phishing par sa hyper-localisation. Contrairement aux campagnes génériques qui ciblent des marques grand public (Amazon, mise à jour bancaire, etc.), notre approche limite parfaitement une communication interne du CCNB. Nous utilisons le logo officiel, le slogan institutionnel "Ensemble on change les VIES", et les couleurs officielles du collège. Cela rend l'attaque beaucoup plus crédible pour le public cible que des marques grand public, car elle provient d'une source que les étudiants reconnaissent et en laquelle ils ont confiance.
+                </p>
+              </div>
+              
+              <div>
+                <h3 className="text-2xl font-bold text-primary mb-3">2. Pertinence Contextuelle et Urgence Réelle</h3>
+                <p className="text-foreground/80 leading-relaxed">
+                  Notre simulation joue sur une peur réelle des étudiants : la perte d'accès à leurs cours et données académiques. Cette urgence est beaucoup plus impactante qu'un phishing financier ou commercial classique. Les étudiants dépendent de la plateforme Ardoise pour leurs études, et une corruption de données représente une menace directe à leur réussite académique. Cette pertinence contextuelle augmente significativement le taux de clics et d'engagement, ce qui rend la simulation plus efficace d'un point de vue pédagogique.
+                </p>
+              </div>
+              
+              <div>
+                <h3 className="text-2xl font-bold text-primary mb-3">3. Niveau de Sophistication Technique Avancé</h3>
+                <p className="text-foreground/80 leading-relaxed">
+                  Notre campagne utilise plusieurs techniques modernes de phishing pour augmenter son crédibilité. Nous avons utilisé un domaine légèrement modifié qui ressemble à un domaine légitime mais qui est en réalité contrôlé par nous. Le ton du courriel est professionnel et poli ("Nous nous excusons sincèrement..."), ce qui renforce la perception de légitimité. La page de connexion Microsoft que nous avons créée est extrêmement réaliste, reproduisant fidèlement l'interface officielle de Microsoft avec le logo CCNB en arrière-plan. Cette page reproduit les techniques modernes de spear-phishing et de typosquatting, offrant une expérience d'apprentissage complète aux étudiants.
+                </p>
+              </div>
+              
+              <div>
+                <h3 className="text-2xl font-bold text-primary mb-3">4. Valeur Pédagogique Supérieure</h3>
+                <p className="text-foreground/80 leading-relaxed">
+                  Les étudiants qui cliquent sur le lien et qui arrivent à la page de connexion apprendront concrètement à identifier les signes d'une attaque de phishing. Ils apprendront à vérifier l'adresse réelle de l'expéditeur en inspectant les en-têtes du courriel. Ils apprendront à repérer les avertissements de sécurité Outlook qui indiquent que le message provient de l'extérieur de l'organisation. Ils apprendront à éviter de cliquer sur des liens urgents et à accéder directement au site officiel plutôt que via un courriel. Grâce à son réalisme et à sa pertinence locale, cette campagne a un fort potentiel d'engagement et d'apprentissage durable.
+                </p>
+              </div>
+            </div>
+          </div>
 
-            <h3 className="text-2xl font-bold text-primary mb-4 mt-8">Contexte et Objectifs du Projet</h3>
+          {/* Analyse des Secteurs */}
+          <div className="prose prose-invert max-w-none">
+            <h2 className="text-3xl font-bold text-primary mb-6">Analyse des Secteurs les Plus Ciblés et les Plus Vulnérables au Canada</h2>
+            
             <p className="text-foreground/80 leading-relaxed mb-4">
-              Le phishing reste l'une des menaces de sécurité les plus efficaces et les plus courantes, exploitant la psychologie humaine plutôt que les failles techniques. Les statistiques montrent que le phishing est responsable de la majorité des incidents de sécurité et des violations de données. L'objectif principal du projet était de sensibiliser les utilisateurs aux menaces de phishing et d'améliorer leur capacité à identifier les emails de phishing. Les objectifs spécifiques incluaient :
+              Le phishing demeure l'un des vecteurs d'attaque les plus utilisés au Canada et dans le monde. Selon plusieurs rapports récents, il constitue souvent le point d'entrée initial pour des attaques plus graves (ransomware, vol de données, etc.). Différents secteurs d'activité présentent des niveaux de vulnérabilité variables en fonction de leurs pratiques de sécurité, de leur sensibilisation et de la valeur des données qu'ils possèdent.
             </p>
-            <ul className="list-disc list-inside text-foreground/80 mb-4 space-y-2">
-              <li>Concevoir une campagne d'hameçonnage simulée réaliste et convaincante</li>
-              <li>Déployer la campagne à grande échelle auprès des étudiants du CCNB (5 campus)</li>
-              <li>Mesurer le taux de clics et d'interactions avec les emails de phishing simulés</li>
-              <li>Analyser les comportements des utilisateurs face aux menaces de phishing</li>
-              <li>Fournir une rétroaction éducative aux utilisateurs qui ont cliqué sur les liens</li>
-              <li>Évaluer l'efficacité de la campagne de sensibilisation</li>
-              <li>Identifier les groupes d'utilisateurs à risque élevé</li>
-              <li>Recommander des mesures de sensibilisation supplémentaires</li>
+            
+            <p className="text-foreground/80 leading-relaxed mb-4">
+              <span className="font-semibold">Secteurs les Plus Ciblés au Canada (2024-2025):</span>
+            </p>
+            <ul className="list-disc list-inside text-foreground/80 mb-6 space-y-2">
+              <li>Éducation (collèges et universités)</li>
+              <li>Santé (hôpitaux et cliniques)</li>
+              <li>Finance et Assurance</li>
+              <li>Gouvernement et Administrations Publiques</li>
+              <li>Énergie et Infrastructures Critiques</li>
+              <li>Commerce de Détail</li>
             </ul>
-
-            <h3 className="text-2xl font-bold text-primary mb-4 mt-8">Conception de la Campagne</h3>
+            
             <p className="text-foreground/80 leading-relaxed mb-4">
-              La conception de la campagne d'hameçonnage a impliqué une planification minutieuse pour créer des emails convaincants qui ressemblaient à des emails de phishing réels tout en restant éducatifs et éthiques. La campagne a utilisé plusieurs techniques de social engineering couramment utilisées par les attaquants réels :
+              <span className="font-semibold">Pourquoi le Secteur de l'Éducation est Particulièrement Vulnérable:</span> Le secteur de l'éducation figure parmi les plus touchés au Canada en 2024-2025. Plusieurs incidents ont été rapportés dans des établissements comme l'Université de Winnipeg, le Collège Ahuntsic et d'autres boards scolaires. Les raisons principales de cette vulnérabilité incluent des budgets souvent limités en cybersécurité, un grand nombre d'utilisateurs (étudiants et personnel) avec des niveaux de sensibilisation variables, une confiance élevée dans les communications institutionnelles, l'utilisation massive de plateformes cloud (Microsoft 365, systèmes de gestion de l'apprentissage comme Ardoise), et la présence de données personnelles sensibles (informations académiques, coordonnées, parfois données financières).
             </p>
-
+            
             <p className="text-foreground/80 leading-relaxed mb-4">
-              <strong>1. Urgence et Peur :</strong> Les emails de phishing utilisent souvent l'urgence et la peur pour inciter les utilisateurs à agir rapidement sans réfléchir. Les emails de la campagne ont utilisé des sujets comme "Votre compte a été compromis" ou "Action immédiate requise" pour créer un sentiment d'urgence. Cette technique exploite la tendance naturelle des utilisateurs à réagir rapidement aux situations d'urgence.
+              Les statistiques montrent que le taux de clics sur des simulations de phishing dans le secteur de l'éducation peut atteindre 26 % à 31 % sans formation continue, mais chute fortement (jusqu'à moins de 5 %) après une sensibilisation régulière et des simulations répétées. Cela démontre l'efficacité des campagnes éducatives comme celle que nous avons développée.
             </p>
+            
+            <p className="text-foreground/80 leading-relaxed">
+              Au Canada, le Centre canadien pour la cybersécurité (Cyber Centre) souligne que le phishing et les ransomwares touchent fréquemment les organisations éducatives, causant des interruptions de services et des risques de fuite de données. Notre campagne au CCNB s'inscrit donc dans un contexte national très pertinent : elle permet de renforcer la culture de sécurité dans un secteur reconnu comme vulnérable.
+            </p>
+          </div>
 
+          {/* Conclusion */}
+          <div className="prose prose-invert max-w-none">
+            <h2 className="text-3xl font-bold text-primary mb-6">Conclusion</h2>
+            
             <p className="text-foreground/80 leading-relaxed mb-4">
-              <strong>2. Imitation de Sources Fiables :</strong> Les emails de phishing imitent souvent des sources fiables comme les banques, les services informatiques ou les fournisseurs de services. Les emails de la campagne ont imité des emails du département informatique du CCNB, utilisant des logos et des formats similaires aux emails authentiques. Cette technique exploite la confiance des utilisateurs envers les sources fiables.
+              Cette campagne de simulation de phishing basée sur la plateforme Ardoise s'avère être un excellent outil pédagogique. En reproduisant fidèlement une communication officielle du CCNB, nous avons créé un scénario réaliste et impactant qui permet aux étudiants de vivre concrètement les mécanismes du phishing tout en apprenant à s'en protéger.
             </p>
+            
+            <p className="text-foreground/80 leading-relaxed mb-4">
+              Les points forts de notre projet résident dans sa pertinence locale, son niveau de réalisme et sa forte valeur éducative. Les résultats attendus (taux de clics et de saisie de mots de passe) serviront à mesurer l'efficacité de la sensibilisation et à identifier les axes d'amélioration pour les futures campagnes.
+            </p>
+            
+            <p className="text-foreground/80 leading-relaxed mb-4">
+              À long terme, ce type d'exercice contribue à développer une culture de cybersécurité chez les étudiants, qui deviendront les employés et citoyens de demain. Nous recommandons au CCNB de répéter régulièrement des simulations variées, d'encourager l'activation de l'authentification multifacteur (MFA) et de promouvoir l'accès direct aux plateformes officielles plutôt que via des liens dans les courriels.
+            </p>
+          </div>
 
-            <p className="text-foreground/80 leading-relaxed mb-4">
-              <strong>3. Demandes de Vérification d'Identité :</strong> Les emails de phishing demandent souvent aux utilisateurs de vérifier leur identité en cliquant sur un lien ou en entrant des informations d'identification. Les emails de la campagne ont demandé aux utilisateurs de vérifier leur compte en cliquant sur un lien. Cette technique exploite la tendance des utilisateurs à suivre les instructions des sources apparemment fiables.
-            </p>
-
-            <p className="text-foreground/80 leading-relaxed mb-4">
-              <strong>4. Offres Attrayantes :</strong> Certains emails de phishing offrent des récompenses ou des avantages pour inciter les utilisateurs à cliquer. Les emails de la campagne ont offert des prix ou des avantages pour encourager les clics. Cette technique exploite la tendance des utilisateurs à être attirés par les offres avantageuses.
-            </p>
-
-            <h3 className="text-2xl font-bold text-primary mb-4 mt-8">Infrastructure Technique</h3>
-            <p className="text-foreground/80 leading-relaxed mb-4">
-              L'infrastructure technique de la campagne a impliqué la mise en place d'une plateforme de phishing simulée qui permettait le suivi des interactions des utilisateurs :
-            </p>
-
-            <p className="text-foreground/80 leading-relaxed mb-4">
-              <strong>1. Serveur de Phishing Simulé :</strong> Un serveur web a été mis en place pour héberger les pages de phishing simulées. Ces pages ressemblaient à des pages de connexion authentiques du CCNB. Lorsque les utilisateurs cliquaient sur les liens dans les emails de phishing, ils étaient dirigés vers ces pages simulées. Les pages enregistraient les interactions des utilisateurs (clics, temps passé sur la page, etc.) sans capturer les informations d'identification réelles.
-            </p>
-
-            <p className="text-foreground/80 leading-relaxed mb-4">
-              <strong>2. Système de Suivi :</strong> Un système de suivi a été implémenté pour enregistrer les interactions des utilisateurs avec les emails et les pages de phishing. Le système enregistrait les données suivantes : qui a cliqué sur le lien, quand ils ont cliqué, combien de temps ils ont passé sur la page de phishing, et s'ils ont entré des informations d'identification (bien que les informations d'identification n'aient pas été capturées).
-            </p>
-
-            <p className="text-foreground/80 leading-relaxed mb-4">
-              <strong>3. Plateforme de Rétroaction Éducative :</strong> Une plateforme de rétroaction a été mise en place pour fournir une rétroaction éducative aux utilisateurs qui ont cliqué sur les liens de phishing. Lorsque les utilisateurs cliquaient sur les liens, ils étaient redirigés vers une page éducative qui expliquait les techniques de phishing utilisées et comment identifier les emails de phishing. Cette rétroaction immédiate a renforcé l'apprentissage.
-            </p>
-
-            <h3 className="text-2xl font-bold text-primary mb-4 mt-8">Déploiement de la Campagne</h3>
-            <p className="text-foreground/80 leading-relaxed mb-4">
-              La campagne a été déployée à grande échelle auprès des étudiants du CCNB sur 5 campus. Le déploiement a impliqué l'envoi d'emails de phishing simulés à tous les étudiants du CCNB. La campagne a été soigneusement planifiée pour minimiser les faux positifs et pour assurer que les utilisateurs comprenaient que la campagne était éducative et non malveillante.
-            </p>
-
-            <p className="text-foreground/80 leading-relaxed mb-4">
-              <strong>Phases du Déploiement :</strong>
-            </p>
-            <ul className="list-disc list-inside text-foreground/80 mb-4 space-y-2">
-              <li><strong>Phase 1 - Préparation :</strong> Approbation de la direction, mise en place de l'infrastructure technique, création des emails de phishing, et préparation des pages de rétroaction éducative</li>
-              <li><strong>Phase 2 - Lancement :</strong> Envoi des emails de phishing simulés à tous les étudiants du CCNB sur 5 campus</li>
-              <li><strong>Phase 3 - Suivi :</strong> Suivi des interactions des utilisateurs et collecte des données sur les taux de clics</li>
-              <li><strong>Phase 4 - Rétroaction :</strong> Fourniture de rétroaction éducative aux utilisateurs qui ont cliqué sur les liens</li>
-              <li><strong>Phase 5 - Analyse :</strong> Analyse des données collectées et génération de rapports</li>
+          {/* References */}
+          <div className="prose prose-invert max-w-none">
+            <h2 className="text-3xl font-bold text-primary mb-6">Références</h2>
+            <ul className="list-disc list-inside text-foreground/80 space-y-2">
+              <li>Centre canadien pour la cybersécurité. (2024). National Cyber Threat Assessment 2025-2026. Gouvernement du Canada.</li>
+              <li>KnowBe4. (2025). 2025 Phishing By Industry Benchmark Report.</li>
+              <li>Canadian Cybersecurity Network. (2025). The State of Cybersecurity in Canada 2025.</li>
+              <li>Proofpoint. (2024). State of the Phish Report.</li>
+              <li>Verizon. (2025). Data Breach Investigations Report (DBIR) 2025.</li>
+              <li>Canadian Centre for Cyber Security. (2026). Ransomware Threat Outlook 2025-2027.</li>
             </ul>
+          </div>
 
-            <h3 className="text-2xl font-bold text-primary mb-4 mt-8">Résultats et Analyses</h3>
-            <p className="text-foreground/80 leading-relaxed mb-4">
-              La campagne a généré des résultats significatifs qui ont fourni des insights précieux sur la sensibilisation des utilisateurs aux menaces de phishing :
-            </p>
+          {/* Screenshots Section */}
+          <div className="space-y-6 mt-12 pt-8 border-t border-border">
+            <h2 className="text-3xl font-bold text-primary mb-6">Captures d'Écran et Annexes</h2>
+            
+            <div className="p-6 bg-card rounded-lg border border-border">
+              <h3 className="text-xl font-semibold text-accent mb-2">Capture d'Écran du Courriel de Phishing</h3>
+              <p className="text-sm text-muted-foreground mb-4">
+                [Insérez ici la capture d'écran du courriel de phishing envoyé aux étudiants]
+              </p>
+              <div className="w-full h-64 bg-background border border-dashed border-border rounded flex items-center justify-center">
+                <span className="text-muted-foreground">Emplacement pour capture d'écran</span>
+              </div>
+            </div>
 
-            <p className="text-foreground/80 leading-relaxed mb-4">
-              <strong>Taux de Clics :</strong> Le taux de clics global a été de 15-20%, ce qui est légèrement inférieur aux taux de clics moyens observés dans les campagnes de phishing réelles (20-30%). Ce résultat suggère que les utilisateurs du CCNB ont une sensibilisation modérée aux menaces de phishing, mais qu'il y a encore une marge d'amélioration significative.
-            </p>
+            <div className="p-6 bg-card rounded-lg border border-border">
+              <h3 className="text-xl font-semibold text-accent mb-2">Capture d'Écran de la Fausse Page de Connexion</h3>
+              <p className="text-sm text-muted-foreground mb-4">
+                [Insérez ici la capture d'écran de la fausse page de connexion Microsoft avec logo CCNB]
+              </p>
+              <div className="w-full h-64 bg-background border border-dashed border-border rounded flex items-center justify-center">
+                <span className="text-muted-foreground">Emplacement pour capture d'écran</span>
+              </div>
+            </div>
 
-            <p className="text-foreground/80 leading-relaxed mb-4">
-              <strong>Variation par Campus :</strong> Le taux de clics a varié considérablement entre les campus, allant de 10% à 25%. Cette variation suggère que certains campus ont une meilleure sensibilisation à la sécurité que d'autres. Les campus avec un taux de clics plus élevé ont reçu des recommandations pour des mesures de sensibilisation supplémentaires.
-            </p>
-
-            <p className="text-foreground/80 leading-relaxed mb-4">
-              <strong>Variation par Département :</strong> Le taux de clics a également varié par département. Les étudiants en informatique et en cybersécurité ont montré un taux de clics inférieur (8-12%), tandis que les étudiants d'autres disciplines ont montré un taux de clics plus élevé (18-25%). Ce résultat était attendu car les étudiants en informatique ont généralement une meilleure compréhension des menaces de sécurité.
-            </p>
-
-            <p className="text-foreground/80 leading-relaxed mb-4">
-              <strong>Analyse des Comportements :</strong> L'analyse des comportements des utilisateurs a révélé plusieurs patterns intéressants. Certains utilisateurs ont cliqué immédiatement sur les liens sans réfléchir, tandis que d'autres ont hésité avant de cliquer. Certains utilisateurs ont même signalé les emails comme du phishing, démontrant une bonne sensibilisation à la sécurité.
-            </p>
-
-            <h3 className="text-2xl font-bold text-primary mb-4 mt-8">Impact Éducatif</h3>
-            <p className="text-foreground/80 leading-relaxed mb-4">
-              La campagne a eu un impact éducatif significatif sur les utilisateurs qui ont participé :
-            </p>
-
-            <p className="text-foreground/80 leading-relaxed mb-4">
-              <strong>1. Sensibilisation Accrue :</strong> Les utilisateurs qui ont cliqué sur les liens de phishing et qui ont reçu la rétroaction éducative ont montré une sensibilisation accrue aux menaces de phishing. Un suivi ultérieur a montré que ces utilisateurs avaient moins de chances de cliquer sur des emails de phishing similaires à l'avenir.
-            </p>
-
-            <p className="text-foreground/80 leading-relaxed mb-4">
-              <strong>2. Comportements de Sécurité Améliorés :</strong> Les utilisateurs qui ont participé à la campagne ont montré des comportements de sécurité améliorés, y compris une vérification plus minutieuse des emails, une hésitation avant de cliquer sur les liens, et un signalement des emails suspects.
-            </p>
-
-            <p className="text-foreground/80 leading-relaxed mb-4">
-              <strong>3. Engagement Accru :</strong> La campagne a généré un engagement accru avec la sensibilisation à la sécurité. Les utilisateurs ont montré un intérêt accru pour les formations de sécurité et les ressources éducatives.
-            </p>
-
-            <h3 className="text-2xl font-bold text-primary mb-4 mt-8">Défis et Considérations Éthiques</h3>
-            <p className="text-foreground/80 leading-relaxed mb-4">
-              Le projet a présenté plusieurs défis et considérations éthiques qui ont dû être soigneusement gérés :
-            </p>
-
-            <p className="text-foreground/80 leading-relaxed mb-4">
-              <strong>1. Consentement et Transparence :</strong> Un défi majeur a été d'obtenir le consentement des utilisateurs pour la campagne tout en maintenant le réalisme de la simulation. La solution a impliqué l'approbation préalable de la direction du CCNB et la communication claire aux utilisateurs que la campagne était éducative et non malveillante.
-            </p>
-
-            <p className="text-foreground/80 leading-relaxed mb-4">
-              <strong>2. Risque de Dommages Psychologiques :</strong> Un autre défi a été de minimiser le risque de dommages psychologiques aux utilisateurs qui ont cliqué sur les liens de phishing. La solution a impliqué la fourniture immédiate de rétroaction éducative et positive, plutôt que de punir ou d'humilier les utilisateurs.
-            </p>
-
-            <p className="text-foreground/80 leading-relaxed mb-4">
-              <strong>3. Conformité aux Réglementations :</strong> Le projet a dû se conformer aux réglementations sur la protection des données et la vie privée. Les données collectées ont été traitées de manière sécurisée et confidentielle, et les utilisateurs ont eu la possibilité de refuser de participer à la campagne.
-            </p>
-
-            <h3 className="text-2xl font-bold text-primary mb-4 mt-8">Apprentissages et Compétences Développées</h3>
-            <p className="text-foreground/80 leading-relaxed mb-4">
-              Le projet a permis de développer et de consolider plusieurs compétences importantes :
-            </p>
-            <ul className="list-disc list-inside text-foreground/80 mb-4 space-y-2">
-              <li>Compréhension profonde des techniques de phishing et de social engineering</li>
-              <li>Capacité à concevoir des campagnes de sensibilisation à la sécurité efficaces</li>
-              <li>Compétences en gestion de projets complexes et multi-campus</li>
-              <li>Compétences en analyse de données et en génération de rapports</li>
-              <li>Compétences en communication et en présentation des résultats</li>
-              <li>Compréhension des considérations éthiques en sécurité</li>
-              <li>Capacité à travailler en équipe et à collaborer avec d'autres étudiants</li>
-              <li>Compréhension de la psychologie humaine et de la manipulation</li>
-            </ul>
-
-            <h3 className="text-2xl font-bold text-primary mb-4 mt-8">Recommandations et Suivi</h3>
-            <p className="text-foreground/80 leading-relaxed mb-4">
-              Sur la base des résultats de la campagne, plusieurs recommandations ont été formulées pour améliorer la sensibilisation à la sécurité :
-            </p>
-            <ul className="list-disc list-inside text-foreground/80 mb-4 space-y-2">
-              <li>Mettre en place des formations de sensibilisation à la sécurité régulières et obligatoires</li>
-              <li>Créer des ressources éducatives facilement accessibles sur la reconnaissance du phishing</li>
-              <li>Mettre en place des campagnes de phishing simulées régulières pour maintenir la sensibilisation</li>
-              <li>Fournir une rétroaction personnalisée aux utilisateurs à risque élevé</li>
-              <li>Créer une culture de sécurité positive qui encourage le signalement des emails suspects</li>
-              <li>Mettre en place des mesures techniques supplémentaires pour filtrer les emails de phishing</li>
-            </ul>
-
-            <h3 className="text-2xl font-bold text-primary mb-4 mt-8">Conclusion</h3>
-            <p className="text-foreground/80 leading-relaxed mb-4">
-              Le projet de simulation de sensibilisation à l'hameçonnage a démontré une compréhension profonde des techniques de phishing et de l'importance de la sensibilisation à la sécurité. Le projet a eu un impact éducatif significatif sur les utilisateurs et a fourni des insights précieux sur les niveaux de sensibilisation à la sécurité du CCNB. Cette expérience constitue une base solide pour des rôles en sensibilisation à la sécurité, gestion des risques de sécurité, ou ingénierie de sécurité. Les compétences développées lors de ce projet, notamment la compréhension des techniques de phishing, la capacité à concevoir des campagnes de sensibilisation efficaces, et la compréhension des considérations éthiques en sécurité, sont hautement demandées dans l'industrie de la cybersécurité.
-            </p>
+            <div className="p-6 bg-card rounded-lg border border-border">
+              <h3 className="text-xl font-semibold text-accent mb-2">Statistiques de Réponse à la Campagne</h3>
+              <p className="text-sm text-muted-foreground mb-4">
+                [Insérez ici les graphiques et statistiques de réponse à la campagne]
+              </p>
+              <div className="w-full h-64 bg-background border border-dashed border-border rounded flex items-center justify-center">
+                <span className="text-muted-foreground">Emplacement pour statistiques</span>
+              </div>
+            </div>
           </div>
         </div>
       </section>
