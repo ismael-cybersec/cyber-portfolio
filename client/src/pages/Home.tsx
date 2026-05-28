@@ -4,7 +4,6 @@ import { ArrowRight, Github, Mail, MapPin, Phone, Linkedin } from "lucide-react"
 import { Link } from "wouter";
 import { Navigation } from "@/components/Navigation";
 import { Footer } from "@/components/Footer";
-import { HeroSection } from "@/components/HeroSection";
 import { SectionHeader } from "@/components/SectionHeader";
 import { SkillCard } from "@/components/SkillCard";
 import { ProjectCard } from "@/components/ProjectCard";
@@ -40,7 +39,7 @@ export default function Home() {
 
   return (
     <div className="min-h-screen bg-background text-foreground">
-      <Navigation onContactClick={() => window.location.href = "#contact"} />
+      <Navigation onContactClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })} />
 
       {/* Hero Section */}
       <section className="relative min-h-screen flex items-center justify-center pt-20 pb-20 overflow-hidden">
@@ -62,12 +61,18 @@ export default function Home() {
                 Support informatique | Réseaux et infrastructures TI | Spécialisé en systèmes de détection d'intrusion et architecture de sécurité d'entreprise.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 mb-8">
-                <button onClick={() => document.getElementById('projects')?.scrollIntoView({ behavior: 'smooth' })} className="inline-flex items-center justify-center px-6 py-3 bg-accent text-background font-semibold rounded-lg hover:bg-accent/90 transition-colors duration-300">
-  Voir Mes Projets <ArrowRight className="ml-2 h-5 w-5" />
-</button>
-                <a href="#contact" className="inline-flex items-center justify-center px-6 py-3 border border-accent text-accent font-semibold rounded-lg hover:bg-accent/10 transition-colors duration-300">
+                <button
+                  onClick={() => document.getElementById('projects')?.scrollIntoView({ behavior: 'smooth' })}
+                  className="inline-flex items-center justify-center px-6 py-3 bg-accent text-background font-semibold rounded-lg hover:bg-accent/90 transition-colors duration-300"
+                >
+                  Voir Mes Projets <ArrowRight className="ml-2 h-5 w-5" />
+                </button>
+                <button
+                  onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
+                  className="inline-flex items-center justify-center px-6 py-3 border border-accent text-accent font-semibold rounded-lg hover:bg-accent/10 transition-colors duration-300"
+                >
                   Me Contacter
-                </a>
+                </button>
               </div>
               <div className="flex gap-6">
                 <a href="#" className="flex items-center gap-2 text-foreground/70 hover:text-accent transition-colors">
@@ -100,7 +105,7 @@ export default function Home() {
       </section>
 
       {/* À Propos Section */}
-      <section className="py-20 md:py-32 bg-secondary/20">
+      <section id="about" className="py-20 md:py-32 bg-secondary/20">
         <div className="container max-w-4xl">
           <SectionHeader title="À Propos" />
           <div className="grid md:grid-cols-2 gap-12 items-center">
@@ -140,7 +145,7 @@ export default function Home() {
       </section>
 
       {/* Compétences Section */}
-      <section className="py-20 md:py-32">
+      <section id="skills" className="py-20 md:py-32">
         <div className="container">
           <SectionHeader title="Compétences Principales" />
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -258,7 +263,7 @@ export default function Home() {
               <MapPin className="h-6 w-6 text-accent flex-shrink-0" />
               <div>
                 <p className="text-sm text-foreground/60">Localisation</p>
-                <p className="text-foreground font-semibold">Dieppe, Nouveau-Brunswick, Canada</p>
+                <p className="text-foreground font-semibold">Moncton, Nouveau-Brunswick, Canada</p>
               </div>
             </div>
           </div>
