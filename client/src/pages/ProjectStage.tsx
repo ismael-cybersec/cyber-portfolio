@@ -69,6 +69,7 @@ export default function ProjectStage() {
                   <p className="text-foreground/80 leading-relaxed">
                     L'évaluation de l'état des équipements a révélé que certains appareils nécessitaient une réinitialisation complète avant leur utilisation, tandis que d'autres présentaient des signes d'usure ou de configuration antérieure qui devrait être effacée. Cette évaluation initiale a fourni des informations critiques pour la planification des tâches de préparation des équipements.
                   </p>
+                  <img src="/manus-storage/WhatsAppImage2026-05-27at22.43.30(3)_44cc41fd.jpeg" alt="Travail pratique de configuration" className="w-full rounded-lg border border-accent/30 my-4" />
                 </div>
 
                 <div className="bg-secondary/20 p-6 rounded-lg border border-border">
@@ -117,6 +118,7 @@ export default function ProjectStage() {
                   <p className="text-foreground/80 leading-relaxed">
                     La mise à la terre des racks a été une exigence de sécurité critique et non négociable pour prévenir les chocs électriques, les dommages aux équipements causés par les surtensions, et les risques d'incendie. Cette opération a impliqué la connexion d'un conducteur de terre de faible résistance du rack au système de mise à la terre principal de l'établissement. Une mise à la terre appropriée protège les équipements contre les surtensions transitoires, les décharges électrostatiques, et les défauts d'isolation électrique.
                   </p>
+                  <img src="/manus-storage/WhatsAppImage2026-05-27at22.43.30_56c4e582.jpeg" alt="Armoire complète avec équipements réseau" className="w-full rounded-lg border border-accent/30 my-4" />
                 </div>
 
                 <div className="bg-secondary/20 p-6 rounded-lg border border-border">
@@ -156,6 +158,7 @@ export default function ProjectStage() {
                   <p className="text-foreground/80 leading-relaxed">
                     La libération du Switch Ubiquiti et du point d'accès de l'armoire CYSE et leur remplacement avec le matériel du 1103 a illustré la nécessité de consolider et d'optimiser l'utilisation des équipements disponibles. Cette réorganisation a permis une meilleure utilisation de l'espace, une simplification de la gestion des équipements, et une réduction de la complexité générale de l'infrastructure.
                   </p>
+                  <img src="/manus-storage/WhatsAppImage2026-05-27at22.43.30(5)_19630f19.jpeg" alt="Travail sur l'armoire réseau" className="w-full rounded-lg border border-accent/30 my-4" />
                 </div>
 
                 <div className="bg-secondary/20 p-6 rounded-lg border border-border">
@@ -204,6 +207,7 @@ export default function ProjectStage() {
                   <p className="text-foreground/80 leading-relaxed">
                     Le déplacement de l'équipement Juniper vers le 1106-E a démontré la nécessité d'adapter la disposition physique des équipements en fonction des besoins de connectivité et de performance. Cet équipement critique devait être positionné de manière à minimiser la longueur des câbles de liaison montante, à réduire les pertes de signal, et à faciliter l'accès pour la maintenance et les mises à jour.
                   </p>
+                  <img src="/manus-storage/WhatsAppImage2026-05-27at22.43.30.jpeg" alt="Baie de brassage Legrand avec câblage structuré" className="w-full rounded-lg border border-accent/30 my-4" />
                 </div>
 
                 <div className="bg-secondary/20 p-6 rounded-lg border border-border">
@@ -217,6 +221,7 @@ export default function ProjectStage() {
                   <p className="text-foreground/80 leading-relaxed">
                     L'achat des matériaux de finition (goulottes, prises murales, crochets, trays et autres accessoires) a été essentiel pour compléter l'installation des câbles de manière professionnelle et durable. Ces matériaux ont permis une organisation claire des câbles, une protection contre les dommages physiques, une amélioration de l'esthétique générale, et une facilitation de la maintenance future.
                   </p>
+                  <img src="/manus-storage/WhatsAppImage2026-05-27at22.43.30(4)_3a528060.jpeg" alt="Configuration du firewall WatchGuard" className="w-full rounded-lg border border-accent/30 my-4" />
                 </div>
 
                 <div className="bg-secondary/20 p-6 rounded-lg border border-border">
@@ -289,8 +294,9 @@ export default function ProjectStage() {
                     Le branchement de l'alimentation principale et redondante de tous les équipements a été une tâche critique qui assure la disponibilité et la résilience de l'infrastructure. Les équipements critiques ont dû être connectés à au moins deux UPS différentes pour assurer la redondance et la continuité de service en cas de défaillance d'une UPS. La distribution de la charge électrique a dû être équilibrée pour éviter la surcharge d'une seule UPS et assurer une performance optimale.
                   </p>
                   <p className="text-foreground/80 leading-relaxed">
-                    L'intégration des équipements sans fil a impliqué l'installation physique des points d'accès Ubiquiti dans les salles de classe et leur connexion au réseau filaire via les câbles Ethernet préalablement installés. Les points d'accès ont dû être positionnés de manière stratégique pour assurer une couverture radio optimale et pour minimiser les interférences avec d'autres appareils sans fil.
+                    L'intégration des équipements sans fil a impliqué l'installation physique des points d'accès Ubiquiti dans les salles de classe et leur connexion au réseau filé via les câbles Ethernet préalablement installés. Les points d'accès ont dû être positionnés de manière stratégique pour assurer une couverture radio optimale et pour minimiser les interférences avec d'autres appareils sans fil.
                   </p>
+                  <img src="/manus-storage/WhatsAppImage2026-05-27at22.43.30(2)_ef982c2c.jpeg" alt="Travail sur l'armoire réseau" className="w-full rounded-lg border border-accent/30 my-4" />
                 </div>
 
                 <div className="bg-secondary/20 p-6 rounded-lg border border-border">
@@ -304,6 +310,7 @@ export default function ProjectStage() {
                   <p className="text-foreground/80 leading-relaxed">
                     La configuration des serveurs Proxmox a impliqué l'installation du système d'exploitation de virtualisation, la configuration de la mise en réseau pour l'intégration avec les VLANs, la configuration du stockage pour les machines virtuelles, et la préparation des serveurs pour héberger les machines virtuelles pédagogiques. Proxmox est une plateforme de virtualisation open-source puissante qui permet de créer et de gérer des machines virtuelles et des conteneurs pour les besoins pédagogiques.
                   </p>
+                  <img src="/manus-storage/WhatsAppImage2026-05-27at22.43.30(1)_151d404e.jpeg" alt="Armoire Proxmox avec serveurs de virtualisation" className="w-full rounded-lg border border-accent/30 my-4" />
                 </div>
 
                 <div className="bg-secondary/20 p-6 rounded-lg border border-border">
