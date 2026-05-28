@@ -231,6 +231,14 @@ export default function Home() {
                 image="https://d2xsxph8kpxj0f.cloudfront.net/310519663382628638/WmRojeLpchBAbCWdyVAPFM/hero-cybersecurity-dvbfngCY6SAPXZ4u5h4RAC.webp"
               />
             </a>
+            <a href="/projects/yodeck" className="cursor-pointer">
+              <ProjectCard
+                title="Projet Yodeck - Affichage Dynamique"
+                description="Système d'affichage dynamique centralisé sur Raspberry Pi 4 avec gestion de contenu web, virtualisation et déploiement professionnel."
+                tags={["Yodeck", "Raspberry Pi", "Affichage Dynamique", "Virtualisation", "OSSE1087"]}
+                image="https://d2xsxph8kpxj0f.cloudfront.net/310519663382628638/WmRojeLpchBAbCWdyVAPFM/hero-cybersecurity-dvbfngCY6SAPXZ4u5h4RAC.webp"
+              />
+            </a>
           </div>
         </div>
       </section>

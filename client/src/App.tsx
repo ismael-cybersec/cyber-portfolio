@@ -10,6 +10,7 @@ import ProjectVortexCore from "./pages/ProjectVortexCore";
 import ProjectEthicalHacking from "./pages/ProjectEthicalHacking";
 import ProjectPhishing from "./pages/ProjectPhishing";
 import ProjectActiveDirectoryLabs from "./pages/ProjectActiveDirectoryLabs";
+import ProjectYodeck from "./pages/ProjectYodeck";
 
 function Router() {
   return (
@@ -20,6 +21,7 @@ function Router() {
       <Route path="/projects/ethical-hacking" component={ProjectEthicalHacking} />
       <Route path="/projects/phishing" component={ProjectPhishing} />
       <Route path="/projects/active-directory-labs" component={ProjectActiveDirectoryLabs} />
+      <Route path="/projects/yodeck" component={ProjectYodeck} />
       <Route path="/404" component={NotFound} />
       <Route component={NotFound} />
     </Switch>
