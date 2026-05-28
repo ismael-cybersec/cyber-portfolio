@@ -62,9 +62,9 @@ export default function Home() {
                 Support informatique | Réseaux et infrastructures TI | Spécialisé en systèmes de détection d'intrusion et architecture de sécurité d'entreprise.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 mb-8">
-                <a href="#projects" className="inline-flex items-center justify-center px-6 py-3 bg-accent text-background font-semibold rounded-lg hover:bg-accent/90 transition-colors duration-300">
-                  Voir Mes Projets <ArrowRight className="ml-2 h-5 w-5" />
-                </a>
+                <button onClick={() => document.getElementById('projects')?.scrollIntoView({ behavior: 'smooth' })} className="inline-flex items-center justify-center px-6 py-3 bg-accent text-background font-semibold rounded-lg hover:bg-accent/90 transition-colors duration-300">
+  Voir Mes Projets <ArrowRight className="ml-2 h-5 w-5" />
+</button>
                 <a href="#contact" className="inline-flex items-center justify-center px-6 py-3 border border-accent text-accent font-semibold rounded-lg hover:bg-accent/10 transition-colors duration-300">
                   Me Contacter
                 </a>
