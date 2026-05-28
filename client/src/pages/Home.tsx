@@ -1,6 +1,7 @@
 import { Badge } from "@/components/ui/badge";
 import { Card } from "@/components/ui/card";
 import { ArrowRight, Github, Mail, MapPin, Phone, Linkedin } from "lucide-react";
+import { Link } from "wouter";
 import { Navigation } from "@/components/Navigation";
 import { Footer } from "@/components/Footer";
 import { HeroSection } from "@/components/HeroSection";
@@ -8,16 +9,6 @@ import { SectionHeader } from "@/components/SectionHeader";
 import { SkillCard } from "@/components/SkillCard";
 import { ProjectCard } from "@/components/ProjectCard";
 import { CertificationCard } from "@/components/CertificationCard";
-
-
-/**
- * Design Philosophy: Elegant Professional Modern - Dark Theme
- * - Deep navy blue (#1e3a5f) as primary color
- * - Gold accents (#d4a574) for highlights
- * - Playfair Display for headings, Lato for body
- * - Soft shadows and subtle animations
- * - Dark background with light text for readability
- */
 
 export default function Home() {
 
@@ -40,38 +31,12 @@ export default function Home() {
     },
   ];
 
-  const projets = [
-    {
-      titre: "Stage - Laboratoire de Réseautique",
-      description: "6 semaines de stage intensif en laboratoire de réseautique couvrant la mise en place complète d'une infrastructure réseau professionnelle avec câblage, configuration VLAN, DHCP, NAT et tests complets.",
-      tags: ["Réseautique", "Cisco", "VLAN", "DHCP", "NAT", "Infrastructure"],
-      image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663382628638/WmRojeLpchBAbCWdyVAPFM/stage-lab-network-38RRxU2KENqN8uZTXXNRBn.webp",
-      descriptionComplete: "Stage professionnel de 6 semaines au Collège communautaire du Nouveau-Brunswick. Mise en place complète d'une infrastructure réseau : inventaire, câblage, passage des câbles, plan d'adressage VLAN, configuration des serveurs, tests de connectivité et validation finale. Apprentissage pratique de technologies Cisco, gestion de racks et équipements réseau professionnels.",
-    },
-    {
-      titre: "VortexCore - Cluster Proxmox VE",
-      description: "Cluster Proxmox VE 3 nœuds avec stockage NFS partagé (UNAS Pro 8), RAID 10 et RAID 5, haute disponibilité et sauvegardes pour plusieurs équipes (SOC, IAM, CyberRange).",
-      tags: ["Proxmox VE", "Clustering", "NFS", "RAID", "Haute Disponibilité", "Infrastructure"],
-      image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663382628638/WmRojeLpchBAbCWdyVAPFM/projects-showcase-nuYrFuXjrhnULQRkyUKLiG.webp",
-      descriptionComplete: "Projet d'intégration en cybersécurité (VortexOps Inc.). Cluster Proxmox VE avec 3 nœuds physiques, stockage NFS partagé (UNAS Pro 8), RAID 10 et RAID 5 pour haute disponibilité et sauvegardes pour plusieurs équipes (SOC, IAM, CyberRange). Résolution de problèmes complexes : corosync, défaillance matérielle, blocage NFS par WatchGuard, erreurs APT. 2e place CYBER-CCNB 2026 - Trophée d'argent.",
-    },
-    {
-      titre: "Projet d'Ethical Hacking",
-      description: "Tests de pénétration avancés, reconnaissance active et exploitation de vulnérabilités critiques avec Nmap, GoPhish et Wireshark.",
-      tags: ["Ethical Hacking", "Pentest", "Nmap", "GoPhish", "Wireshark", "Sécurité"],
-      image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663382628638/WmRojeLpchBAbCWdyVAPFM/hero-cybersecurity-dvbfngCY6SAPXZ4u5h4RAC.webp",
-      descriptionComplete: "Tests de pénétration avancés, reconnaissance active complète, identification de vulnérabilités critiques, campagne de phishing GoPhish sophistiquée et analyse Wireshark approfondie du trafic réseau.",
-    },
-  ];
-
   const certifications = [
     { name: "Cisco Ethical Hacker", issuer: "Cisco", year: "2025" },
     { name: "Cisco Network Technician Career Path", issuer: "Cisco", year: "2025" },
     { name: "Cisco Cyber Threat Management", issuer: "Cisco", year: "2025" },
     { name: "TryHackMe - Cyber Security 101", issuer: "TryHackMe", year: "2025" },
   ];
-
-
 
   return (
     <div className="min-h-screen bg-background text-foreground">
@@ -191,54 +156,54 @@ export default function Home() {
         <div className="container">
           <SectionHeader title="Projets Vedettes" />
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-            <a href="/projects/stage" className="cursor-pointer">
+            <Link href="/projects/stage" className="cursor-pointer">
               <ProjectCard
                 title="Stage - Laboratoire de Réseautique"
                 description="6 semaines de stage intensif en laboratoire de réseautique couvrant la mise en place complète d'une infrastructure réseau professionnelle avec câblage, configuration VLAN, DHCP, NAT et tests complets."
                 tags={["Réseautique", "Cisco", "VLAN", "DHCP", "NAT", "Infrastructure"]}
                 image="https://d2xsxph8kpxj0f.cloudfront.net/310519663382628638/WmRojeLpchBAbCWdyVAPFM/skills-background-wJKfmNjJQe9N7mKZ8VQxWq.webp"
               />
-            </a>
-            <a href="/projects/vortexcore" className="cursor-pointer">
+            </Link>
+            <Link href="/projects/vortexcore" className="cursor-pointer">
               <ProjectCard
                 title="VortexCore - Cluster Proxmox VE"
                 description="Cluster Proxmox VE 3 nœuds avec stockage NFS partagé (UNAS Pro 8), RAID 10 et RAID 5, haute disponibilité et sauvegardes pour plusieurs équipes (SOC, IAM, CyberRange)."
                 tags={["Proxmox VE", "Clustering", "NFS", "RAID", "Haute Disponibilité", "Infrastructure"]}
                 image="https://d2xsxph8kpxj0f.cloudfront.net/310519663382628638/WmRojeLpchBAbCWdyVAPFM/projects-showcase-nuYrFuXjrhnULQRkyUKLiG.webp"
               />
-            </a>
-            <a href="/projects/ethical-hacking" className="cursor-pointer">
+            </Link>
+            <Link href="/projects/ethical-hacking" className="cursor-pointer">
               <ProjectCard
                 title="Projet d'Ethical Hacking"
                 description="Tests de pénétration avancés, reconnaissance active et exploitation de vulnérabilités critiques avec Nmap, GoPhish et Wireshark."
                 tags={["Ethical Hacking", "Pentest", "Nmap", "GoPhish", "Wireshark", "Sécurité"]}
                 image="https://d2xsxph8kpxj0f.cloudfront.net/310519663382628638/WmRojeLpchBAbCWdyVAPFM/hero-cybersecurity-dvbfngCY6SAPXZ4u5h4RAC.webp"
               />
-            </a>
-            <a href="/projects/phishing" className="cursor-pointer">
+            </Link>
+            <Link href="/projects/phishing" className="cursor-pointer">
               <ProjectCard
                 title="Projet de Simulation de Phishing"
                 description="Campagne de sensibilisation aux techniques d'ingénierie sociale et d'hameçonnage avec analyse des secteurs vulnérables au Canada."
                 tags={["Phishing", "Sensibilisation", "Ingénierie Sociale", "SECS1026", "Groupe"]}
                 image="https://d2xsxph8kpxj0f.cloudfront.net/310519663382628638/WmRojeLpchBAbCWdyVAPFM/hero-cybersecurity-dvbfngCY6SAPXZ4u5h4RAC.webp"
               />
-            </a>
-            <a href="/projects/active-directory-labs" className="cursor-pointer">
+            </Link>
+            <Link href="/projects/active-directory-labs" className="cursor-pointer">
               <ProjectCard
                 title="Active Directory Labs"
                 description="Reconnaissance Active Directory complète, énumération des services, analyse des protocoles NTLM et Kerberos, password spraying et exploitation des vulnérabilités d'authentification."
                 tags={["Active Directory", "NTLM", "Kerberos", "Reconnaissance", "SECS1028"]}
                 image="https://d2xsxph8kpxj0f.cloudfront.net/310519663382628638/WmRojeLpchBAbCWdyVAPFM/hero-cybersecurity-dvbfngCY6SAPXZ4u5h4RAC.webp"
               />
-            </a>
-            <a href="/projects/yodeck" className="cursor-pointer">
+            </Link>
+            <Link href="/projects/yodeck" className="cursor-pointer">
               <ProjectCard
                 title="Projet Yodeck - Affichage Dynamique"
                 description="Système d'affichage dynamique centralisé sur Raspberry Pi 4 avec gestion de contenu web, virtualisation et déploiement professionnel."
                 tags={["Yodeck", "Raspberry Pi", "Affichage Dynamique", "Virtualisation", "OSSE1087"]}
                 image="https://d2xsxph8kpxj0f.cloudfront.net/310519663382628638/WmRojeLpchBAbCWdyVAPFM/hero-cybersecurity-dvbfngCY6SAPXZ4u5h4RAC.webp"
               />
-            </a>
+            </Link>
           </div>
         </div>
       </section>
