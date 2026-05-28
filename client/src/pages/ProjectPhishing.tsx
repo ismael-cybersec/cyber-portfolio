@@ -1,5 +1,6 @@
 import { Badge } from "@/components/ui/badge";
 import { ArrowLeft } from "lucide-react";
+import { Link } from "wouter";
 import { Navigation } from "@/components/Navigation";
 import { Footer } from "@/components/Footer";
 
@@ -12,9 +13,9 @@ export default function ProjectPhishing() {
       <section className="py-20 bg-gradient-to-r from-primary/10 to-accent/10 border-b border-border">
         <div className="container">
           <div className="flex items-center gap-4 mb-6">
-            <a href="/" className="text-accent hover:text-accent/80 transition-colors flex items-center gap-2">
-              <ArrowLeft className="w-5 h-5" /> Retour au Portfolio
-            </a>
+            <Link href="/" className="text-accent hover:text-accent/80 transition-colors flex items-center gap-2">
+  <ArrowLeft className="w-5 h-5" /> Retour au Portfolio
+</Link>
           </div>
           <h1 className="text-5xl font-bold text-primary mb-4">Projet de Simulation de Phishing Éducatif</h1>
           <p className="text-2xl text-accent mb-6">Campagne de Sensibilisation aux Techniques d'Ingénierie Sociale</p>
