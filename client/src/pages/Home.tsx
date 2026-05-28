@@ -223,6 +223,14 @@ export default function Home() {
                 image="https://d2xsxph8kpxj0f.cloudfront.net/310519663382628638/WmRojeLpchBAbCWdyVAPFM/hero-cybersecurity-dvbfngCY6SAPXZ4u5h4RAC.webp"
               />
             </a>
+            <a href="/projects/active-directory-labs" className="cursor-pointer">
+              <ProjectCard
+                title="Active Directory Labs"
+                description="Reconnaissance Active Directory complète, énumération des services, analyse des protocoles NTLM et Kerberos, password spraying et exploitation des vulnérabilités d'authentification."
+                tags={["Active Directory", "NTLM", "Kerberos", "Reconnaissance", "SECS1028"]}
+                image="https://d2xsxph8kpxj0f.cloudfront.net/310519663382628638/WmRojeLpchBAbCWdyVAPFM/hero-cybersecurity-dvbfngCY6SAPXZ4u5h4RAC.webp"
+              />
+            </a>
           </div>
         </div>
       </section>
