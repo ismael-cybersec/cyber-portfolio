@@ -45,7 +45,7 @@ export default function Home() {
       titre: "Stage - Laboratoire de Réseautique",
       description: "6 semaines de stage intensif en laboratoire de réseautique couvrant la mise en place complète d'une infrastructure réseau professionnelle avec câblage, configuration VLAN, DHCP, NAT et tests complets.",
       tags: ["Réseautique", "Cisco", "VLAN", "DHCP", "NAT", "Infrastructure"],
-      image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663382628638/WmRojeLpchBAbCWdyVAPFM/stage-laboratory-SadS4XLTs4qP8S3GJUYfcV.webp",
+      image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663382628638/WmRojeLpchBAbCWdyVAPFM/stage-lab-network-38RRxU2KENqN8uZTXXNRBn.webp",
       descriptionComplete: "Stage professionnel de 6 semaines au Collège communautaire du Nouveau-Brunswick. Mise en place complète d'une infrastructure réseau : inventaire, câblage, passage des câbles, plan d'adressage VLAN, configuration des serveurs, tests de connectivité et validation finale. Apprentissage pratique de technologies Cisco, gestion de racks et équipements réseau professionnels.",
     },
     {
