@@ -1,4 +1,6 @@
+import { Badge } from "@/components/ui/badge";
 import { ArrowLeft } from "lucide-react";
+import { Link } from "wouter";
 import { Navigation } from "@/components/Navigation";
 import { Footer } from "@/components/Footer";
 
@@ -8,10 +10,9 @@ export default function ProjectActiveDirectoryLabs() {
       <Navigation onContactClick={() => window.location.href = "#contact"} />
 
       <div className="container py-20">
-        <a href="/" className="inline-flex items-center gap-2 text-accent hover:text-accent/80 mb-8">
-          <ArrowLeft size={20} />
-          Retour au portfolio
-        </a>
+        <Link href="/" className="text-accent hover:text-accent/80 transition-colors flex items-center gap-2">
+  <ArrowLeft className="w-5 h-5" /> Retour au Portfolio
+</Link>
 
         <article className="max-w-4xl mx-auto">
           <h1 className="text-5xl font-bold text-primary mb-4">Active Directory Labs - Reconnaissance & Authentification</h1>
