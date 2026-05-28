@@ -1,7 +1,8 @@
 import { Toaster } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import NotFound from "@/pages/NotFound";
-import { Route, Router, Switch } from "wouter";
+import { useEffect } from "react";
+import { Route, Router, Switch, useLocation } from "wouter";
 import { useHashLocation } from "wouter/use-hash-location";
 import ErrorBoundary from "./components/ErrorBoundary";
 import { ThemeProvider } from "./contexts/ThemeContext";
@@ -13,9 +14,18 @@ import ProjectPhishing from "./pages/ProjectPhishing";
 import ProjectActiveDirectoryLabs from "./pages/ProjectActiveDirectoryLabs";
 import ProjectYodeck from "./pages/ProjectYodeck";
 
+function ScrollToTop() {
+  const [location] = useLocation();
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [location]);
+  return null;
+}
+
 function AppRouter() {
   return (
     <Router hook={useHashLocation}>
+      <ScrollToTop />
       <Switch>
         <Route path="/" component={Home} />
         <Route path="/projects/stage" component={ProjectStage} />
