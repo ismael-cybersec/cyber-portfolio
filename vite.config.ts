@@ -206,7 +206,7 @@ function vitePluginStorageProxy(): Plugin {
 const plugins = [react(), tailwindcss(), jsxLocPlugin(), vitePluginManusRuntime(), vitePluginManusDebugCollector(), vitePluginStorageProxy()];
 
 export default defineConfig({
-  base: '/cyber-portfolio/',
+  base: process.env.NODE_ENV === 'production' ? '/cyber-portfolio/' : '/',
   plugins,
   resolve: {
     alias: {
