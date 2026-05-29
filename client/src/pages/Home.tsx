@@ -1,6 +1,6 @@
 import { Badge } from "@/components/ui/badge";
 import { Card } from "@/components/ui/card";
-import { ArrowRight, Github, Mail, MapPin, Phone, Linkedin, Send } from "lucide-react";
+import { ArrowRight, Github, Mail, Linkedin, Send } from "lucide-react";
 import { Link } from "wouter";
 import { useState } from "react";
 import { Navigation } from "@/components/Navigation";
@@ -29,13 +29,10 @@ function ContactForm() {
     e.preventDefault();
     setIsSubmitting(true);
     setSubmitStatus("idle");
-
     try {
       const response = await fetch("https://formspree.io/f/xredjoda", {
         method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
+        headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
           name: formData.name,
           email: formData.email,
@@ -45,7 +42,6 @@ function ContactForm() {
           _replyto: formData.email,
         }),
       });
-
       if (response.ok) {
         setSubmitStatus("success");
         setFormData({ name: "", email: "", subject: "", message: "" });
@@ -53,7 +49,7 @@ function ContactForm() {
       } else {
         setSubmitStatus("error");
       }
-    } catch (error) {
+    } catch {
       setSubmitStatus("error");
     } finally {
       setIsSubmitting(false);
@@ -65,81 +61,38 @@ function ContactForm() {
       <form onSubmit={handleSubmit} className="space-y-6">
         <div className="grid md:grid-cols-2 gap-6">
           <div>
-            <label htmlFor="name" className="block text-sm font-medium text-foreground mb-2">
-              Nom
-            </label>
-            <input
-              type="text"
-              id="name"
-              name="name"
-              value={formData.name}
-              onChange={handleChange}
-              required
+            <label htmlFor="name" className="block text-sm font-medium text-foreground mb-2">Nom</label>
+            <input type="text" id="name" name="name" value={formData.name} onChange={handleChange} required
               className="w-full px-4 py-2 bg-background border border-border rounded-lg text-foreground placeholder-foreground/40 focus:outline-none focus:ring-2 focus:ring-accent"
-              placeholder="Votre nom"
-            />
+              placeholder="Votre nom" />
           </div>
           <div>
-            <label htmlFor="email" className="block text-sm font-medium text-foreground mb-2">
-              Email
-            </label>
-            <input
-              type="email"
-              id="email"
-              name="email"
-              value={formData.email}
-              onChange={handleChange}
-              required
+            <label htmlFor="email" className="block text-sm font-medium text-foreground mb-2">Email</label>
+            <input type="email" id="email" name="email" value={formData.email} onChange={handleChange} required
               className="w-full px-4 py-2 bg-background border border-border rounded-lg text-foreground placeholder-foreground/40 focus:outline-none focus:ring-2 focus:ring-accent"
-              placeholder="votre.email@exemple.com"
-            />
+              placeholder="votre.email@exemple.com" />
           </div>
         </div>
         <div>
-          <label htmlFor="subject" className="block text-sm font-medium text-foreground mb-2">
-            Sujet
-          </label>
-          <input
-            type="text"
-            id="subject"
-            name="subject"
-            value={formData.subject}
-            onChange={handleChange}
-            required
+          <label htmlFor="subject" className="block text-sm font-medium text-foreground mb-2">Sujet</label>
+          <input type="text" id="subject" name="subject" value={formData.subject} onChange={handleChange} required
             className="w-full px-4 py-2 bg-background border border-border rounded-lg text-foreground placeholder-foreground/40 focus:outline-none focus:ring-2 focus:ring-accent"
-            placeholder="Sujet de votre message"
-          />
+            placeholder="Sujet de votre message" />
         </div>
         <div>
-          <label htmlFor="message" className="block text-sm font-medium text-foreground mb-2">
-            Message
-          </label>
-          <textarea
-            id="message"
-            name="message"
-            value={formData.message}
-            onChange={handleChange}
-            required
-            rows={5}
+          <label htmlFor="message" className="block text-sm font-medium text-foreground mb-2">Message</label>
+          <textarea id="message" name="message" value={formData.message} onChange={handleChange} required rows={5}
             className="w-full px-4 py-2 bg-background border border-border rounded-lg text-foreground placeholder-foreground/40 focus:outline-none focus:ring-2 focus:ring-accent resize-none"
-            placeholder="Votre message..."
-          />
+            placeholder="Votre message..." />
         </div>
         <div className="flex items-center gap-4">
-          <button
-            type="submit"
-            disabled={isSubmitting}
-            className="inline-flex items-center justify-center px-6 py-3 bg-accent text-background font-semibold rounded-lg hover:bg-accent/90 transition-colors duration-300 disabled:opacity-50 disabled:cursor-not-allowed"
-          >
+          <button type="submit" disabled={isSubmitting}
+            className="inline-flex items-center justify-center px-6 py-3 bg-accent text-background font-semibold rounded-lg hover:bg-accent/90 transition-colors duration-300 disabled:opacity-50 disabled:cursor-not-allowed">
             <Send className="h-5 w-5 mr-2" />
             {isSubmitting ? "Envoi en cours..." : "Envoyer"}
           </button>
-          {submitStatus === "success" && (
-            <p className="text-green-500 font-medium">✓ Message envoyé avec succès!</p>
-          )}
-          {submitStatus === "error" && (
-            <p className="text-red-500 font-medium">✗ Erreur lors de l'envoi. Veuillez réessayer.</p>
-          )}
+          {submitStatus === "success" && <p className="text-green-500 font-medium">✓ Message envoyé avec succès!</p>}
+          {submitStatus === "error" && <p className="text-red-500 font-medium">✗ Erreur lors de l'envoi. Veuillez réessayer.</p>}
         </div>
       </form>
     </Card>
@@ -149,22 +102,10 @@ function ContactForm() {
 export default function Home() {
 
   const competences = [
-    {
-      category: "Support Informatique",
-      items: ["Dépannage matériel et logiciel", "Diagnostic réseau", "Assistance technique", "Documentation", "Support utilisateur", "Gestion des tickets"],
-    },
-    {
-      category: "Réseaux",
-      items: ["TCP/IP", "VLAN", "DHCP", "NAT", "Cisco", "Ubiquiti", "WatchGuard", "Wi-Fi", "SSH", "ACL"],
-    },
-    {
-      category: "Virtualisation & Systèmes",
-      items: ["Proxmox VE", "VMware", "VirtualBox", "Windows Server", "Active Directory", "Clustering", "NFS", "RAID"],
-    },
-    {
-      category: "Cybersécurité",
-      items: ["Wireshark", "Wazuh", "Snort", "Kali Linux", "SIEM", "Pare-feux", "Sécurité réseau", "Surveillance réseau"],
-    },
+    { category: "Support Informatique", items: ["Dépannage matériel et logiciel", "Diagnostic réseau", "Assistance technique", "Documentation", "Support utilisateur", "Gestion des tickets"] },
+    { category: "Réseaux", items: ["TCP/IP", "VLAN", "DHCP", "NAT", "Cisco", "Ubiquiti", "WatchGuard", "Wi-Fi", "SSH", "ACL"] },
+    { category: "Virtualisation & Systèmes", items: ["Proxmox VE", "VMware", "VirtualBox", "Windows Server", "Active Directory", "Clustering", "NFS", "RAID"] },
+    { category: "Cybersécurité", items: ["Wireshark", "Wazuh", "Snort", "Kali Linux", "SIEM", "Pare-feux", "Sécurité réseau", "Surveillance réseau"] },
   ];
 
   const certifications = [
@@ -188,7 +129,6 @@ export default function Home() {
           />
           <div className="absolute inset-0 bg-gradient-to-r from-background via-background/80 to-background/60"></div>
         </div>
-
         <div className="container relative z-10">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="animate-fade-in-up">
@@ -212,11 +152,11 @@ export default function Home() {
                 </button>
               </div>
               <div className="flex gap-6">
-                <a href="#" className="flex items-center gap-2 text-foreground/70 hover:text-accent transition-colors">
+                <a href="https://github.com/ismael-cybersec" className="flex items-center gap-2 text-foreground/70 hover:text-accent transition-colors">
                   <Github className="h-5 w-5" />
                   <span>GitHub</span>
                 </a>
-                <a href="mailto:ismael@example.com" className="flex items-center gap-2 text-foreground/70 hover:text-accent transition-colors">
+                <a href="mailto:babyismael03@gmail.com" className="flex items-center gap-2 text-foreground/70 hover:text-accent transition-colors">
                   <Mail className="h-5 w-5" />
                   <span>Email</span>
                 </a>
@@ -226,15 +166,14 @@ export default function Home() {
                 </a>
               </div>
             </div>
-            <div className="relative w-80 h-80 mx-auto">
-  <div className="absolute inset-0 rounded-full border-2 border-accent/30"></div>
-  <div className="absolute inset-4 rounded-full border border-accent/20"></div>
-  <img
-    src="/cyber-portfolio/moi.png"
-    alt="Ismael Baby"
-    className="w-full h-full object-cover object-top rounded-full"
-  />
-</div>
+            <div className="relative animate-fade-in">
+              <div className="relative w-80 h-80 mx-auto">
+                <img
+                  src="/cyber-portfolio/moi.png"
+                  alt="Ismael Baby"
+                  className="w-full h-full object-cover object-top rounded-full shadow-2xl shadow-accent/20"
+                />
+              </div>
             </div>
           </div>
         </div>
