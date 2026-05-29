@@ -226,16 +226,15 @@ export default function Home() {
                 </a>
               </div>
             </div>
-            <div className="relative animate-fade-in">
-              <div className="relative w-80 h-80 mx-auto">
-                <div className="absolute inset-0 rounded-full border-2 border-accent/30"></div>
-                <div className="absolute inset-4 rounded-full border border-accent/20"></div>
-                <img
-                  src="/cyber-portfolio/moi.png"
-                  alt="Ismael Baby"
-                  className="w-full h-full object-cover object-top rounded-full"
-                />
-              </div>
+            <div className="relative w-80 h-80 mx-auto">
+  <div className="absolute inset-0 rounded-full border-2 border-accent/30"></div>
+  <div className="absolute inset-4 rounded-full border border-accent/20"></div>
+  <img
+    src="/cyber-portfolio/moi.png"
+    alt="Ismael Baby"
+    className="w-full h-full object-cover object-top rounded-full"
+  />
+</div>
             </div>
           </div>
         </div>
