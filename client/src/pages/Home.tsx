@@ -1,13 +1,150 @@
 import { Badge } from "@/components/ui/badge";
 import { Card } from "@/components/ui/card";
-import { ArrowRight, Github, Mail, MapPin, Phone, Linkedin } from "lucide-react";
+import { ArrowRight, Github, Mail, MapPin, Phone, Linkedin, Send } from "lucide-react";
 import { Link } from "wouter";
+import { useState } from "react";
 import { Navigation } from "@/components/Navigation";
 import { Footer } from "@/components/Footer";
 import { SectionHeader } from "@/components/SectionHeader";
 import { SkillCard } from "@/components/SkillCard";
 import { ProjectCard } from "@/components/ProjectCard";
 import { CertificationCard } from "@/components/CertificationCard";
+
+function ContactForm() {
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    subject: "",
+    message: "",
+  });
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submitStatus, setSubmitStatus] = useState<"idle" | "success" | "error">("idle");
+
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+    const { name, value } = e.target;
+    setFormData((prev) => ({ ...prev, [name]: value }));
+  };
+
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    setIsSubmitting(true);
+    setSubmitStatus("idle");
+
+    try {
+      const response = await fetch("https://formspree.io/f/xredjoda", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          name: formData.name,
+          email: formData.email,
+          subject: formData.subject,
+          message: formData.message,
+          _subject: `Nouveau message de ${formData.name}`,
+          _replyto: formData.email,
+        }),
+      });
+
+      if (response.ok) {
+        setSubmitStatus("success");
+        setFormData({ name: "", email: "", subject: "", message: "" });
+        setTimeout(() => setSubmitStatus("idle"), 5000);
+      } else {
+        setSubmitStatus("error");
+      }
+    } catch (error) {
+      setSubmitStatus("error");
+    } finally {
+      setIsSubmitting(false);
+    }
+  };
+
+  return (
+    <Card className="card-elegant p-8 bg-card/50">
+      <form onSubmit={handleSubmit} className="space-y-6">
+        <div className="grid md:grid-cols-2 gap-6">
+          <div>
+            <label htmlFor="name" className="block text-sm font-medium text-foreground mb-2">
+              Nom
+            </label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              value={formData.name}
+              onChange={handleChange}
+              required
+              className="w-full px-4 py-2 bg-background border border-border rounded-lg text-foreground placeholder-foreground/40 focus:outline-none focus:ring-2 focus:ring-accent"
+              placeholder="Votre nom"
+            />
+          </div>
+          <div>
+            <label htmlFor="email" className="block text-sm font-medium text-foreground mb-2">
+              Email
+            </label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              value={formData.email}
+              onChange={handleChange}
+              required
+              className="w-full px-4 py-2 bg-background border border-border rounded-lg text-foreground placeholder-foreground/40 focus:outline-none focus:ring-2 focus:ring-accent"
+              placeholder="votre.email@exemple.com"
+            />
+          </div>
+        </div>
+        <div>
+          <label htmlFor="subject" className="block text-sm font-medium text-foreground mb-2">
+            Sujet
+          </label>
+          <input
+            type="text"
+            id="subject"
+            name="subject"
+            value={formData.subject}
+            onChange={handleChange}
+            required
+            className="w-full px-4 py-2 bg-background border border-border rounded-lg text-foreground placeholder-foreground/40 focus:outline-none focus:ring-2 focus:ring-accent"
+            placeholder="Sujet de votre message"
+          />
+        </div>
+        <div>
+          <label htmlFor="message" className="block text-sm font-medium text-foreground mb-2">
+            Message
+          </label>
+          <textarea
+            id="message"
+            name="message"
+            value={formData.message}
+            onChange={handleChange}
+            required
+            rows={5}
+            className="w-full px-4 py-2 bg-background border border-border rounded-lg text-foreground placeholder-foreground/40 focus:outline-none focus:ring-2 focus:ring-accent resize-none"
+            placeholder="Votre message..."
+          />
+        </div>
+        <div className="flex items-center gap-4">
+          <button
+            type="submit"
+            disabled={isSubmitting}
+            className="inline-flex items-center justify-center px-6 py-3 bg-accent text-background font-semibold rounded-lg hover:bg-accent/90 transition-colors duration-300 disabled:opacity-50 disabled:cursor-not-allowed"
+          >
+            <Send className="h-5 w-5 mr-2" />
+            {isSubmitting ? "Envoi en cours..." : "Envoyer"}
+          </button>
+          {submitStatus === "success" && (
+            <p className="text-green-500 font-medium">✓ Message envoyé avec succès!</p>
+          )}
+          {submitStatus === "error" && (
+            <p className="text-red-500 font-medium">✗ Erreur lors de l'envoi. Veuillez réessayer.</p>
+          )}
+        </div>
+      </form>
+    </Card>
+  );
+}
 
 export default function Home() {
 
@@ -243,30 +380,8 @@ export default function Home() {
       {/* Contact Section */}
       <section id="contact" className="py-20 md:py-32">
         <div className="container max-w-2xl">
-          <SectionHeader title="Coordonnées" />
-          <div className="space-y-4">
-            <div className="flex items-center gap-4 p-4 bg-secondary/20 rounded-lg border border-border">
-              <Phone className="h-6 w-6 text-accent flex-shrink-0" />
-              <div>
-                <p className="text-sm text-foreground/60">Téléphone</p>
-                <p className="text-foreground font-semibold">+1 (506) 555-0123</p>
-              </div>
-            </div>
-            <div className="flex items-center gap-4 p-4 bg-secondary/20 rounded-lg border border-border">
-              <Mail className="h-6 w-6 text-accent flex-shrink-0" />
-              <div>
-                <p className="text-sm text-foreground/60">Email</p>
-                <p className="text-foreground font-semibold">ismael.baby@example.com</p>
-              </div>
-            </div>
-            <div className="flex items-center gap-4 p-4 bg-secondary/20 rounded-lg border border-border">
-              <MapPin className="h-6 w-6 text-accent flex-shrink-0" />
-              <div>
-                <p className="text-sm text-foreground/60">Localisation</p>
-                <p className="text-foreground font-semibold">Moncton, Nouveau-Brunswick, Canada</p>
-              </div>
-            </div>
-          </div>
+          <SectionHeader title="Me Contacter" />
+          <ContactForm />
         </div>
       </section>
 
