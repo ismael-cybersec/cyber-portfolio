@@ -231,7 +231,7 @@ export default function Home() {
                 <div className="absolute inset-0 rounded-full border-2 border-accent/30"></div>
                 <div className="absolute inset-4 rounded-full border border-accent/20"></div>
                 <img
-                  src="/manus-storage/image_a1b2c3d4.png"
+                  src="/cyber-portfolio/moi.jpg"
                   alt="Ismael Baby"
                   className="w-full h-full object-cover rounded-full"
                 />
