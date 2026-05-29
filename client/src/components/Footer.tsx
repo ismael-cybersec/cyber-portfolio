@@ -22,8 +22,6 @@ export function Footer() {
           <div>
             <h4 className="font-semibold text-primary mb-4">Contact</h4>
             <ul className="space-y-2 text-sm text-foreground/60">
-              <li>Email: babyismael03@gmail.com</li>
-              <li>Téléphone: (506) 962-1855</li>
               <li>Localisation: Moncton, NB</li>
             </ul>
           </div>
