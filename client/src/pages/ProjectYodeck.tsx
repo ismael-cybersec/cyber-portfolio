@@ -30,7 +30,8 @@ export default function ProjectYodeck() {
               Le Projet Yodeck représente une implémentation complète d'un système d'affichage dynamique (Digital Signage) utilisant la plateforme Yodeck sur un Raspberry Pi 4. Ce projet, réalisé en collaboration avec Joel Allain, Christelle Zeufack et Adi Habachi sous la supervision de Christian Gilles Kalla au Collège Communautaire du Nouveau-Brunswick, démontre l'intégration de technologies embarquées, de virtualisation et de gestion centralisée de contenu pour créer une solution d'affichage moderne et flexible.
             </p>
           </div>
-          <img src="/cyber-portfolio/1.png" alt="Admission au programme" className="w-full rounded-lg border border-accent/30 mt-6" />
+          <img src="/cyber-portfolio/0
+            .png" alt="Admission au programme" className="w-full rounded-lg border border-accent/30 mt-6" />
         </div>
 
         <section className="mb-12">
