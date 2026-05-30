@@ -30,8 +30,8 @@ export default function ProjectYodeck() {
               Le Projet Yodeck représente une implémentation complète d'un système d'affichage dynamique (Digital Signage) utilisant la plateforme Yodeck sur un Raspberry Pi 4. Ce projet, réalisé en collaboration avec Joel Allain, Christelle Zeufack et Adi Habachi sous la supervision de Christian Gilles Kalla au Collège Communautaire du Nouveau-Brunswick, démontre l'intégration de technologies embarquées, de virtualisation et de gestion centralisée de contenu pour créer une solution d'affichage moderne et flexible.
             </p>
           </div>
-          <img src="/cyber-portfolio/0
-            .png" alt="Admission au programme" className="w-full rounded-lg border border-accent/30 mt-6" />
+          <img src="/cyber-portfolio/1
+            .png" -accent/30 mt-6" />
         </div>
 
         <section className="mb-12">
@@ -47,8 +47,7 @@ export default function ProjectYodeck() {
               Le système Yodeck offre plusieurs avantages significatifs par rapport aux solutions d'affichage traditionnelles : gestion centralisée du contenu depuis n'importe quel endroit, support d'une large gamme de formats, et scalabilité exceptionnelle permettant de gérer des centaines d'écrans depuis une seule interface.
             </p>
           </div>
-          <img src="/cyber-portfolio/Screenshot_2026-05-30_134607.png" alt="Tableau de bord Yodeck" className="w-full rounded-lg border border-accent/30 mt-6" />
-        </section>
+        
 
         <section className="mb-12">
           <h2 className="text-3xl font-bold mb-6 text-accent">2. Contexte et Motivation du Projet</h2>
@@ -144,14 +143,14 @@ export default function ProjectYodeck() {
             <p className="text-base leading-relaxed text-foreground/90">
               Pour activer le Raspberry Pi en tant que client Yodeck, l'interface de configuration affichait un code d'enregistrement unique pour cet appareil. Nous avons utilisé ce code pour enregistrer l'appareil auprès du compte Yodeck via le site web. Une fois enregistré, l'appareil était lié au compte et pouvait recevoir des mises à jour de contenu.
             </p>
-            <img src="/cyber-portfolio/Screenshot_2026-05-30_134559.png" alt="Code d'enregistrement Yodeck sur l'écran" className="w-full rounded-lg border border-accent/30 my-4" />
+            <img src="/cyber-portfolio/3.png" alt="Code d'enregistrement Yodeck sur l'écran" className="w-full rounded-lg border border-accent/30 my-4" />
 
             <h3 className="text-2xl font-semibold text-accent/80 mt-6">6.4 Affichage du Contenu Dynamique</h3>
             <p className="text-base leading-relaxed text-foreground/90">
               Une fois l'appareil enregistré et connecté, il était prêt à afficher du contenu dynamique. Nous avons configuré plusieurs types de contenu depuis le tableau de bord Yodeck, notamment la météo en temps réel pour Dieppe, NB et un flux RSS personnalisé.
             </p>
-            <img src="/cyber-portfolio/Screenshot_2026-05-30_134750.png" alt="Configuration de l'application météo Yodeck" className="w-full rounded-lg border border-accent/30 my-4" />
-            <img src="/cyber-portfolio/Screenshot_2026-05-30_134759.png" alt="Configuration du flux RSS personnalisé" className="w-full rounded-lg border border-accent/30 my-4" />
+            <img src="/cyber-portfolio/4.png" alt="Configuration de l'application météo Yodeck" className="w-full rounded-lg border border-accent/30 my-4" />
+            <img src="/cyber-portfolio/5.png" alt="Configuration du flux RSS personnalisé" className="w-full rounded-lg border border-accent/30 my-4" />
           </div>
         </section>
 
@@ -164,7 +163,7 @@ export default function ProjectYodeck() {
             <p className="text-base leading-relaxed text-foreground/90">
               Les résultats de validation ont confirmé que tous les objectifs du projet avaient été atteints. Le système fonctionnait correctement en environnement virtuel et en déploiement physique. La connectivité réseau était stable, et le contenu s'affichait correctement sur l'écran.
             </p>
-            <img src="/cyber-portfolio/Screenshot_2026-05-30_134815.png" alt="Affichage final : météo et actualités en temps réel" className="w-full rounded-lg border border-accent/30 my-4" />
+            <img src="/cyber-portfolio/6.png" alt="Affichage final : météo et actualités en temps réel" className="w-full rounded-lg border border-accent/30 my-4" />
             <p className="text-base leading-relaxed text-foreground/90">
               L'affichage final montrait en temps réel la météo de Dieppe, NB (7°C, nuageux) avec les prévisions sur plusieurs jours, l'heure actuelle, et les dernières actualités via le flux RSS. Ce résultat démontre parfaitement la puissance et la flexibilité de la solution Yodeck.
             </p>
