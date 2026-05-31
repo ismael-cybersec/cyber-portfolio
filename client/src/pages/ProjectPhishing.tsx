@@ -185,7 +185,7 @@ export default function ProjectPhishing() {
                 institutionnelles, lien malveillant dissimulé.
               </p>
               <img
-                src="/cyber-portfolio/20.png"
+                src="/cyber-portfolio/22.png"
                 alt="Courriel de phishing - Problème avec Ardoise"
                 className="w-full rounded-lg border border-accent/30"
               />
