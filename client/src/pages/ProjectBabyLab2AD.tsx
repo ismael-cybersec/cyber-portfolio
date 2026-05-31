@@ -15,7 +15,7 @@ export default function ProjectBabyLab2AD() {
               <ArrowLeft className="w-5 h-5" /> Retour au Portfolio
             </a>
           </div>
-          <h1 className="text-5xl font-bold text-primary mb-4">Baby Lab 2 - Active Directory Avancé</h1>
+          <h1 className="text-5xl font-bold text-foreground mb-4">Baby Lab 2 - Active Directory Avancé</h1>
           <p className="text-2xl text-accent mb-6">Gestion Avancée d'Active Directory et Sécurité</p>
           <div className="flex flex-wrap gap-2 mb-6">
             <Badge className="bg-accent/20 text-accent border-accent/30">Active Directory</Badge>
@@ -30,13 +30,13 @@ export default function ProjectBabyLab2AD() {
       <section className="py-20">
         <div className="container max-w-4xl mx-auto">
           <div className="prose prose-invert max-w-none">
-            <h2 className="text-3xl font-bold text-primary mb-6">Vue d'Ensemble du Laboratoire</h2>
+            <h2 className="text-3xl font-bold text-foreground mb-6">Vue d'Ensemble du Laboratoire</h2>
             
             <p className="text-foreground/80 leading-relaxed mb-6">
               Le laboratoire Baby Lab 2 - Active Directory Avancé représente une étude approfondie des aspects avancés d'Active Directory, y compris la réplication, la sécurité avancée, la gestion des sites, et la récupération après sinistre. Ce laboratoire a fourni une expérience pratique dans la conception d'une infrastructure Active Directory hautement disponible et sécurisée. Le laboratoire a couvert les concepts avancés d'Active Directory et les meilleures pratiques en administration d'AD à grande échelle. Cette expérience a été fondamentale pour développer les compétences en gestion d'une infrastructure Active Directory complexe.
             </p>
 
-            <h3 className="text-2xl font-bold text-primary mb-4 mt-8">Objectifs du Laboratoire</h3>
+            <h3 className="text-2xl font-bold text-foreground mb-4 mt-8">Objectifs du Laboratoire</h3>
             <p className="text-foreground/80 leading-relaxed mb-4">
               Les objectifs principaux du laboratoire Baby Lab 2 - AD Avancé incluaient :
             </p>
@@ -51,7 +51,7 @@ export default function ProjectBabyLab2AD() {
               <li>Dépanner les problèmes complexes d'Active Directory</li>
             </ul>
 
-            <h3 className="text-2xl font-bold text-primary mb-4 mt-8">Réplication d'Active Directory</h3>
+            <h3 className="text-2xl font-bold text-foreground mb-4 mt-8">Réplication d'Active Directory</h3>
             <p className="text-foreground/80 leading-relaxed mb-4">
               Le laboratoire a couvert en détail le mécanisme de réplication d'Active Directory, qui est essentiel pour maintenir la cohérence des données dans une infrastructure Active Directory distribuée :
             </p>
@@ -68,7 +68,7 @@ export default function ProjectBabyLab2AD() {
               <strong>Topologie de Réplication :</strong> La topologie de réplication définit comment les contrôleurs de domaine répliquent les données entre eux. Le service KCC (Knowledge Consistency Checker) génère automatiquement la topologie de réplication pour assurer la convergence des données. La topologie peut être visualisée et modifiée à l'aide des outils d'administration d'Active Directory.
             </p>
 
-            <h3 className="text-2xl font-bold text-primary mb-4 mt-8">Gestion des Sites et des Liaisons de Sites</h3>
+            <h3 className="text-2xl font-bold text-foreground mb-4 mt-8">Gestion des Sites et des Liaisons de Sites</h3>
             <p className="text-foreground/80 leading-relaxed mb-4">
               Le laboratoire a impliqué la configuration des sites et des liaisons de sites pour optimiser la réplication et l'authentification dans une infrastructure Active Directory distribuée :
             </p>
@@ -85,7 +85,7 @@ export default function ProjectBabyLab2AD() {
               <strong>Optimisation de la Réplication :</strong> La réplication a été optimisée en configurant les horaires de réplication, les coûts de liaisons, et les protocoles de réplication. L'optimisation a assuré que la réplication se produit efficacement sans surcharger les liaisons réseau.
             </p>
 
-            <h3 className="text-2xl font-bold text-primary mb-4 mt-8">Sécurité Avancée d'Active Directory</h3>
+            <h3 className="text-2xl font-bold text-foreground mb-4 mt-8">Sécurité Avancée d'Active Directory</h3>
             <p className="text-foreground/80 leading-relaxed mb-4">
               Le laboratoire a couvert les mesures de sécurité avancées pour protéger Active Directory contre les menaces de sécurité :
             </p>
@@ -102,7 +102,7 @@ export default function ProjectBabyLab2AD() {
               <strong>Audit de Sécurité :</strong> L'audit de sécurité a été configuré pour enregistrer les événements importants d'Active Directory. Les événements auditées incluaient les modifications de schéma, les modifications d'administrateurs, et les accès aux objets sensibles. Les journaux d'audit ont été examinés régulièrement pour identifier les activités suspectes.
             </p>
 
-            <h3 className="text-2xl font-bold text-primary mb-4 mt-8">Politiques de Groupe Avancées</h3>
+            <h3 className="text-2xl font-bold text-foreground mb-4 mt-8">Politiques de Groupe Avancées</h3>
             <p className="text-foreground/80 leading-relaxed mb-4">
               Le laboratoire a couvert les politiques de groupe avancées pour appliquer des configurations complexes aux utilisateurs et aux ordinateurs :
             </p>
@@ -119,7 +119,7 @@ export default function ProjectBabyLab2AD() {
               <strong>Ordre d'Application des GPO :</strong> L'ordre d'application des GPO a été configuré pour assurer que les politiques sont appliquées dans l'ordre correct. Les politiques appliquées en dernier ont la priorité sur les politiques appliquées antérieurement.
             </p>
 
-            <h3 className="text-2xl font-bold text-primary mb-4 mt-8">Haute Disponibilité et Récupération après Sinistre</h3>
+            <h3 className="text-2xl font-bold text-foreground mb-4 mt-8">Haute Disponibilité et Récupération après Sinistre</h3>
             <p className="text-foreground/80 leading-relaxed mb-4">
               Le laboratoire a couvert la planification et la mise en œuvre de la haute disponibilité et de la récupération après sinistre pour Active Directory :
             </p>
@@ -136,7 +136,7 @@ export default function ProjectBabyLab2AD() {
               <strong>Plan de Récupération après Sinistre :</strong> Un plan de récupération après sinistre a été développé pour guider la récupération d'Active Directory en cas de sinistre. Le plan incluait les étapes de récupération, les responsabilités, et les délais de récupération cibles.
             </p>
 
-            <h3 className="text-2xl font-bold text-primary mb-4 mt-8">Apprentissages et Compétences Développées</h3>
+            <h3 className="text-2xl font-bold text-foreground mb-4 mt-8">Apprentissages et Compétences Développées</h3>
             <p className="text-foreground/80 leading-relaxed mb-4">
               Le laboratoire a permis de développer les compétences avancées en administration d'Active Directory :
             </p>
@@ -151,7 +151,7 @@ export default function ProjectBabyLab2AD() {
               <li>Capacité à dépanner les problèmes complexes d'Active Directory</li>
             </ul>
 
-            <h3 className="text-2xl font-bold text-primary mb-4 mt-8">Conclusion</h3>
+            <h3 className="text-2xl font-bold text-foreground mb-4 mt-8">Conclusion</h3>
             <p className="text-foreground/80 leading-relaxed mb-4">
               Le laboratoire Baby Lab 2 - Active Directory Avancé a fourni une formation complète dans les aspects avancés d'Active Directory. Cette expérience constitue une base solide pour des rôles d'administrateur système senior ou d'architecte d'infrastructure. Les compétences développées lors de ce laboratoire sont essentielles pour gérer une infrastructure Active Directory complexe et hautement disponible et sont hautement demandées dans l'industrie informatique.
             </p>

@@ -16,7 +16,7 @@ export default function ProjectVortexCore() {
               <ArrowLeft className="w-5 h-5" /> Retour au Portfolio
             </Link>
           </div>
-          <h1 className="text-5xl font-bold text-primary mb-4">VortexCore</h1>
+          <h1 className="text-5xl font-bold text-foreground mb-4">VortexCore</h1>
           <p className="text-2xl text-accent mb-6">Cluster Proxmox VE - Infrastructure Virtualisée Hautement Disponible</p>
           <div className="flex flex-wrap gap-2 mb-6">
             <Badge className="bg-accent/20 text-accent border-accent/30">Proxmox VE</Badge>
@@ -36,12 +36,12 @@ export default function ProjectVortexCore() {
         <div className="container max-w-4xl mx-auto">
           <div className="prose prose-invert max-w-none">
 
-            <h2 className="text-3xl font-bold text-primary mb-6">Vue d'Ensemble du Projet</h2>
+            <h2 className="text-3xl font-bold text-foreground mb-6">Vue d'Ensemble du Projet</h2>
             <p className="text-foreground/80 leading-relaxed mb-6">
               VortexCore est un projet d'infrastructure ambitieux qui démontre la conception et l'implémentation d'une architecture de virtualisation d'entreprise hautement disponible et performante. Le projet a été développé dans le contexte d'une compétition de cybersécurité (CYBER-CCNB 2026) et a remporté la 2e place avec un trophée d'argent, reconnaissant l'excellence technique et l'innovation apportées.
             </p>
 
-            <h3 className="text-2xl font-bold text-primary mb-4 mt-8">Contexte et Objectifs</h3>
+            <h3 className="text-2xl font-bold text-foreground mb-4 mt-8">Contexte et Objectifs</h3>
             <p className="text-foreground/80 leading-relaxed mb-4">
               L'objectif principal du projet VortexCore était de concevoir et de déployer une infrastructure de virtualisation robuste, scalable et hautement disponible capable de supporter les opérations critiques de plusieurs équipes virtuelles. Le cluster devait intégrer des technologies modernes de virtualisation, de stockage distribué et de gestion des ressources pour fournir une plateforme fiable aux équipes SOC, IAM et CyberRange.
             </p>
@@ -49,7 +49,7 @@ export default function ProjectVortexCore() {
               Les défis spécifiques à relever incluaient la conception d'une architecture capable de supporter plus de 50 machines virtuelles simultanément, la mise en place d'une haute disponibilité garantissant une disponibilité de 99.9%, et la résolution de problèmes complexes d'infrastructure en environnement de production.
             </p>
 
-            <h3 className="text-2xl font-bold text-primary mb-4 mt-8">Architecture Technique Détaillée</h3>
+            <h3 className="text-2xl font-bold text-foreground mb-4 mt-8">Architecture Technique Détaillée</h3>
             <p className="text-foreground/80 leading-relaxed mb-4">
               L'architecture de VortexCore repose sur un cluster Proxmox VE composé de 3 nœuds physiques interconnectés via une infrastructure réseau redondante. Chaque nœud est équipé de ressources matérielles robustes incluant des processeurs multi-cœurs haute performance (Intel Xeon Gold 6526Y — 64 cœurs), 251 GiB de RAM par nœud, et des connexions réseau redondantes pour assurer la continuité de service en cas de défaillance.
             </p>
@@ -60,7 +60,7 @@ export default function ProjectVortexCore() {
             <img src="/cyber-portfolio/20.png" alt="Topologie réseau du cluster VortexCore — Nodes 1, 2, 3 + UNAS Stockage" className="w-full rounded-lg border border-accent/30 my-6" />
           
 
-            <h3 className="text-2xl font-bold text-primary mb-4 mt-8">Stockage Distribué et RAID</h3>
+            <h3 className="text-2xl font-bold text-foreground mb-4 mt-8">Stockage Distribué et RAID</h3>
             <p className="text-foreground/80 leading-relaxed mb-4">
               Le système de stockage central utilise une baie UNAS Pro 8 configurée avec une stratégie RAID hybride. Les données critiques sont protégées par RAID 10 (mirroring + striping) pour les opérations transactionnelles. Le stockage archivistique utilise RAID 5 pour optimiser la capacité tout en maintenant une redondance adéquate.
             </p>
@@ -68,12 +68,12 @@ export default function ProjectVortexCore() {
               Le stockage NFS partagé (vortexops-NFS) permet à tous les nœuds du cluster d'accéder aux machines virtuelles et aux données de manière transparente, facilitant la migration en direct sans interruption de service.
             </p>
 
-            <h3 className="text-2xl font-bold text-primary mb-4 mt-8">Haute Disponibilité et Résilience</h3>
+            <h3 className="text-2xl font-bold text-foreground mb-4 mt-8">Haute Disponibilité et Résilience</h3>
             <p className="text-foreground/80 leading-relaxed mb-4">
               VortexCore intègre plusieurs mécanismes de haute disponibilité. Le clustering Proxmox VE permet la migration automatique des machines virtuelles en cas de défaillance d'un nœud. Lorsqu'un nœud défaille, le cluster détecte automatiquement la défaillance via les heartbeats Corosync et déclenche la migration des machines virtuelles vers les nœuds restants.
             </p>
 
-            <h3 className="text-2xl font-bold text-primary mb-4 mt-8">Équipes Virtuelles Supportées</h3>
+            <h3 className="text-2xl font-bold text-foreground mb-4 mt-8">Équipes Virtuelles Supportées</h3>
             <p className="text-foreground/80 leading-relaxed mb-4">
               L'infrastructure VortexCore supporte trois équipes virtuelles principales, chacune avec ses propres ressources isolées :
             </p>
@@ -86,7 +86,7 @@ export default function ProjectVortexCore() {
             </ul>
             <img src="/cyber-portfolio/19.png" alt="Liste complète des machines virtuelles par nœud avec leurs équipes" className="w-full rounded-lg border border-accent/30 my-6" />
            
-            <h3 className="text-2xl font-bold text-primary mb-4 mt-8">Défis Techniques Rencontrés et Solutions</h3>
+            <h3 className="text-2xl font-bold text-foreground mb-4 mt-8">Défis Techniques Rencontrés et Solutions</h3>
             <p className="text-foreground/80 leading-relaxed mb-4">
               <strong>1. Défaillance Matérielle et Récupération :</strong> Une défaillance matérielle sur l'un des nœuds a causé une perte de synchronisation du cluster. La solution a impliqué la reconfiguration complète du nœud, la réinstallation du système d'exploitation, et la resynchronisation des données via NFS.
             </p>
@@ -100,7 +100,7 @@ export default function ProjectVortexCore() {
               <strong>4. Erreurs APT et Dépendances :</strong> Des conflits de dépendances ont été résolus en identifiant les dépendances manquantes et en mettant à jour les sources de paquets dans l'ordre correct.
             </p>
 
-            <h3 className="text-2xl font-bold text-primary mb-4 mt-8">Performances et Résultats</h3>
+            <h3 className="text-2xl font-bold text-foreground mb-4 mt-8">Performances et Résultats</h3>
             <p className="text-foreground/80 leading-relaxed mb-4">
               L'infrastructure VortexCore démontre des performances exceptionnelles :
             </p>
@@ -114,7 +114,7 @@ export default function ProjectVortexCore() {
             </ul>
             <img src="/cyber-portfolio/18.png" alt="Statistiques en temps réel du node3-vortexcore — 64 CPUs, 251 GiB RAM" className="w-full rounded-lg border border-accent/30 my-6" />
 
-            <h3 className="text-2xl font-bold text-primary mb-4 mt-8">Sécurité et Conformité</h3>
+            <h3 className="text-2xl font-bold text-foreground mb-4 mt-8">Sécurité et Conformité</h3>
             <ul className="list-disc list-inside text-foreground/80 mb-4 space-y-2">
               <li>Contrôle d'accès basé sur les rôles (RBAC) pour Proxmox VE</li>
               <li>Authentification SSH avec clés cryptographiques</li>
@@ -123,7 +123,7 @@ export default function ProjectVortexCore() {
               <li>Isolation des équipes virtuelles via des réseaux virtuels séparés</li>
             </ul>
 
-            <h3 className="text-2xl font-bold text-primary mb-4 mt-8">Impact et Reconnaissance — CYBER-CCNB 2026</h3>
+            <h3 className="text-2xl font-bold text-foreground mb-4 mt-8">Impact et Reconnaissance — CYBER-CCNB 2026</h3>
             <p className="text-foreground/80 leading-relaxed mb-4">
               Le projet VortexCore a reçu une reconnaissance significative lors de la compétition CYBER-CCNB 2026. La 2e place avec un trophée d'argent valide l'excellence technique et l'innovation apportées.
             </p>
@@ -133,7 +133,7 @@ export default function ProjectVortexCore() {
             <img src="/cyber-portfolio/10.jpeg" alt="L'équipe VortexCore avec les trophées d'argent CYBER-CCNB 2026" className="w-full rounded-lg border border-accent/30 my-6" />
             <img src="/cyber-portfolio/12.jpeg" alt="Remise du certificat à Ismael Baby" className="w-full rounded-lg border border-accent/30 my-6" />
 
-            <h3 className="text-2xl font-bold text-primary mb-4 mt-8">Apprentissages et Compétences Développées</h3>
+            <h3 className="text-2xl font-bold text-foreground mb-4 mt-8">Apprentissages et Compétences Développées</h3>
             <ul className="list-disc list-inside text-foreground/80 mb-4 space-y-2">
               <li>Conception et implémentation d'architectures de virtualisation hautement disponibles</li>
               <li>Configuration avancée de Proxmox VE et du clustering avec Corosync et Pacemaker</li>
@@ -143,7 +143,7 @@ export default function ProjectVortexCore() {
               <li>Gestion de projets d'infrastructure complexes</li>
             </ul>
 
-            <h3 className="text-2xl font-bold text-primary mb-4 mt-8">Conclusion</h3>
+            <h3 className="text-2xl font-bold text-foreground mb-4 mt-8">Conclusion</h3>
             <p className="text-foreground/80 leading-relaxed mb-4">
               VortexCore représente une réalisation majeure en matière d'infrastructure de virtualisation d'entreprise. Le projet démontre la capacité à concevoir, implémenter et maintenir une infrastructure complexe et hautement disponible. La reconnaissance par la 2e place à CYBER-CCNB 2026 valide l'excellence technique et l'innovation apportées.
             </p>

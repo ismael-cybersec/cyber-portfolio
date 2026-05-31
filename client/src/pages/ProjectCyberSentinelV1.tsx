@@ -15,7 +15,7 @@ export default function ProjectCyberSentinelV1() {
               <ArrowLeft className="w-5 h-5" /> Retour au Portfolio
             </a>
           </div>
-          <h1 className="text-5xl font-bold text-primary mb-4">CyberSentinel v1 - Système de Sécurité Initial</h1>
+          <h1 className="text-5xl font-bold text-foreground mb-4">CyberSentinel v1 - Système de Sécurité Initial</h1>
           <p className="text-2xl text-accent mb-6">Prototype de Système de Détection et de Réponse aux Menaces</p>
           <div className="flex flex-wrap gap-2 mb-6">
             <Badge className="bg-accent/20 text-accent border-accent/30">Détection de Menaces</Badge>
@@ -29,13 +29,13 @@ export default function ProjectCyberSentinelV1() {
       <section className="py-20">
         <div className="container max-w-4xl mx-auto">
           <div className="prose prose-invert max-w-none">
-            <h2 className="text-3xl font-bold text-primary mb-6">Vue d'Ensemble du Projet</h2>
+            <h2 className="text-3xl font-bold text-foreground mb-6">Vue d'Ensemble du Projet</h2>
             
             <p className="text-foreground/80 leading-relaxed mb-6">
               CyberSentinel v1 représente le prototype initial d'un système de détection et de réponse aux menaces de sécurité. Ce projet a marqué le début du développement d'une solution de sécurité complète capable de détecter les menaces de sécurité, de générer des alertes, et de déclencher des réponses automatisées. Le projet v1 a fourni les fondations architecturales et les concepts de base qui ont été améliorés dans les versions ultérieures. Cette expérience a validé la faisabilité d'une solution de sécurité intégrée et a établi les principes de conception pour les versions futures.
             </p>
 
-            <h3 className="text-2xl font-bold text-primary mb-4 mt-8">Objectifs du Projet</h3>
+            <h3 className="text-2xl font-bold text-foreground mb-4 mt-8">Objectifs du Projet</h3>
             <p className="text-foreground/80 leading-relaxed mb-4">
               Les objectifs principaux du projet CyberSentinel v1 incluaient :
             </p>
@@ -50,7 +50,7 @@ export default function ProjectCyberSentinelV1() {
               <li>Documenter l'architecture et les processus</li>
             </ul>
 
-            <h3 className="text-2xl font-bold text-primary mb-4 mt-8">Architecture du Système</h3>
+            <h3 className="text-2xl font-bold text-foreground mb-4 mt-8">Architecture du Système</h3>
             
             <p className="text-foreground/80 leading-relaxed mb-4">
               <strong>Composant de Capture de Trafic :</strong> Le système incluait un composant de capture de trafic réseau qui utilisait des outils comme Tcpdump ou Wireshark pour capturer le trafic réseau. Le trafic capturé était stocké dans des fichiers PCAP pour analyse ultérieure. Ce composant fournissait les données brutes nécessaires pour la détection de menaces.
@@ -68,7 +68,7 @@ export default function ProjectCyberSentinelV1() {
               <strong>Système de Réponse Automatisée :</strong> Le système pouvait déclencher des réponses automatisées aux menaces détectées. Les réponses incluaient le blocage du trafic malveillant, l'isolation des systèmes compromis, ou l'activation de mesures de sécurité supplémentaires. Le système de réponse était configurable pour permettre différents niveaux de réponse automatisée.
             </p>
 
-            <h3 className="text-2xl font-bold text-primary mb-4 mt-8">Capacités de Détection</h3>
+            <h3 className="text-2xl font-bold text-foreground mb-4 mt-8">Capacités de Détection</h3>
             <p className="text-foreground/80 leading-relaxed mb-4">
               Le système v1 incluait les capacités de détection suivantes :
             </p>
@@ -85,7 +85,7 @@ export default function ProjectCyberSentinelV1() {
               <strong>Détection d'Anomalies :</strong> Le système pouvait détecter les anomalies de trafic qui s'écartaient du comportement normal. Les anomalies incluaient les volumes de trafic inhabituels, les patterns de communication inhabituels, ou les protocoles inhabituels. La détection d'anomalies utilisait des techniques d'apprentissage automatique pour établir un profil de comportement normal.
             </p>
 
-            <h3 className="text-2xl font-bold text-primary mb-4 mt-8">Intégration et Déploiement</h3>
+            <h3 className="text-2xl font-bold text-foreground mb-4 mt-8">Intégration et Déploiement</h3>
             <p className="text-foreground/80 leading-relaxed mb-4">
               Le système v1 a été conçu pour s'intégrer dans une infrastructure de sécurité existante :
             </p>
@@ -102,7 +102,7 @@ export default function ProjectCyberSentinelV1() {
               <strong>Déploiement en Mode Capteur :</strong> Le système pouvait être déployé en mode capteur sur des points stratégiques du réseau pour monitorer le trafic. Les capteurs pouvaient être déployés sur des segments réseau spécifiques pour fournir une visibilité sur le trafic de ces segments.
             </p>
 
-            <h3 className="text-2xl font-bold text-primary mb-4 mt-8">Interface de Monitoring</h3>
+            <h3 className="text-2xl font-bold text-foreground mb-4 mt-8">Interface de Monitoring</h3>
             <p className="text-foreground/80 leading-relaxed mb-4">
               Le système v1 incluait une interface de monitoring pour visualiser l'activité de sécurité :
             </p>
@@ -119,7 +119,7 @@ export default function ProjectCyberSentinelV1() {
               <strong>Console d'Alertes :</strong> Une console affichait toutes les alertes générées par le système. Les alertes étaient triées par sévérité et permettaient aux administrateurs de filtrer et de rechercher les alertes spécifiques.
             </p>
 
-            <h3 className="text-2xl font-bold text-primary mb-4 mt-8">Défis et Solutions</h3>
+            <h3 className="text-2xl font-bold text-foreground mb-4 mt-8">Défis et Solutions</h3>
             <p className="text-foreground/80 leading-relaxed mb-4">
               Le développement du système v1 a présenté plusieurs défis qui ont été résolus :
             </p>
@@ -136,7 +136,7 @@ export default function ProjectCyberSentinelV1() {
               <strong>Défi : Scalabilité :</strong> Le système devait être capable de traiter des volumes de trafic croissants. Solution : Architecture modulaire permettant l'ajout de capteurs supplémentaires et de serveurs de traitement.
             </p>
 
-            <h3 className="text-2xl font-bold text-primary mb-4 mt-8">Apprentissages et Compétences Développées</h3>
+            <h3 className="text-2xl font-bold text-foreground mb-4 mt-8">Apprentissages et Compétences Développées</h3>
             <p className="text-foreground/80 leading-relaxed mb-4">
               Le projet a permis de développer une expertise en détection de menaces et en systèmes de sécurité :
             </p>
@@ -150,12 +150,12 @@ export default function ProjectCyberSentinelV1() {
               <li>Compréhension des techniques d'apprentissage automatique pour la sécurité</li>
             </ul>
 
-            <h3 className="text-2xl font-bold text-primary mb-4 mt-8">Évolution vers v2</h3>
+            <h3 className="text-2xl font-bold text-foreground mb-4 mt-8">Évolution vers v2</h3>
             <p className="text-foreground/80 leading-relaxed mb-4">
               Le succès du système v1 a conduit au développement de CyberSentinel v2, qui a amélioré et étendu les capacités du système initial. Les améliorations incluaient des capacités de détection plus avancées, une meilleure intégration avec les systèmes SIEM, et une interface utilisateur améliorée. La version v2 a démontré l'importance d'itérer et d'améliorer continuellement les solutions de sécurité.
             </p>
 
-            <h3 className="text-2xl font-bold text-primary mb-4 mt-8">Conclusion</h3>
+            <h3 className="text-2xl font-bold text-foreground mb-4 mt-8">Conclusion</h3>
             <p className="text-foreground/80 leading-relaxed mb-4">
               CyberSentinel v1 a représenté un projet fondateur qui a établi les principes de conception pour un système de détection de menaces intégré. Le système a démontré la faisabilité d'une solution de sécurité automatisée et a fourni les fondations pour les améliorations futures. Cette expérience a validé la capacité à concevoir et à implémenter des systèmes de sécurité complexes et a établi les compétences en détection de menaces qui ont été appliquées aux projets ultérieurs.
             </p>

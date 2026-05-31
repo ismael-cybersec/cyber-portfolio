@@ -17,7 +17,7 @@ export default function ProjectPhishing() {
   <ArrowLeft className="w-5 h-5" /> Retour au Portfolio
 </Link>
           </div>
-          <h1 className="text-5xl font-bold text-primary mb-4">Projet de Simulation de Phishing Éducatif</h1>
+          <h1 className="text-5xl font-bold text-foreground mb-4">Projet de Simulation de Phishing Éducatif</h1>
           <p className="text-2xl text-accent mb-6">Campagne de Sensibilisation aux Techniques d'Ingénierie Sociale</p>
           <div className="flex flex-wrap gap-2 mb-6">
             <Badge className="bg-accent/20 text-accent border-accent/30">Phishing</Badge>
@@ -39,7 +39,7 @@ export default function ProjectPhishing() {
           
           {/* Introduction */}
           <div className="prose prose-invert max-w-none">
-            <h2 className="text-3xl font-bold text-primary mb-6">Introduction</h2>
+            <h2 className="text-3xl font-bold text-foreground mb-6">Introduction</h2>
             <p className="text-foreground/80 leading-relaxed mb-4">
               Dans le cadre de notre projet de groupe en cybersécurité, nous avons conçu et développé une campagne de simulation d'hameçonnage (phishing) ciblant l'ensemble des étudiants du Collège communautaire du Nouveau-Brunswick (CCNB). Cette initiative représente une approche pédagogique moderne et efficace pour sensibiliser les utilisateurs aux menaces de sécurité informatique qui évoluent constamment dans le paysage numérique actuel.
             </p>
@@ -56,7 +56,7 @@ export default function ProjectPhishing() {
 
           {/* Choix de la Campagne */}
           <div className="prose prose-invert max-w-none">
-            <h2 className="text-3xl font-bold text-primary mb-6">Choix de la Campagne par Rapport au Public Cible</h2>
+            <h2 className="text-3xl font-bold text-foreground mb-6">Choix de la Campagne par Rapport au Public Cible</h2>
             <p className="text-foreground/80 leading-relaxed mb-4">
               <span className="font-semibold">Public Cible Défini:</span> Notre campagne cible tous les étudiants et étudiantes du Collège communautaire du Nouveau-Brunswick, indépendamment de leur programme d'études ou de leur campus. Cette approche inclusive garantit une couverture maximale et permet une sensibilisation uniforme à l'ensemble de la communauté étudiante.
             </p>
@@ -73,32 +73,32 @@ export default function ProjectPhishing() {
 
           {/* Raison de Distinction */}
           <div className="prose prose-invert max-w-none">
-            <h2 className="text-3xl font-bold text-primary mb-6">Raison pour Laquelle Notre Campagne se Démarque des Autres</h2>
+            <h2 className="text-3xl font-bold text-foreground mb-6">Raison pour Laquelle Notre Campagne se Démarque des Autres</h2>
             
             <div className="space-y-6">
               <div>
-                <h3 className="text-2xl font-bold text-primary mb-3">1. Hyper-Localisation Contextuelle</h3>
+                <h3 className="text-2xl font-bold text-foreground mb-3">1. Hyper-Localisation Contextuelle</h3>
                 <p className="text-foreground/80 leading-relaxed">
                   Notre simulation se distingue des campagnes génériques de phishing par sa hyper-localisation. Contrairement aux campagnes génériques qui ciblent des marques grand public (Amazon, mise à jour bancaire, etc.), notre approche limite parfaitement une communication interne du CCNB. Nous utilisons le logo officiel, le slogan institutionnel "Ensemble on change les VIES", et les couleurs officielles du collège. Cela rend l'attaque beaucoup plus crédible pour le public cible que des marques grand public, car elle provient d'une source que les étudiants reconnaissent et en laquelle ils ont confiance.
                 </p>
               </div>
               
               <div>
-                <h3 className="text-2xl font-bold text-primary mb-3">2. Pertinence Contextuelle et Urgence Réelle</h3>
+                <h3 className="text-2xl font-bold text-foreground mb-3">2. Pertinence Contextuelle et Urgence Réelle</h3>
                 <p className="text-foreground/80 leading-relaxed">
                   Notre simulation joue sur une peur réelle des étudiants : la perte d'accès à leurs cours et données académiques. Cette urgence est beaucoup plus impactante qu'un phishing financier ou commercial classique. Les étudiants dépendent de la plateforme Ardoise pour leurs études, et une corruption de données représente une menace directe à leur réussite académique. Cette pertinence contextuelle augmente significativement le taux de clics et d'engagement, ce qui rend la simulation plus efficace d'un point de vue pédagogique.
                 </p>
               </div>
               
               <div>
-                <h3 className="text-2xl font-bold text-primary mb-3">3. Niveau de Sophistication Technique Avancé</h3>
+                <h3 className="text-2xl font-bold text-foreground mb-3">3. Niveau de Sophistication Technique Avancé</h3>
                 <p className="text-foreground/80 leading-relaxed">
                   Notre campagne utilise plusieurs techniques modernes de phishing pour augmenter son crédibilité. Nous avons utilisé un domaine légèrement modifié qui ressemble à un domaine légitime mais qui est en réalité contrôlé par nous. Le ton du courriel est professionnel et poli ("Nous nous excusons sincèrement..."), ce qui renforce la perception de légitimité. La page de connexion Microsoft que nous avons créée est extrêmement réaliste, reproduisant fidèlement l'interface officielle de Microsoft avec le logo CCNB en arrière-plan. Cette page reproduit les techniques modernes de spear-phishing et de typosquatting, offrant une expérience d'apprentissage complète aux étudiants.
                 </p>
               </div>
               
               <div>
-                <h3 className="text-2xl font-bold text-primary mb-3">4. Valeur Pédagogique Supérieure</h3>
+                <h3 className="text-2xl font-bold text-foreground mb-3">4. Valeur Pédagogique Supérieure</h3>
                 <p className="text-foreground/80 leading-relaxed">
                   Les étudiants qui cliquent sur le lien et qui arrivent à la page de connexion apprendront concrètement à identifier les signes d'une attaque de phishing. Ils apprendront à vérifier l'adresse réelle de l'expéditeur en inspectant les en-têtes du courriel. Ils apprendront à repérer les avertissements de sécurité Outlook qui indiquent que le message provient de l'extérieur de l'organisation. Ils apprendront à éviter de cliquer sur des liens urgents et à accéder directement au site officiel plutôt que via un courriel. Grâce à son réalisme et à sa pertinence locale, cette campagne a un fort potentiel d'engagement et d'apprentissage durable.
                 </p>
@@ -108,7 +108,7 @@ export default function ProjectPhishing() {
 
           {/* Analyse des Secteurs */}
           <div className="prose prose-invert max-w-none">
-            <h2 className="text-3xl font-bold text-primary mb-6">Analyse des Secteurs les Plus Ciblés et les Plus Vulnérables au Canada</h2>
+            <h2 className="text-3xl font-bold text-foreground mb-6">Analyse des Secteurs les Plus Ciblés et les Plus Vulnérables au Canada</h2>
             
             <p className="text-foreground/80 leading-relaxed mb-4">
               Le phishing demeure l'un des vecteurs d'attaque les plus utilisés au Canada et dans le monde. Selon plusieurs rapports récents, il constitue souvent le point d'entrée initial pour des attaques plus graves (ransomware, vol de données, etc.). Différents secteurs d'activité présentent des niveaux de vulnérabilité variables en fonction de leurs pratiques de sécurité, de leur sensibilisation et de la valeur des données qu'ils possèdent.
@@ -141,7 +141,7 @@ export default function ProjectPhishing() {
 
           {/* Conclusion */}
           <div className="prose prose-invert max-w-none">
-            <h2 className="text-3xl font-bold text-primary mb-6">Conclusion</h2>
+            <h2 className="text-3xl font-bold text-foreground mb-6">Conclusion</h2>
             
             <p className="text-foreground/80 leading-relaxed mb-4">
               Cette campagne de simulation de phishing basée sur la plateforme Ardoise s'avère être un excellent outil pédagogique. En reproduisant fidèlement une communication officielle du CCNB, nous avons créé un scénario réaliste et impactant qui permet aux étudiants de vivre concrètement les mécanismes du phishing tout en apprenant à s'en protéger.
@@ -158,7 +158,7 @@ export default function ProjectPhishing() {
 
           {/* References */}
           <div className="prose prose-invert max-w-none">
-            <h2 className="text-3xl font-bold text-primary mb-6">Références</h2>
+            <h2 className="text-3xl font-bold text-foreground mb-6">Références</h2>
             <ul className="list-disc list-inside text-foreground/80 space-y-2">
               <li>Centre canadien pour la cybersécurité. (2024). National Cyber Threat Assessment 2025-2026. Gouvernement du Canada.</li>
               <li>KnowBe4. (2025). 2025 Phishing By Industry Benchmark Report.</li>
@@ -171,7 +171,7 @@ export default function ProjectPhishing() {
 
           {/* Screenshots Section */}
           <div className="space-y-6 mt-12 pt-8 border-t border-border">
-            <h2 className="text-3xl font-bold text-primary mb-6">Captures d'Écran et Annexes</h2>
+            <h2 className="text-3xl font-bold text-foreground mb-6">Captures d'Écran et Annexes</h2>
             
             <div className="p-6 bg-card rounded-lg border border-border">
               <h3 className="text-xl font-semibold text-accent mb-2">Capture d'Écran du Courriel de Phishing</h3>

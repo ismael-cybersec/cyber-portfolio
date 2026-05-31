@@ -7,7 +7,7 @@ interface SectionHeaderProps {
 export function SectionHeader({ title, subtitle, centered = true }: SectionHeaderProps) {
   return (
     <div className={centered ? "text-center" : ""}>
-      <h2 className="text-4xl md:text-5xl font-bold text-primary mb-6">
+      <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
         {title}
       </h2>
       {subtitle && (

@@ -15,7 +15,7 @@ export default function ProjectCahierCharges() {
               <ArrowLeft className="w-5 h-5" /> Retour au Portfolio
             </a>
           </div>
-          <h1 className="text-5xl font-bold text-primary mb-4">Cahier des Charges - Stage Laboratoire de Réseautique</h1>
+          <h1 className="text-5xl font-bold text-foreground mb-4">Cahier des Charges - Stage Laboratoire de Réseautique</h1>
           <p className="text-2xl text-accent mb-6">Spécifications et Planification du Stage</p>
           <div className="flex flex-wrap gap-2 mb-6">
             <Badge className="bg-accent/20 text-accent border-accent/30">Cahier des Charges</Badge>
@@ -29,18 +29,18 @@ export default function ProjectCahierCharges() {
       <section className="py-20">
         <div className="container max-w-4xl mx-auto">
           <div className="prose prose-invert max-w-none">
-            <h2 className="text-3xl font-bold text-primary mb-6">Vue d'Ensemble du Cahier des Charges</h2>
+            <h2 className="text-3xl font-bold text-foreground mb-6">Vue d'Ensemble du Cahier des Charges</h2>
             
             <p className="text-foreground/80 leading-relaxed mb-6">
               Le cahier des charges du stage au Laboratoire de Réseautique représente le document fondateur qui a défini les objectifs, les livrables, et les attentes pour l'ensemble du stage. Ce document a fourni une feuille de route claire pour les activités du stage et a établi les critères de succès pour évaluer la réussite du stage. Le cahier des charges a couvert les domaines d'étude, les compétences à développer, les projets à réaliser, et les résultats attendus. Ce document a été essentiel pour assurer l'alignement entre les objectifs du stage et les attentes de l'organisation d'accueil.
             </p>
 
-            <h3 className="text-2xl font-bold text-primary mb-4 mt-8">Contexte et Justification</h3>
+            <h3 className="text-2xl font-bold text-foreground mb-4 mt-8">Contexte et Justification</h3>
             <p className="text-foreground/80 leading-relaxed mb-4">
               Le stage au Laboratoire de Réseautique a été conçu pour fournir une expérience pratique dans les domaines clés de la réseautique et de la cybersécurité. Le laboratoire est un environnement d'apprentissage spécialisé équipé d'équipements réseau modernes et de logiciels de simulation. Le stage a offert l'opportunité d'appliquer les connaissances théoriques acquises en classe à des projets pratiques et de développer une expertise en configuration et en administration des réseaux informatiques. Le cahier des charges a établi le cadre pour transformer cette opportunité en apprentissage structuré et mesurable.
             </p>
 
-            <h3 className="text-2xl font-bold text-primary mb-4 mt-8">Objectifs Généraux du Stage</h3>
+            <h3 className="text-2xl font-bold text-foreground mb-4 mt-8">Objectifs Généraux du Stage</h3>
             <p className="text-foreground/80 leading-relaxed mb-4">
               Les objectifs généraux du stage incluaient :
             </p>
@@ -54,7 +54,7 @@ export default function ProjectCahierCharges() {
               <li>Préparer pour une carrière en réseautique ou en cybersécurité</li>
             </ul>
 
-            <h3 className="text-2xl font-bold text-primary mb-4 mt-8">Domaines d'Étude</h3>
+            <h3 className="text-2xl font-bold text-foreground mb-4 mt-8">Domaines d'Étude</h3>
             <p className="text-foreground/80 leading-relaxed mb-4">
               Le cahier des charges a défini les domaines d'étude suivants pour le stage :
             </p>
@@ -79,7 +79,7 @@ export default function ProjectCahierCharges() {
               <strong>Virtualisation et Cloud :</strong> Introduction à la virtualisation des réseaux et aux technologies cloud. Cette étude a couvert les concepts de virtualisation, les hyperviseurs, et les services cloud.
             </p>
 
-            <h3 className="text-2xl font-bold text-primary mb-4 mt-8">Projets et Livrables</h3>
+            <h3 className="text-2xl font-bold text-foreground mb-4 mt-8">Projets et Livrables</h3>
             <p className="text-foreground/80 leading-relaxed mb-4">
               Le cahier des charges a défini les projets et les livrables suivants pour le stage :
             </p>
@@ -100,7 +100,7 @@ export default function ProjectCahierCharges() {
               <strong>Projet 4 - Documentation Technique :</strong> Créer une documentation technique complète de l'infrastructure réseau. La documentation a inclus les diagrammes réseau, les configurations des équipements, les procédures d'administration, et les meilleures pratiques. Cette documentation a servi de référence pour l'administration future du réseau.
             </p>
 
-            <h3 className="text-2xl font-bold text-primary mb-4 mt-8">Compétences à Développer</h3>
+            <h3 className="text-2xl font-bold text-foreground mb-4 mt-8">Compétences à Développer</h3>
             <p className="text-foreground/80 leading-relaxed mb-4">
               Le cahier des charges a identifié les compétences suivantes à développer pendant le stage :
             </p>
@@ -115,7 +115,7 @@ export default function ProjectCahierCharges() {
               <li>Gestion de projets</li>
             </ul>
 
-            <h3 className="text-2xl font-bold text-primary mb-4 mt-8">Critères de Succès</h3>
+            <h3 className="text-2xl font-bold text-foreground mb-4 mt-8">Critères de Succès</h3>
             <p className="text-foreground/80 leading-relaxed mb-4">
               Le cahier des charges a défini les critères de succès suivants pour évaluer la réussite du stage :
             </p>
@@ -136,7 +136,7 @@ export default function ProjectCahierCharges() {
               <strong>Critère 4 - Satisfaction du Superviseur :</strong> Le superviseur du stage a exprimé la satisfaction avec la performance et les réalisations pendant le stage. L'évaluation du superviseur a confirmé que les objectifs du stage ont été atteints.
             </p>
 
-            <h3 className="text-2xl font-bold text-primary mb-4 mt-8">Planification et Calendrier</h3>
+            <h3 className="text-2xl font-bold text-foreground mb-4 mt-8">Planification et Calendrier</h3>
             <p className="text-foreground/80 leading-relaxed mb-4">
               Le cahier des charges a défini un calendrier pour les activités du stage :
             </p>
@@ -161,7 +161,7 @@ export default function ProjectCahierCharges() {
               <strong>Semaine 15-16 : Documentation et Finalisation :</strong> Finalisation de la documentation technique et préparation du rapport final du stage. Cette période a inclus la révision de la documentation et la préparation de la présentation finale.
             </p>
 
-            <h3 className="text-2xl font-bold text-primary mb-4 mt-8">Ressources et Support</h3>
+            <h3 className="text-2xl font-bold text-foreground mb-4 mt-8">Ressources et Support</h3>
             <p className="text-foreground/80 leading-relaxed mb-4">
               Le cahier des charges a identifié les ressources et le support disponibles pour le stage :
             </p>
@@ -174,7 +174,7 @@ export default function ProjectCahierCharges() {
               <li>Support technique et assistance en cas de problème</li>
             </ul>
 
-            <h3 className="text-2xl font-bold text-primary mb-4 mt-8">Conclusion</h3>
+            <h3 className="text-2xl font-bold text-foreground mb-4 mt-8">Conclusion</h3>
             <p className="text-foreground/80 leading-relaxed mb-4">
               Le cahier des charges du stage au Laboratoire de Réseautique a fourni un cadre clair et structuré pour le stage. Le document a défini les objectifs, les projets, les compétences à développer, et les critères de succès. Le cahier des charges a assuré que le stage était bien planifié et que les attentes étaient claires pour toutes les parties impliquées. Le respect du cahier des charges a permis de réaliser un stage réussi et de développer les compétences essentielles en réseautique et en cybersécurité.
             </p>

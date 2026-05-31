@@ -15,7 +15,7 @@ export default function ProjectExamenFinal() {
               <ArrowLeft className="w-5 h-5" /> Retour au Portfolio
             </a>
           </div>
-          <h1 className="text-5xl font-bold text-primary mb-4">Examen Final - Cybersécurité</h1>
+          <h1 className="text-5xl font-bold text-foreground mb-4">Examen Final - Cybersécurité</h1>
           <p className="text-2xl text-accent mb-6">Évaluation Complète des Compétences en Cybersécurité</p>
           <div className="flex flex-wrap gap-2 mb-6">
             <Badge className="bg-accent/20 text-accent border-accent/30">Examen</Badge>
@@ -29,13 +29,13 @@ export default function ProjectExamenFinal() {
       <section className="py-20">
         <div className="container max-w-4xl mx-auto">
           <div className="prose prose-invert max-w-none">
-            <h2 className="text-3xl font-bold text-primary mb-6">Vue d'Ensemble de l'Examen</h2>
+            <h2 className="text-3xl font-bold text-foreground mb-6">Vue d'Ensemble de l'Examen</h2>
             
             <p className="text-foreground/80 leading-relaxed mb-6">
               L'examen final en cybersécurité représente une évaluation complète des compétences acquises tout au long du programme d'études. Cet examen a couvert tous les aspects essentiels de la cybersécurité, y compris les concepts théoriques, les compétences pratiques, et la capacité à appliquer les connaissances à des situations réelles. L'examen a été conçu pour évaluer non seulement la compréhension des concepts, mais aussi la capacité à résoudre des problèmes complexes de cybersécurité. Cette évaluation a validé la préparation pour une carrière en cybersécurité.
             </p>
 
-            <h3 className="text-2xl font-bold text-primary mb-4 mt-8">Structure de l'Examen</h3>
+            <h3 className="text-2xl font-bold text-foreground mb-4 mt-8">Structure de l'Examen</h3>
             <p className="text-foreground/80 leading-relaxed mb-4">
               L'examen final était composé de plusieurs sections couvrant différents domaines de la cybersécurité :
             </p>
@@ -60,7 +60,7 @@ export default function ProjectExamenFinal() {
               <strong>Section 5 - Gestion des Risques et Conformité :</strong> Cette section a évalué la compréhension de la gestion des risques, de la conformité, et des cadres de sécurité. Les questions ont couvert l'évaluation des risques, la sélection des contrôles, la conformité aux standards (ISO 27001, NIST), et les implications légales. Cette section a validé la compréhension holistique de la sécurité informatique d'entreprise.
             </p>
 
-            <h3 className="text-2xl font-bold text-primary mb-4 mt-8">Composantes Pratiques</h3>
+            <h3 className="text-2xl font-bold text-foreground mb-4 mt-8">Composantes Pratiques</h3>
             <p className="text-foreground/80 leading-relaxed mb-4">
               L'examen incluait également des composantes pratiques qui évaluaient la capacité à appliquer les connaissances à des situations réelles :
             </p>
@@ -77,7 +77,7 @@ export default function ProjectExamenFinal() {
               <strong>Scénario 3 - Conception d'une Architecture de Sécurité :</strong> Un scénario a demandé aux candidats de concevoir une architecture de sécurité pour une organisation. Les candidats devaient identifier les besoins de sécurité, sélectionner les contrôles appropriés, et documenter l'architecture. Ce scénario a évalué la capacité à concevoir une architecture de sécurité complète.
             </p>
 
-            <h3 className="text-2xl font-bold text-primary mb-4 mt-8">Domaines Couverts par l'Examen</h3>
+            <h3 className="text-2xl font-bold text-foreground mb-4 mt-8">Domaines Couverts par l'Examen</h3>
             <p className="text-foreground/80 leading-relaxed mb-4">
               L'examen a couvert les domaines suivants de la cybersécurité :
             </p>
@@ -96,7 +96,7 @@ export default function ProjectExamenFinal() {
               <li>Sensibilisation à la sécurité et formation</li>
             </ul>
 
-            <h3 className="text-2xl font-bold text-primary mb-4 mt-8">Préparation et Étude</h3>
+            <h3 className="text-2xl font-bold text-foreground mb-4 mt-8">Préparation et Étude</h3>
             <p className="text-foreground/80 leading-relaxed mb-4">
               La préparation à l'examen final a impliqué une révision complète de tous les matériels couverts tout au long du programme d'études. La préparation a inclus :
             </p>
@@ -113,12 +113,12 @@ export default function ProjectExamenFinal() {
               <strong>Examens Pratiques :</strong> La réalisation d'examens pratiques pour évaluer la préparation. Les examens pratiques ont aidé à identifier les domaines faibles et à concentrer l'étude sur ces domaines. Les examens pratiques ont également aidé à se familiariser avec le format de l'examen et à gérer le temps efficacement.
             </p>
 
-            <h3 className="text-2xl font-bold text-primary mb-4 mt-8">Résultats et Réalisations</h3>
+            <h3 className="text-2xl font-bold text-foreground mb-4 mt-8">Résultats et Réalisations</h3>
             <p className="text-foreground/80 leading-relaxed mb-4">
               L'examen final a validé la compréhension complète des concepts de cybersécurité et la capacité à appliquer ces concepts à des situations réelles. Les résultats ont démontré une maîtrise des domaines clés de la cybersécurité et une préparation solide pour une carrière en cybersécurité. La réussite de l'examen a validé que les objectifs d'apprentissage du programme d'études avaient été atteints.
             </p>
 
-            <h3 className="text-2xl font-bold text-primary mb-4 mt-8">Apprentissages et Compétences Développées</h3>
+            <h3 className="text-2xl font-bold text-foreground mb-4 mt-8">Apprentissages et Compétences Développées</h3>
             <p className="text-foreground/80 leading-relaxed mb-4">
               L'examen final a permis de consolider et de valider toutes les compétences acquises tout au long du programme d'études :
             </p>
@@ -131,7 +131,7 @@ export default function ProjectExamenFinal() {
               <li>Préparation pour une carrière en cybersécurité</li>
             </ul>
 
-            <h3 className="text-2xl font-bold text-primary mb-4 mt-8">Conclusion</h3>
+            <h3 className="text-2xl font-bold text-foreground mb-4 mt-8">Conclusion</h3>
             <p className="text-foreground/80 leading-relaxed mb-4">
               L'examen final en cybersécurité a représenté un point culminant du programme d'études et a validé la préparation pour une carrière en cybersécurité. La réussite de l'examen a démontré une compréhension complète des concepts de cybersécurité et une capacité à appliquer ces concepts à des situations réelles. Cette expérience constitue une validation importante des compétences acquises et une confirmation de la préparation pour les rôles en cybersécurité.
             </p>

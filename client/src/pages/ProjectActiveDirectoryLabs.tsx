@@ -15,7 +15,7 @@ export default function ProjectActiveDirectoryLabs() {
 </Link>
 
         <article className="max-w-4xl mx-auto">
-          <h1 className="text-5xl font-bold text-primary mb-4">Active Directory Labs - Reconnaissance & Authentification</h1>
+          <h1 className="text-5xl font-bold text-foreground mb-4">Active Directory Labs - Reconnaissance & Authentification</h1>
           <p className="text-xl text-foreground/70 mb-12">
             Laboratoires complets couvrant la reconnaissance Active Directory, l'énumération des services, l'analyse des protocoles d'authentification NTLM et Kerberos, et les attaques par password spraying avec une profondeur technique exceptionnelle.
           </p>
@@ -38,13 +38,13 @@ export default function ProjectActiveDirectoryLabs() {
           <section className="mb-16">
             <h2 className="text-3xl font-bold text-accent mb-6">Laboratoire 1 : Reconnaissance Active Directory</h2>
             
-            <h3 className="text-2xl font-bold text-primary mb-4">Énumération, Cartographie et Analyse de la Surface d'Attaque AD</h3>
+            <h3 className="text-2xl font-bold text-foreground mb-4">Énumération, Cartographie et Analyse de la Surface d'Attaque AD</h3>
             
             <p className="text-lg text-foreground/80 mb-6">
               Le premier laboratoire se concentre sur la reconnaissance active de l'infrastructure Active Directory. Cette phase est critique dans un test de pénétration car elle permet à un attaquant de cartographier l'environnement cible, d'identifier les services disponibles, et de détecter les points faibles potentiels. La reconnaissance est souvent la première étape d'une attaque réussie, car elle fournit à l'attaquant les informations nécessaires pour planifier les étapes suivantes.
             </p>
 
-            <h4 className="text-xl font-bold text-primary mb-4">1.1 Identification du Domaine et des Contrôleurs de Domaine</h4>
+            <h4 className="text-xl font-bold text-foreground mb-4">1.1 Identification du Domaine et des Contrôleurs de Domaine</h4>
             <p className="text-lg text-foreground/80 mb-4">
               La première étape consiste à identifier le domaine Active Directory et les contrôleurs de domaine qui le gèrent. Cette information est fondamentale car elle permet de comprendre la structure de l'infrastructure d'authentification. Un domaine Active Directory est une unité administrative logique qui contient des utilisateurs, des ordinateurs, des imprimantes et d'autres ressources réseau.
             </p>
@@ -61,7 +61,7 @@ export default function ProjectActiveDirectoryLabs() {
               Ces rôles sont essentiels pour le fonctionnement de l'infrastructure d'authentification et de l'annuaire Active Directory. Comprendre ces rôles permet à un attaquant de cibler les services critiques et de planifier des attaques plus efficaces. Par exemple, si le KDC est compromis, un attaquant pourrait potentiellement générer des tickets Kerberos falsifiés.
             </p>
 
-            <h4 className="text-xl font-bold text-primary mb-4">1.2 Cartographie DNS du Domaine</h4>
+            <h4 className="text-xl font-bold text-foreground mb-4">1.2 Cartographie DNS du Domaine</h4>
             <p className="text-lg text-foreground/80 mb-4">
               La cartographie DNS est une étape cruciale de la reconnaissance. Elle permet d'identifier tous les services Active Directory disponibles dans le domaine en effectuant des requêtes DNS de type SRV (Service Records). Les enregistrements SRV sont des enregistrements DNS spéciaux qui identifient les services disponibles dans un domaine.
             </p>
@@ -84,7 +84,7 @@ export default function ProjectActiveDirectoryLabs() {
               L'AS-REP Roasting est une attaque qui cible les utilisateurs dont l'authentification Kerberos préalable n'est pas requise (UPN_OPTS_DONT_REQUIRE_PREAUTH). Ces utilisateurs peuvent envoyer une demande AS-REQ (Authentication Service Request) sans fournir de preuve d'identité, et le serveur répondra avec un ticket TGT (Ticket Granting Ticket) chiffré avec le hash du mot de passe de l'utilisateur. Un attaquant peut capturer ce ticket et le cracker hors ligne. Le Kerberoasting est une attaque similaire qui cible les comptes de service en demandant des tickets de service (TGS - Ticket Granting Service) et en les crackant hors ligne.
             </p>
 
-            <h4 className="text-xl font-bold text-primary mb-4">1.3 Énumération des Utilisateurs du Domaine</h4>
+            <h4 className="text-xl font-bold text-foreground mb-4">1.3 Énumération des Utilisateurs du Domaine</h4>
             <p className="text-lg text-foreground/80 mb-4">
               Une fois la structure de base du domaine identifiée, l'étape suivante consiste à énumérer les utilisateurs du domaine. Cette information est critique car elle fournit une liste de cibles potentielles pour les attaques d'authentification. L'énumération des utilisateurs peut être effectuée de plusieurs façons, notamment en utilisant LDAP, en effectuant des tentatives d'authentification, ou en utilisant des outils spécialisés.
             </p>
@@ -101,7 +101,7 @@ export default function ProjectActiveDirectoryLabs() {
               L'énumération des groupes de sécurité est également importante car elle révèle la structure organisationnelle du domaine et les permissions associées à chaque groupe. Les groupes de sécurité sont utilisés pour gérer les permissions sur les ressources réseau. Un attaquant peut utiliser cette information pour identifier les groupes privilégiés et cibler les utilisateurs qui en sont membres.
             </p>
 
-            <h4 className="text-xl font-bold text-primary mb-4">1.4 Analyse des Partages Réseau</h4>
+            <h4 className="text-xl font-bold text-foreground mb-4">1.4 Analyse des Partages Réseau</h4>
             <p className="text-lg text-foreground/80 mb-4">
               L'identification des partages réseau disponibles est une étape importante de la reconnaissance. Ces partages peuvent contenir des données sensibles ou des configurations système qui pourraient être exploitées. Les partages réseau sont généralement accessibles via le protocole SMB (Server Message Block) sur le port 445.
             </p>
@@ -112,7 +112,7 @@ export default function ProjectActiveDirectoryLabs() {
               Les partages administratifs (C$, D$, ADMIN$, IPC$) sont particulièrement intéressants car ils permettent aux administrateurs de gérer les ordinateurs à distance. Un attaquant qui peut accéder à ces partages peut potentiellement exécuter des commandes à distance ou télécharger des fichiers sensibles.
             </p>
 
-            <h4 className="text-xl font-bold text-primary mb-4">1.5 Énumération des Services et des Ports</h4>
+            <h4 className="text-xl font-bold text-foreground mb-4">1.5 Énumération des Services et des Ports</h4>
             <p className="text-lg text-foreground/80 mb-4">
               L'énumération des services et des ports ouverts est une étape cruciale de la reconnaissance. Elle permet d'identifier les services disponibles sur les ordinateurs du domaine et les ports sur lesquels ils écoutent. Cette information peut être utilisée pour identifier les vulnérabilités potentielles et les vecteurs d'attaque.
             </p>
@@ -133,7 +133,7 @@ export default function ProjectActiveDirectoryLabs() {
               <li><strong>Port 3389 (RDP)</strong> - Utilisé pour le Bureau à distance</li>
             </ul>
 
-            <h4 className="text-xl font-bold text-primary mb-4">1.6 Analyse des Politiques de Domaine</h4>
+            <h4 className="text-xl font-bold text-foreground mb-4">1.6 Analyse des Politiques de Domaine</h4>
             <p className="text-lg text-foreground/80 mb-4">
               L'analyse des politiques de domaine est une étape importante de la reconnaissance. Les politiques de domaine définissent les règles de sécurité qui s'appliquent à tous les utilisateurs et ordinateurs du domaine. Ces politiques incluent les exigences en matière de mots de passe, les politiques de verrouillage de compte, les politiques de mise à jour, et d'autres paramètres de sécurité.
             </p>
@@ -149,15 +149,15 @@ export default function ProjectActiveDirectoryLabs() {
           <section className="mb-16">
             <h2 className="text-3xl font-bold text-accent mb-6">Laboratoire 2 : Authentification NTLM & Kerberos</h2>
             
-            <h3 className="text-2xl font-bold text-primary mb-4">Password Spraying, NTLM Analysis et Kerberos Exploitation</h3>
+            <h3 className="text-2xl font-bold text-foreground mb-4">Password Spraying, NTLM Analysis et Kerberos Exploitation</h3>
             
             <p className="text-lg text-foreground/80 mb-6">
               Le deuxième laboratoire approfondit l'analyse des protocoles d'authentification NTLM et Kerberos, en mettant l'accent sur les vulnérabilités potentielles et les techniques d'exploitation. Ce laboratoire couvre également les attaques par password spraying et l'analyse des structures de hash NTLM.
             </p>
 
-            <h4 className="text-xl font-bold text-primary mb-4">Partie A : Comprendre l'Authentification NTLM</h4>
+            <h4 className="text-xl font-bold text-foreground mb-4">Partie A : Comprendre l'Authentification NTLM</h4>
             
-            <h5 className="text-lg font-bold text-primary mb-3">Tâche A.1 - Observer le Flux NTLM en Pratique</h5>
+            <h5 className="text-lg font-bold text-foreground mb-3">Tâche A.1 - Observer le Flux NTLM en Pratique</h5>
             <p className="text-lg text-foreground/80 mb-4">
               L'authentification NTLM est un protocole d'authentification utilisé dans les environnements Windows, particulièrement pour les connexions SMB (Server Message Block). NTLM est un protocole d'authentification basé sur un challenge-response qui a été développé par Microsoft. Bien que plus ancien que Kerberos, NTLM est toujours utilisé dans les environnements modernes pour la compatibilité rétroactive.
             </p>
@@ -180,7 +180,7 @@ export default function ProjectActiveDirectoryLabs() {
               Ces expériences démontrent comment le protocole NTLM fonctionne dans un environnement Active Directory. Par défaut, certaines connexions SMB utilisent NTLM comme mécanisme d'authentification, particulièrement lorsque la résolution du nom ne correspond pas exactement au SPN (Service Principal Name) attendu, ou lorsque l'accès est effectué via une adresse IP ou un nom non pleinement qualifié. NTLM agit alors comme un mécanisme de repli (fallback) lorsque Kerberos ne peut pas être utilisé.
             </p>
 
-            <h5 className="text-lg font-bold text-primary mb-3">Tâche A.2 - Analyser la Structure du Hash NTLM</h5>
+            <h5 className="text-lg font-bold text-foreground mb-3">Tâche A.2 - Analyser la Structure du Hash NTLM</h5>
             <p className="text-lg text-foreground/80 mb-4">
               La compréhension de la structure des hash NTLM est cruciale pour comprendre comment les attaques de cracking de mots de passe fonctionnent. Le protocole NTLM repose sur deux types de hash : le hash LM et le hash NT.
             </p>
@@ -209,9 +209,9 @@ export default function ProjectActiveDirectoryLabs() {
               Cependant, même NTLMv2 présente des vulnérabilités. Une attaque courante est le relais NTLM, où un attaquant capture une authentification NTLM et la relaie vers un autre serveur. Cette attaque peut permettre à l'attaquant d'accéder à des ressources sans connaître le mot de passe de l'utilisateur.
             </p>
 
-            <h4 className="text-xl font-bold text-primary mb-4">Partie B : Password Spraying</h4>
+            <h4 className="text-xl font-bold text-foreground mb-4">Partie B : Password Spraying</h4>
             
-            <h5 className="text-lg font-bold text-primary mb-3">Tâche B.1 - Fichier users.txt et Vérification de la Politique sur Kali</h5>
+            <h5 className="text-lg font-bold text-foreground mb-3">Tâche B.1 - Fichier users.txt et Vérification de la Politique sur Kali</h5>
             <p className="text-lg text-foreground/80 mb-4">
               Le password spraying est une technique d'attaque qui consiste à tester un nombre limité de mots de passe courants contre un grand nombre de comptes d'utilisateurs. Cette technique est particulièrement efficace car elle permet d'éviter les mécanismes de verrouillage de compte tout en augmentant les chances de trouver des comptes avec des mots de passe faibles.
             </p>
@@ -242,7 +242,7 @@ export default function ProjectActiveDirectoryLabs() {
               Le password spraying peut être effectué à l'aide d'outils comme Kerbrute, Spray, ou des scripts personnalisés. Ces outils permettent de tester rapidement de nombreux comptes avec un nombre limité de mots de passe tout en respectant les politiques de verrouillage de compte.
             </p>
 
-            <h5 className="text-lg font-bold text-primary mb-3">Tâche B.2 - Techniques de Password Spraying Avancées</h5>
+            <h5 className="text-lg font-bold text-foreground mb-3">Tâche B.2 - Techniques de Password Spraying Avancées</h5>
             <p className="text-lg text-foreground/80 mb-4">
               Le password spraying peut être effectué de plusieurs façons, notamment en utilisant Kerberos, LDAP, ou SMB. Chaque méthode a ses avantages et ses inconvénients.
             </p>
@@ -259,9 +259,9 @@ export default function ProjectActiveDirectoryLabs() {
               Le choix de la méthode dépend de l'environnement cible et des objectifs de l'attaquant. En général, le password spraying via Kerberos est préféré car il génère moins d'événements de logon échoué et est donc moins susceptible d'être détecté.
             </p>
 
-            <h4 className="text-xl font-bold text-primary mb-4">Partie C : Analyse des Protocoles Kerberos</h4>
+            <h4 className="text-xl font-bold text-foreground mb-4">Partie C : Analyse des Protocoles Kerberos</h4>
             
-            <h5 className="text-lg font-bold text-primary mb-3">Tâche C.1 - Comprendre le Protocole Kerberos</h5>
+            <h5 className="text-lg font-bold text-foreground mb-3">Tâche C.1 - Comprendre le Protocole Kerberos</h5>
             <p className="text-lg text-foreground/80 mb-4">
               Kerberos est un protocole d'authentification basé sur des tickets qui a été développé au MIT. Il est utilisé par Active Directory comme protocole d'authentification principal. Kerberos est considéré comme plus sécurisé que NTLM car il utilise des techniques de chiffrement plus modernes et ne transmet jamais le mot de passe sur le réseau.
             </p>
@@ -275,7 +275,7 @@ export default function ProjectActiveDirectoryLabs() {
               Kerberos présente plusieurs avantages par rapport à NTLM : il n'envoie jamais le mot de passe sur le réseau, il utilise des techniques de chiffrement plus modernes, et il offre une meilleure scalabilité. Cependant, Kerberos présente également des vulnérabilités potentielles, notamment les attaques de type AS-REP Roasting et Kerberoasting.
             </p>
 
-            <h5 className="text-lg font-bold text-primary mb-3">Tâche C.2 - Attaques Kerberos : AS-REP Roasting et Kerberoasting</h5>
+            <h5 className="text-lg font-bold text-foreground mb-3">Tâche C.2 - Attaques Kerberos : AS-REP Roasting et Kerberoasting</h5>
             <p className="text-lg text-foreground/80 mb-4">
               L'AS-REP Roasting est une attaque qui cible les utilisateurs dont l'authentification Kerberos préalable n'est pas requise (UPN_OPTS_DONT_REQUIRE_PREAUTH). Ces utilisateurs peuvent envoyer une demande AS-REQ sans fournir de preuve d'identité, et le serveur répondra avec un TGT chiffré avec le hash du mot de passe de l'utilisateur. Un attaquant peut capturer ce TGT et le cracker hors ligne.
             </p>
@@ -291,7 +291,7 @@ export default function ProjectActiveDirectoryLabs() {
           <section className="mb-16">
             <h2 className="text-3xl font-bold text-accent mb-6">Concepts Clés et Apprentissages</h2>
             
-            <h3 className="text-2xl font-bold text-primary mb-4">Reconnaissance Active Directory</h3>
+            <h3 className="text-2xl font-bold text-foreground mb-4">Reconnaissance Active Directory</h3>
             <p className="text-lg text-foreground/80 mb-4">
               La reconnaissance Active Directory est une phase critique de tout test de pénétration. Elle permet à un attaquant de cartographier l'infrastructure cible, d'identifier les services disponibles, et de détecter les points faibles potentiels. Les techniques de reconnaissance incluent l'énumération des domaines, des contrôleurs de domaine, des utilisateurs, des groupes, et des partages réseau.
             </p>
@@ -299,7 +299,7 @@ export default function ProjectActiveDirectoryLabs() {
               Une reconnaissance efficace peut fournir à un attaquant une mine d'informations qui peuvent être utilisées pour planifier des attaques ultérieures. C'est pourquoi il est important de limiter les informations disponibles publiquement et de surveiller les tentatives de reconnaissance.
             </p>
 
-            <h3 className="text-2xl font-bold text-primary mb-4">Protocoles d'Authentification</h3>
+            <h3 className="text-2xl font-bold text-foreground mb-4">Protocoles d'Authentification</h3>
             <p className="text-lg text-foreground/80 mb-4">
               La compréhension des protocoles d'authentification NTLM et Kerberos est essentielle pour identifier les vulnérabilités potentielles. NTLM est un protocole d'authentification plus ancien et moins sécurisé, tandis que Kerberos est un protocole plus moderne et plus sécurisé. Cependant, les deux protocoles présentent des vulnérabilités potentielles qui peuvent être exploitées par un attaquant.
             </p>
@@ -307,7 +307,7 @@ export default function ProjectActiveDirectoryLabs() {
               La migration de NTLM à Kerberos est une étape importante pour améliorer la sécurité d'un environnement Active Directory. Cependant, NTLM doit souvent être conservé pour la compatibilité rétroactive avec les applications et les systèmes hérités.
             </p>
 
-            <h3 className="text-2xl font-bold text-primary mb-4">Attaques par Password Spraying</h3>
+            <h3 className="text-2xl font-bold text-foreground mb-4">Attaques par Password Spraying</h3>
             <p className="text-lg text-foreground/80 mb-4">
               Le password spraying est une technique d'attaque efficace qui permet à un attaquant de contourner les mécanismes de verrouillage de compte tout en augmentant les chances de trouver des comptes avec des mots de passe faibles. Cette technique est particulièrement efficace dans les environnements d'entreprise où les politiques de mots de passe ne sont pas strictement appliquées.
             </p>
@@ -315,7 +315,7 @@ export default function ProjectActiveDirectoryLabs() {
               Le password spraying est souvent plus efficace qu'une attaque de force brute traditionnelle car il teste un petit nombre de mots de passe contre de nombreux comptes, ce qui augmente les chances de trouver un compte avec un mot de passe faible sans déclencher les mécanismes de verrouillage de compte.
             </p>
 
-            <h3 className="text-2xl font-bold text-primary mb-4">Défense contre les Attaques Active Directory</h3>
+            <h3 className="text-2xl font-bold text-foreground mb-4">Défense contre les Attaques Active Directory</h3>
             <p className="text-lg text-foreground/80 mb-4">
               La défense contre les attaques Active Directory nécessite une approche multicouche. Les administrateurs doivent mettre en place des politiques de sécurité strictes, surveiller les activités suspectes, et maintenir les systèmes à jour avec les derniers correctifs de sécurité.
             </p>
@@ -348,7 +348,7 @@ export default function ProjectActiveDirectoryLabs() {
               En conclusion, ces laboratoires ont fourni une base solide pour comprendre la sécurité Active Directory et les techniques d'attaque et de défense. Les compétences acquises dans ces laboratoires sont essentielles pour les testeurs de pénétration, les administrateurs système, et les professionnels de la sécurité informatique.
             </p>
 
-            <h3 className="text-2xl font-bold text-primary mb-4">Recommandations de Sécurité</h3>
+            <h3 className="text-2xl font-bold text-foreground mb-4">Recommandations de Sécurité</h3>
             <ul className="list-disc list-inside text-lg text-foreground/80 space-y-3">
               <li><strong>Désactiver NTLM :</strong> Dans les environnements modernes, NTLM devrait être désactivé en faveur de Kerberos, qui offre une meilleure sécurité.</li>
               <li><strong>Implémenter une politique de mots de passe stricte :</strong> Les mots de passe doivent être longs, complexes, et changés régulièrement.</li>

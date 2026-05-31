@@ -16,7 +16,7 @@ export default function ProjectStage() {
               <ArrowLeft className="w-5 h-5" /> Retour au Portfolio
             </Link>
           </div>
-          <h1 className="text-5xl font-bold text-primary mb-4">Stage - Laboratoire de Réseautique</h1>
+          <h1 className="text-5xl font-bold text-foreground mb-4">Stage - Laboratoire de Réseautique</h1>
           <p className="text-2xl text-accent mb-6">Mise en Place Complète d'une Infrastructure Réseau d'Entreprise</p>
           <div className="flex flex-wrap gap-2 mb-6">
             <Badge className="bg-accent/20 text-accent border-accent/30">Stage</Badge>
@@ -34,7 +34,7 @@ export default function ProjectStage() {
             
             {/* INTRODUCTION COMPLÈTE */}
             <div className="bg-secondary/20 p-8 rounded-lg border border-border">
-              <h2 className="text-3xl font-bold text-primary mb-4">Vue d'Ensemble Complète du Stage</h2>
+              <h2 className="text-3xl font-bold text-foreground mb-4">Vue d'Ensemble Complète du Stage</h2>
               <p className="text-foreground/80 leading-relaxed mb-4">
                 Le stage au Laboratoire de Réseautique du Collège communautaire du Nouveau-Brunswick, Campus Dieppe, a constitué un projet majeur d'une durée de six semaines intensives, s'étendant du 27 avril 2026 au 5 juin 2026. Ce projet ambitieux visait à concevoir, mettre en place et configurer une infrastructure réseau d'entreprise complète et fonctionnelle, capable de supporter les besoins pédagogiques d'un établissement d'enseignement moderne. Le projet a englobé l'ensemble du cycle de vie d'une infrastructure réseau : de la planification initiale et l'évaluation des ressources disponibles, en passant par l'installation physique des équipements, le câblage structuré, la configuration logique des systèmes réseau, la mise en place de la sécurité, jusqu'à la validation complète et la documentation finale.
               </p>
@@ -51,7 +51,7 @@ export default function ProjectStage() {
 
             {/* SEMAINE 1 */}
             <div>
-              <h2 className="text-3xl font-bold text-primary mb-6 border-b border-accent/30 pb-4">
+              <h2 className="text-3xl font-bold text-foreground mb-6 border-b border-accent/30 pb-4">
                 Semaine 1 : Prise de Connaissance et Mise en Place Physique (27/04/2026 - 01/05/2026)
               </h2>
 
@@ -173,7 +173,7 @@ export default function ProjectStage() {
 
             {/* SEMAINE 2-3 */}
             <div>
-              <h2 className="text-3xl font-bold text-primary mb-6 border-b border-accent/30 pb-4">
+              <h2 className="text-3xl font-bold text-foreground mb-6 border-b border-accent/30 pb-4">
                 Semaines 2-3 : Câblage Structuré et Connectivité (04/05/2026 - 15/05/2026)
               </h2>
 
@@ -259,7 +259,7 @@ export default function ProjectStage() {
 
             {/* SEMAINE 4-5 */}
             <div>
-              <h2 className="text-3xl font-bold text-primary mb-6 border-b border-accent/30 pb-4">
+              <h2 className="text-3xl font-bold text-foreground mb-6 border-b border-accent/30 pb-4">
                 Semaines 4-5 : Configuration Réseau Avancée et Sécurité (18/05/2026 - 29/05/2026)
               </h2>
 
@@ -335,7 +335,7 @@ export default function ProjectStage() {
 
             {/* SEMAINE 6 */}
             <div>
-              <h2 className="text-3xl font-bold text-primary mb-6 border-b border-accent/30 pb-4">
+              <h2 className="text-3xl font-bold text-foreground mb-6 border-b border-accent/30 pb-4">
                 Semaine 6 : Tests Complets, Validation et Finalisation (01/06/2026 - 05/06/2026)
               </h2>
 
@@ -417,7 +417,7 @@ export default function ProjectStage() {
 
             {/* CONCLUSION */}
             <div className="bg-secondary/20 p-8 rounded-lg border border-accent/30">
-              <h2 className="text-3xl font-bold text-primary mb-4">Conclusion et Apprentissages Majeurs</h2>
+              <h2 className="text-3xl font-bold text-foreground mb-4">Conclusion et Apprentissages Majeurs</h2>
               <p className="text-lg text-foreground/80 leading-relaxed mb-4">
                 Le stage en laboratoire de réseautique a représenté une expérience complète, enrichissante et transformatrice dans la gestion de projets d'infrastructure réseau complexes. Ce projet ambitieux a permis d'acquérir des compétences pratiques essentielles dans tous les aspects critiques de la mise en place d'une infrastructure réseau moderne.
               </p>

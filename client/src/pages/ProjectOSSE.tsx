@@ -16,7 +16,7 @@ export default function ProjectOSSE() {
   <ArrowLeft className="w-5 h-5" /> Retour au Portfolio
 </Link>
           </div>
-          <h1 className="text-5xl font-bold text-primary mb-4">Projet OSSE - Offensive Security Specialist</h1>
+          <h1 className="text-5xl font-bold text-foreground mb-4">Projet OSSE - Offensive Security Specialist</h1>
           <p className="text-2xl text-accent mb-6">Spécialisation en Sécurité Offensive et Tests de Pénétration</p>
           <div className="flex flex-wrap gap-2 mb-6">
             <Badge className="bg-accent/20 text-accent border-accent/30">Offensive Security</Badge>
@@ -30,13 +30,13 @@ export default function ProjectOSSE() {
       <section className="py-20">
         <div className="container max-w-4xl mx-auto">
           <div className="prose prose-invert max-w-none">
-            <h2 className="text-3xl font-bold text-primary mb-6">Vue d'Ensemble du Projet</h2>
+            <h2 className="text-3xl font-bold text-foreground mb-6">Vue d'Ensemble du Projet</h2>
             
             <p className="text-foreground/80 leading-relaxed mb-6">
               Le projet OSSE (Offensive Security Specialist) représente une spécialisation avancée en sécurité offensive et tests de pénétration. Ce projet a fourni une formation complète dans les techniques de sécurité offensive, y compris la reconnaissance, l'énumération, l'exploitation, et la post-exploitation. Le projet a impliqué la participation à des exercices de tests de pénétration réalistes et la démonstration de la capacité à identifier et à exploiter les vulnérabilités de sécurité. Cette expérience a validé la compréhension avancée de la sécurité offensive et la préparation pour des rôles en tests de pénétration professionnels.
             </p>
 
-            <h3 className="text-2xl font-bold text-primary mb-4 mt-8">Objectifs du Projet</h3>
+            <h3 className="text-2xl font-bold text-foreground mb-4 mt-8">Objectifs du Projet</h3>
             <p className="text-foreground/80 leading-relaxed mb-4">
               Les objectifs principaux du projet OSSE incluaient :
             </p>
@@ -51,7 +51,7 @@ export default function ProjectOSSE() {
               <li>Préparer pour les certifications de sécurité offensive (CEH, OSCP)</li>
             </ul>
 
-            <h3 className="text-2xl font-bold text-primary mb-4 mt-8">Phases du Projet</h3>
+            <h3 className="text-2xl font-bold text-foreground mb-4 mt-8">Phases du Projet</h3>
             
             <p className="text-foreground/80 leading-relaxed mb-4">
               <strong>Phase 1 - Reconnaissance Avancée :</strong> Cette phase a impliqué des techniques avancées de reconnaissance pour collecter des informations sur les cibles. Les techniques incluaient la reconnaissance passive (recherche d'informations publiques), la reconnaissance active (scans de ports, énumération de services), et l'utilisation d'outils avancés de reconnaissance. La reconnaissance a fourni les informations nécessaires pour identifier les vecteurs d'attaque potentiels.
@@ -73,7 +73,7 @@ export default function ProjectOSSE() {
               <strong>Phase 5 - Post-Exploitation :</strong> Cette phase a impliqué les activités de post-exploitation pour démontrer l'impact complet d'une compromission. Les activités incluaient le maintien de l'accès, l'escalade de privilèges, la collecte de données sensibles, et la couverture des traces. La post-exploitation a démontré comment les attaquants peuvent maximiser l'impact d'une compromission réussie.
             </p>
 
-            <h3 className="text-2xl font-bold text-primary mb-4 mt-8">Outils et Techniques Avancés</h3>
+            <h3 className="text-2xl font-bold text-foreground mb-4 mt-8">Outils et Techniques Avancés</h3>
             <p className="text-foreground/80 leading-relaxed mb-4">
               Le projet a impliqué l'utilisation d'outils et de techniques avancés de sécurité offensive :
             </p>
@@ -87,7 +87,7 @@ export default function ProjectOSSE() {
               <li><strong>Techniques de Pivot :</strong> Techniques pour se déplacer latéralement dans un réseau compromis</li>
             </ul>
 
-            <h3 className="text-2xl font-bold text-primary mb-4 mt-8">Scénarios de Tests de Pénétration</h3>
+            <h3 className="text-2xl font-bold text-foreground mb-4 mt-8">Scénarios de Tests de Pénétration</h3>
             <p className="text-foreground/80 leading-relaxed mb-4">
               Le projet a impliqué plusieurs scénarios de tests de pénétration réalistes :
             </p>
@@ -104,7 +104,7 @@ export default function ProjectOSSE() {
               <strong>Scénario 3 - Test de Pénétration des Applications Web :</strong> Test de pénétration des applications web pour identifier les vulnérabilités (OWASP Top 10). Le test a impliqué l'identification des vulnérabilités d'injection, des vulnérabilités d'authentification, et des vulnérabilités de gestion de session. Ce scénario a démontré comment les applications mal développées peuvent être compromises.
             </p>
 
-            <h3 className="text-2xl font-bold text-primary mb-4 mt-8">Documentation et Rapports</h3>
+            <h3 className="text-2xl font-bold text-foreground mb-4 mt-8">Documentation et Rapports</h3>
             <p className="text-foreground/80 leading-relaxed mb-4">
               Le projet a impliqué la création de rapports professionnels de tests de pénétration :
             </p>
@@ -121,7 +121,7 @@ export default function ProjectOSSE() {
               <strong>Preuve de Concept :</strong> Des preuves de concept documentées pour chaque vulnérabilité exploitée. Les preuves de concept ont démontré comment chaque vulnérabilité a été exploitée et l'impact réel de l'exploitation.
             </p>
 
-            <h3 className="text-2xl font-bold text-primary mb-4 mt-8">Apprentissages et Compétences Développées</h3>
+            <h3 className="text-2xl font-bold text-foreground mb-4 mt-8">Apprentissages et Compétences Développées</h3>
             <p className="text-foreground/80 leading-relaxed mb-4">
               Le projet a permis de développer une expertise avancée en sécurité offensive :
             </p>
@@ -136,7 +136,7 @@ export default function ProjectOSSE() {
               <li>Préparation pour les certifications de sécurité offensive</li>
             </ul>
 
-            <h3 className="text-2xl font-bold text-primary mb-4 mt-8">Conclusion</h3>
+            <h3 className="text-2xl font-bold text-foreground mb-4 mt-8">Conclusion</h3>
             <p className="text-foreground/80 leading-relaxed mb-4">
               Le projet OSSE a fourni une formation complète en sécurité offensive et tests de pénétration professionnels. Cette expérience constitue une base solide pour une carrière en sécurité offensive, en tests de pénétration, ou en gestion des vulnérabilités. Les compétences développées lors de ce projet sont hautement demandées dans l'industrie de la cybersécurité et sont essentielles pour les rôles de sécurité offensive avancés. La certification OSSE ou des certifications similaires (CEH, OSCP) validerait davantage l'expertise en sécurité offensive.
             </p>

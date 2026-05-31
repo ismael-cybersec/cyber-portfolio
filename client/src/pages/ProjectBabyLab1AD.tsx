@@ -15,7 +15,7 @@ export default function ProjectBabyLab1AD() {
               <ArrowLeft className="w-5 h-5" /> Retour au Portfolio
             </a>
           </div>
-          <h1 className="text-5xl font-bold text-primary mb-4">Baby Lab 1 - Active Directory</h1>
+          <h1 className="text-5xl font-bold text-foreground mb-4">Baby Lab 1 - Active Directory</h1>
           <p className="text-2xl text-accent mb-6">Configuration et Administration d'Active Directory</p>
           <div className="flex flex-wrap gap-2 mb-6">
             <Badge className="bg-accent/20 text-accent border-accent/30">Active Directory</Badge>
@@ -29,13 +29,13 @@ export default function ProjectBabyLab1AD() {
       <section className="py-20">
         <div className="container max-w-4xl mx-auto">
           <div className="prose prose-invert max-w-none">
-            <h2 className="text-3xl font-bold text-primary mb-6">Vue d'Ensemble du Laboratoire</h2>
+            <h2 className="text-3xl font-bold text-foreground mb-6">Vue d'Ensemble du Laboratoire</h2>
             
             <p className="text-foreground/80 leading-relaxed mb-6">
               Le laboratoire Baby Lab 1 - Active Directory représente une introduction pratique à la configuration et à l'administration d'Active Directory (AD). Ce laboratoire a fourni une expérience pratique dans la mise en place d'une infrastructure Active Directory, la gestion des utilisateurs et des groupes, la configuration des politiques de groupe, et la sécurisation d'Active Directory. Le laboratoire a couvert les concepts fondamentaux d'Active Directory et les meilleures pratiques en administration d'AD. Cette expérience a été fondamentale pour développer les compétences en gestion des identités et des accès.
             </p>
 
-            <h3 className="text-2xl font-bold text-primary mb-4 mt-8">Objectifs du Laboratoire</h3>
+            <h3 className="text-2xl font-bold text-foreground mb-4 mt-8">Objectifs du Laboratoire</h3>
             <p className="text-foreground/80 leading-relaxed mb-4">
               Les objectifs principaux du laboratoire Baby Lab 1 - AD incluaient :
             </p>
@@ -50,7 +50,7 @@ export default function ProjectBabyLab1AD() {
               <li>Comprendre les meilleures pratiques en administration d'AD</li>
             </ul>
 
-            <h3 className="text-2xl font-bold text-primary mb-4 mt-8">Architecture d'Active Directory</h3>
+            <h3 className="text-2xl font-bold text-foreground mb-4 mt-8">Architecture d'Active Directory</h3>
             <p className="text-foreground/80 leading-relaxed mb-4">
               Le laboratoire a commencé par une compréhension approfondie de l'architecture d'Active Directory. Active Directory est un service d'annuaire centralisé qui gère les identités et les accès dans une organisation. L'architecture d'Active Directory comprend plusieurs composants clés :
             </p>
@@ -71,7 +71,7 @@ export default function ProjectBabyLab1AD() {
               <strong>Unité Organisationnelle (OU) :</strong> Une unité organisationnelle est un conteneur dans Active Directory qui peut contenir des utilisateurs, des ordinateurs, et d'autres objets. Les OU sont utilisées pour organiser les objets et pour appliquer les politiques de groupe à des groupes d'objets.
             </p>
 
-            <h3 className="text-2xl font-bold text-primary mb-4 mt-8">Configuration d'Active Directory</h3>
+            <h3 className="text-2xl font-bold text-foreground mb-4 mt-8">Configuration d'Active Directory</h3>
             <p className="text-foreground/80 leading-relaxed mb-4">
               Le laboratoire a impliqué la configuration complète d'une infrastructure Active Directory :
             </p>
@@ -92,7 +92,7 @@ export default function ProjectBabyLab1AD() {
               <strong>Configuration des Politiques de Groupe :</strong> La quatrième étape a impliqué la configuration des politiques de groupe (GPO) pour appliquer les paramètres de sécurité et de configuration aux utilisateurs et aux ordinateurs. Les GPO ont été configurées pour appliquer les politiques de mot de passe, les paramètres de sécurité, et les configurations de logiciels.
             </p>
 
-            <h3 className="text-2xl font-bold text-primary mb-4 mt-8">Gestion des Utilisateurs et des Groupes</h3>
+            <h3 className="text-2xl font-bold text-foreground mb-4 mt-8">Gestion des Utilisateurs et des Groupes</h3>
             <p className="text-foreground/80 leading-relaxed mb-4">
               Le laboratoire a couvert les meilleures pratiques en gestion des utilisateurs et des groupes :
             </p>
@@ -109,7 +109,7 @@ export default function ProjectBabyLab1AD() {
               <strong>Gestion des Permissions :</strong> Les permissions ont été configurées pour contrôler l'accès aux ressources partagées. Le principe du moindre privilège a été appliqué pour assurer que les utilisateurs n'ont accès qu'aux ressources nécessaires pour accomplir leurs tâches. Les permissions ont été documentées pour faciliter la maintenance et l'audit.
             </p>
 
-            <h3 className="text-2xl font-bold text-primary mb-4 mt-8">Sécurité d'Active Directory</h3>
+            <h3 className="text-2xl font-bold text-foreground mb-4 mt-8">Sécurité d'Active Directory</h3>
             <p className="text-foreground/80 leading-relaxed mb-4">
               Le laboratoire a couvert les mesures de sécurité essentielles pour protéger Active Directory :
             </p>
@@ -126,7 +126,7 @@ export default function ProjectBabyLab1AD() {
               <strong>Audit et Logging :</strong> L'audit et le logging ont été configurés pour enregistrer les événements importants d'Active Directory. Cela a inclus l'enregistrement des modifications d'utilisateurs, des modifications de groupes, et des tentatives de connexion échouées.
             </p>
 
-            <h3 className="text-2xl font-bold text-primary mb-4 mt-8">Apprentissages et Compétences Développées</h3>
+            <h3 className="text-2xl font-bold text-foreground mb-4 mt-8">Apprentissages et Compétences Développées</h3>
             <p className="text-foreground/80 leading-relaxed mb-4">
               Le laboratoire a permis de développer les compétences essentielles en administration d'Active Directory :
             </p>
@@ -141,7 +141,7 @@ export default function ProjectBabyLab1AD() {
               <li>Compétences en administration de Windows Server</li>
             </ul>
 
-            <h3 className="text-2xl font-bold text-primary mb-4 mt-8">Conclusion</h3>
+            <h3 className="text-2xl font-bold text-foreground mb-4 mt-8">Conclusion</h3>
             <p className="text-foreground/80 leading-relaxed mb-4">
               Le laboratoire Baby Lab 1 - Active Directory a fourni une introduction pratique complète à la configuration et à l'administration d'Active Directory. Cette expérience constitue une base solide pour des rôles d'administrateur système ou d'administrateur réseau. Les compétences développées lors de ce laboratoire sont essentielles pour gérer les identités et les accès dans une organisation et sont hautement demandées dans l'industrie informatique.
             </p>

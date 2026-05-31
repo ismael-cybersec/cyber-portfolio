@@ -26,7 +26,7 @@ export function ProjectCard({ title, description, tags, image, link }: ProjectCa
         </div>
       </div>
       <div className="p-6">
-        <h3 className="text-lg font-semibold text-primary mb-2">{title}</h3>
+        <h3 className="text-lg font-semibold text-foreground mb-2">{title}</h3>
         <p className="text-foreground/70 mb-4 text-sm leading-relaxed line-clamp-2">{description}</p>
         <div className="flex flex-wrap gap-2">
           {tags.map((tag) => (

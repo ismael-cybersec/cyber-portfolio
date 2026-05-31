@@ -8,7 +8,7 @@ interface SkillCardProps {
 export function SkillCard({ category, items }: SkillCardProps) {
   return (
     <Card className="card-elegant p-6 hover:border-accent/50 transition-colors">
-      <h3 className="text-xl font-semibold text-primary mb-4">{category}</h3>
+      <h3 className="text-xl font-semibold text-foreground mb-4">{category}</h3>
       <ul className="space-y-3">
         {items.map((item) => (
           <li key={item} className="flex items-start gap-2">

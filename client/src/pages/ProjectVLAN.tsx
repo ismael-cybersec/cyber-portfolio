@@ -16,7 +16,7 @@ export default function ProjectVLAN() {
               <ArrowLeft className="w-5 h-5" /> Retour au Portfolio
             </a>
           </div>
-          <h1 className="text-5xl font-bold text-primary mb-4">VLAN - DHCP - NAT Lab</h1>
+          <h1 className="text-5xl font-bold text-foreground mb-4">VLAN - DHCP - NAT Lab</h1>
           <p className="text-2xl text-accent mb-6">Configuration Complète d'un Réseau d'Entreprise Sécurisé</p>
           <div className="flex flex-wrap gap-2 mb-6">
             <Badge className="bg-accent/20 text-accent border-accent/30">VLAN</Badge>
@@ -36,13 +36,13 @@ export default function ProjectVLAN() {
       <section className="py-20">
         <div className="container max-w-4xl mx-auto">
           <div className="prose prose-invert max-w-none">
-            <h2 className="text-3xl font-bold text-primary mb-6">Vue d'Ensemble du Projet</h2>
+            <h2 className="text-3xl font-bold text-foreground mb-6">Vue d'Ensemble du Projet</h2>
             
             <p className="text-foreground/80 leading-relaxed mb-6">
               Le projet VLAN-DHCP-NAT Lab est une simulation complète d'une infrastructure réseau d'entreprise moderne utilisant Cisco Packet Tracer. Ce laboratoire démontre la conception et l'implémentation d'une architecture réseau sécurisée, scalable et hautement disponible. Le projet couvre tous les aspects essentiels de l'administration réseau d'entreprise, y compris la segmentation VLAN, le routage inter-VLAN, les services DHCP, la translation d'adresses (NAT) et le contrôle d'accès (ACL). Ce laboratoire représente une application pratique des concepts de réseau d'entreprise et démontre la capacité à concevoir et à implémenter une infrastructure réseau complexe.
             </p>
 
-            <h3 className="text-2xl font-bold text-primary mb-4 mt-8">Contexte et Objectifs Pédagogiques</h3>
+            <h3 className="text-2xl font-bold text-foreground mb-4 mt-8">Contexte et Objectifs Pédagogiques</h3>
             <p className="text-foreground/80 leading-relaxed mb-4">
               Ce laboratoire a été conçu pour démontrer les compétences essentielles en administration réseau d'entreprise et pour valider la compréhension des technologies réseau modernes. Les objectifs principaux incluent :
             </p>
@@ -56,7 +56,7 @@ export default function ProjectVLAN() {
               <li>Documenter l'architecture et les configurations pour faciliter la maintenance et la dépannage</li>
             </ul>
 
-            <h3 className="text-2xl font-bold text-primary mb-4 mt-8">Architecture Réseau Détaillée</h3>
+            <h3 className="text-2xl font-bold text-foreground mb-4 mt-8">Architecture Réseau Détaillée</h3>
             <p className="text-foreground/80 leading-relaxed mb-4">
               L'architecture du laboratoire VLAN-DHCP-NAT est basée sur un modèle d'entreprise typique avec plusieurs départements et fonctions. La topologie comprend plusieurs composants clés :
             </p>
@@ -68,7 +68,7 @@ export default function ProjectVLAN() {
               <li><strong>Serveur Web</strong> - Simule un serveur d'entreprise accessible depuis les VLAN autorisés. Le serveur web démontre comment les ACL peuvent contrôler l'accès aux ressources.</li>
             </ul>
 
-            <h3 className="text-2xl font-bold text-primary mb-4 mt-8">Segmentation VLAN</h3>
+            <h3 className="text-2xl font-bold text-foreground mb-4 mt-8">Segmentation VLAN</h3>
             <p className="text-foreground/80 leading-relaxed mb-4">
               Le réseau est segmenté en quatre VLAN distincts, chacun représentant un département ou une fonction d'entreprise. Cette segmentation offre plusieurs avantages en sécurité, performance et gestion :
             </p>
@@ -91,7 +91,7 @@ export default function ProjectVLAN() {
               <li>Conformité avec les standards de sécurité d'entreprise et les bonnes pratiques</li>
             </ul>
 
-            <h3 className="text-2xl font-bold text-primary mb-4 mt-8">Routage Inter-VLAN (Router-on-a-Stick)</h3>
+            <h3 className="text-2xl font-bold text-foreground mb-4 mt-8">Routage Inter-VLAN (Router-on-a-Stick)</h3>
             <p className="text-foreground/80 leading-relaxed mb-4">
               La communication entre VLAN est réalisée via la technique "Router-on-a-Stick" où un seul port du routeur est connecté au commutateur via un lien trunk. Le routeur configure des sous-interfaces pour chaque VLAN et route le trafic entre eux. Cette approche est économique et facile à mettre en œuvre, bien qu'elle présente une limitation de performance en raison du goulot d'étranglement du lien unique.
             </p>
@@ -111,7 +111,7 @@ export default function ProjectVLAN() {
               Chaque sous-interface est configurée avec l'encapsulation 802.1Q (VLAN tagging) pour identifier les paquets appartenant à chaque VLAN. Le routeur utilise les tables de routage pour diriger le trafic entre les sous-interfaces en fonction de l'adresse IP de destination.
             </p>
 
-            <h3 className="text-2xl font-bold text-primary mb-4 mt-8">Services DHCP</h3>
+            <h3 className="text-2xl font-bold text-foreground mb-4 mt-8">Services DHCP</h3>
             <p className="text-foreground/80 leading-relaxed mb-4">
               Un serveur DHCP est configuré pour fournir automatiquement des adresses IP à chaque VLAN. Cette configuration permet aux utilisateurs de se connecter au réseau sans configuration manuelle d'adresse IP. Le serveur DHCP simplifie la gestion de la configuration réseau et réduit les erreurs de configuration.
             </p>
@@ -136,7 +136,7 @@ export default function ProjectVLAN() {
               <li>Serveur WINS (Windows Internet Name Service) pour la résolution de noms NetBIOS</li>
             </ul>
 
-            <h3 className="text-2xl font-bold text-primary mb-4 mt-8">Translation d'Adresses (NAT/PAT)</h3>
+            <h3 className="text-2xl font-bold text-foreground mb-4 mt-8">Translation d'Adresses (NAT/PAT)</h3>
             <p className="text-foreground/80 leading-relaxed mb-4">
               NAT (Network Address Translation) est configuré sur le routeur pour permettre aux utilisateurs internes d'accéder à Internet. Le routeur traduit les adresses IP privées internes en une adresse IP publique (ou un pool d'adresses publiques) pour les communications externes. Cette configuration offre plusieurs avantages : elle permet aux utilisateurs internes d'accéder à Internet sans exposer les adresses IP internes, elle offre une couche de sécurité supplémentaire en masquant l'architecture réseau interne, et elle permet de réutiliser les adresses IP privées.
             </p>
@@ -155,7 +155,7 @@ export default function ProjectVLAN() {
               PAT (Port Address Translation) est une extension de NAT qui utilise les ports TCP/UDP pour multiplexer plusieurs utilisateurs sur une seule adresse IP publique. Chaque connexion interne est mappée à un port unique sur l'adresse IP publique, permettant au routeur de démultiplexer les réponses reçues d'Internet et de les router vers le client interne correct.
             </p>
 
-            <h3 className="text-2xl font-bold text-primary mb-4 mt-8">Contrôle d'Accès (ACL)</h3>
+            <h3 className="text-2xl font-bold text-foreground mb-4 mt-8">Contrôle d'Accès (ACL)</h3>
             <p className="text-foreground/80 leading-relaxed mb-4">
               Les ACL (Access Control Lists) sont utilisées pour contrôler le trafic entre VLAN et appliquer les politiques de sécurité. Les règles ACL implémentées incluent :
             </p>
@@ -170,7 +170,7 @@ export default function ProjectVLAN() {
               Les ACL sont appliquées aux sous-interfaces du routeur pour contrôler le trafic inter-VLAN. Les ACL utilisent une logique "first match" où la première règle correspondante est appliquée. Les ACL peuvent être configurées pour autoriser ou refuser le trafic en fonction de l'adresse IP source, l'adresse IP destination, le protocole et les ports.
             </p>
 
-            <h3 className="text-2xl font-bold text-primary mb-4 mt-8">Tests et Validation</h3>
+            <h3 className="text-2xl font-bold text-foreground mb-4 mt-8">Tests et Validation</h3>
             <p className="text-foreground/80 leading-relaxed mb-4">
               Plusieurs tests ont été effectués pour valider la configuration complète du réseau :
             </p>
@@ -183,7 +183,7 @@ export default function ProjectVLAN() {
               <li><strong>Test de sécurité</strong> - Vérification que les VLAN sont correctement isolés et que les politiques de sécurité sont appliquées.</li>
             </ul>
 
-            <h3 className="text-2xl font-bold text-primary mb-4 mt-8">Résultats Obtenus</h3>
+            <h3 className="text-2xl font-bold text-foreground mb-4 mt-8">Résultats Obtenus</h3>
             <p className="text-foreground/80 leading-relaxed mb-4">
               Tous les objectifs du laboratoire ont été atteints avec succès :
             </p>
@@ -197,7 +197,7 @@ export default function ProjectVLAN() {
               <li>✓ Architecture réseau sécurisée et conforme aux standards d'entreprise</li>
             </ul>
 
-            <h3 className="text-2xl font-bold text-primary mb-4 mt-8">Apprentissages et Compétences Développées</h3>
+            <h3 className="text-2xl font-bold text-foreground mb-4 mt-8">Apprentissages et Compétences Développées</h3>
             <p className="text-foreground/80 leading-relaxed mb-4">
               Ce laboratoire a permis de développer et de consolider plusieurs compétences essentielles en administration réseau :
             </p>
@@ -212,7 +212,7 @@ export default function ProjectVLAN() {
               <li>Documentation technique et communication d'architecture réseau</li>
             </ul>
 
-            <h3 className="text-2xl font-bold text-primary mb-4 mt-8">Conclusion</h3>
+            <h3 className="text-2xl font-bold text-foreground mb-4 mt-8">Conclusion</h3>
             <p className="text-foreground/80 leading-relaxed mb-4">
               Le laboratoire VLAN-DHCP-NAT démontre une compréhension complète des technologies réseau d'entreprise essentielles. Le projet couvre tous les aspects de la conception et de l'implémentation d'une infrastructure réseau moderne, sécurisée et scalable. Cette expérience constitue une base solide pour des rôles en administration réseau, architecture réseau ou sécurité réseau. Les compétences développées lors de ce laboratoire sont directement applicables à des environnements d'entreprise réels et sont hautement demandées par les employeurs dans le domaine des technologies de l'information et de la sécurité réseau.
             </p>

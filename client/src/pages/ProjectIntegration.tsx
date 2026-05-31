@@ -16,7 +16,7 @@ export default function ProjectIntegration() {
               <ArrowLeft className="w-5 h-5" /> Retour au Portfolio
             </a>
           </div>
-          <h1 className="text-5xl font-bold text-primary mb-4">Projet d'Intégration</h1>
+          <h1 className="text-5xl font-bold text-foreground mb-4">Projet d'Intégration</h1>
           <p className="text-2xl text-accent mb-6">Infrastructure de Cybersécurité Complète pour VortexOps Inc.</p>
           <div className="flex flex-wrap gap-2 mb-6">
             <Badge className="bg-accent/20 text-accent border-accent/30">Cybersécurité</Badge>
@@ -36,13 +36,13 @@ export default function ProjectIntegration() {
       <section className="py-20">
         <div className="container max-w-4xl mx-auto">
           <div className="prose prose-invert max-w-none">
-            <h2 className="text-3xl font-bold text-primary mb-6">Vue d'Ensemble du Projet</h2>
+            <h2 className="text-3xl font-bold text-foreground mb-6">Vue d'Ensemble du Projet</h2>
             
             <p className="text-foreground/80 leading-relaxed mb-6">
               Le projet d'intégration en cybersécurité représente l'aboutissement des études en cybersécurité au CCNB. Ce projet capstone a impliqué la conception et la mise en œuvre d'une infrastructure de cybersécurité complète pour une entreprise fictive (VortexOps Inc.). Le projet a couvert tous les aspects essentiels de la cybersécurité d'entreprise, y compris l'architecture de sécurité, la détection d'intrusion, la gestion des identités, et la conformité aux standards de sécurité. Ce projet a démontré une compréhension holistique de la cybersécurité et la capacité à concevoir et à implémenter une infrastructure sécurisée et résiliente.
             </p>
 
-            <h3 className="text-2xl font-bold text-primary mb-4 mt-8">Contexte et Objectifs du Projet</h3>
+            <h3 className="text-2xl font-bold text-foreground mb-4 mt-8">Contexte et Objectifs du Projet</h3>
             <p className="text-foreground/80 leading-relaxed mb-4">
               Le projet d'intégration a été conçu comme un projet capstone pour valider les compétences acquises durant le programme d'études en cybersécurité. L'objectif principal était de concevoir une infrastructure de cybersécurité complète capable de protéger les actifs informatiques d'une entreprise contre les menaces de sécurité modernes. Les objectifs spécifiques incluaient :
             </p>
@@ -57,7 +57,7 @@ export default function ProjectIntegration() {
               <li>Démontrer la capacité à gérer un projet complexe de cybersécurité</li>
             </ul>
 
-            <h3 className="text-2xl font-bold text-primary mb-4 mt-8">Architecture de Sécurité Globale</h3>
+            <h3 className="text-2xl font-bold text-foreground mb-4 mt-8">Architecture de Sécurité Globale</h3>
             <p className="text-foreground/80 leading-relaxed mb-4">
               L'architecture de sécurité du projet d'intégration repose sur un modèle de défense en profondeur (defense in depth) qui implémente plusieurs couches de sécurité pour protéger les actifs informatiques. Cette approche garantit que même si une couche de sécurité est compromise, d'autres couches continuent à protéger l'infrastructure.
             </p>
@@ -82,7 +82,7 @@ export default function ProjectIntegration() {
               <strong>Couche 5 - Surveillance et Réponse :</strong> La cinquième couche comprend les systèmes de surveillance de sécurité (SIEM) et les procédures de réponse aux incidents. Le système SIEM collecte les événements de sécurité de tous les composants de l'infrastructure et effectue une analyse centralisée pour identifier les incidents de sécurité. Les équipes de sécurité utilisent les alertes du SIEM pour enquêter et répondre rapidement aux incidents.
             </p>
 
-            <h3 className="text-2xl font-bold text-primary mb-4 mt-8">Composants Clés du Projet</h3>
+            <h3 className="text-2xl font-bold text-foreground mb-4 mt-8">Composants Clés du Projet</h3>
             <p className="text-foreground/80 leading-relaxed mb-4">
               Le projet d'intégration intègre plusieurs composants clés de cybersécurité :
             </p>
@@ -107,7 +107,7 @@ export default function ProjectIntegration() {
               <strong>5. CyberRange - Environnement d'Entraînement :</strong> Le CyberRange fournit un environnement d'entraînement isolé pour les exercices de cybersécurité. Les équipes peuvent s'entraîner sur des scénarios d'attaque réalistes dans un environnement contrôlé sans risque pour l'infrastructure de production.
             </p>
 
-            <h3 className="text-2xl font-bold text-primary mb-4 mt-8">Processus de Conception et Implémentation</h3>
+            <h3 className="text-2xl font-bold text-foreground mb-4 mt-8">Processus de Conception et Implémentation</h3>
             <p className="text-foreground/80 leading-relaxed mb-4">
               Le projet a suivi un processus structuré de conception et d'implémentation :
             </p>
@@ -132,7 +132,7 @@ export default function ProjectIntegration() {
               <strong>Phase 5 - Documentation et Déploiement :</strong> La cinquième phase a impliqué la documentation complète de l'architecture et des procédures de sécurité. Une documentation technique détaillée a été créée pour faciliter la maintenance et le dépannage. Des procédures opérationnelles ont été documentées pour guider les équipes de sécurité.
             </p>
 
-            <h3 className="text-2xl font-bold text-primary mb-4 mt-8">Résultats et Réalisations</h3>
+            <h3 className="text-2xl font-bold text-foreground mb-4 mt-8">Résultats et Réalisations</h3>
             <p className="text-foreground/80 leading-relaxed mb-4">
               Le projet d'intégration a atteint tous les objectifs définis et a dépassé les attentes :
             </p>
@@ -147,7 +147,7 @@ export default function ProjectIntegration() {
               <li>✓ 2e place à CYBER-CCNB 2026 avec reconnaissance de l'excellence technique</li>
             </ul>
 
-            <h3 className="text-2xl font-bold text-primary mb-4 mt-8">Apprentissages et Compétences Développées</h3>
+            <h3 className="text-2xl font-bold text-foreground mb-4 mt-8">Apprentissages et Compétences Développées</h3>
             <p className="text-foreground/80 leading-relaxed mb-4">
               Le projet d'intégration a permis de développer et de consolider une compréhension holistique de la cybersécurité d'entreprise :
             </p>
@@ -162,7 +162,7 @@ export default function ProjectIntegration() {
               <li>Leadership et collaboration dans un environnement de projet</li>
             </ul>
 
-            <h3 className="text-2xl font-bold text-primary mb-4 mt-8">Conclusion</h3>
+            <h3 className="text-2xl font-bold text-foreground mb-4 mt-8">Conclusion</h3>
             <p className="text-foreground/80 leading-relaxed mb-4">
               Le projet d'intégration en cybersécurité représente l'aboutissement des études en cybersécurité et démontre une compréhension complète des principes et des pratiques de cybersécurité d'entreprise. Le projet a validé la capacité à concevoir et à implémenter une infrastructure de sécurité complète capable de protéger les actifs informatiques contre les menaces modernes. La reconnaissance du projet par la 2e place à CYBER-CCNB 2026 valide l'excellence technique et l'innovation apportées. Cette expérience constitue une base solide pour une carrière réussie en cybersécurité, que ce soit en tant qu'architecte de sécurité, ingénieur de sécurité, ou responsable de la sécurité informatique.
             </p>

@@ -157,7 +157,7 @@ export default function Home() {
         <div className="container relative z-10">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="animate-fade-in-up">
-              <h1 className="text-5xl md:text-6xl font-bold text-primary mb-6">Ismael Baby</h1>
+              <h1 className="text-5xl md:text-6xl font-bold text-foreground mb-6">Ismael Baby</h1>
               <p className="text-2xl text-accent mb-4">Technicien Réseaux et Infrastructures TI | Support Informatique & Cybersécurité</p>
               <p className="text-lg text-foreground/80 mb-8 leading-relaxed">
                 Support informatique | Réseaux et infrastructures TI | Spécialisé en systèmes de détection d'intrusion et architecture de sécurité d'entreprise.
@@ -332,7 +332,7 @@ export default function Home() {
           <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
             <Card className="card-elegant p-6 bg-card/50">
               <Badge className="mb-4 bg-accent/20 text-accent border-accent/30">2e Place</Badge>
-              <h3 className="text-xl font-bold text-primary mb-2">CYBER-CCNB 2026 - VortexCore</h3>
+              <h3 className="text-xl font-bold text-foreground mb-2">CYBER-CCNB 2026 - VortexCore</h3>
               <p className="text-foreground/70 mb-2">Trophée d'argent</p>
               <p className="text-foreground/60 text-sm">Avril 2026 - Projet d'intégration en cybersécurité</p>
             </Card>
