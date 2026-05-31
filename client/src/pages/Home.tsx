@@ -109,10 +109,35 @@ export default function Home() {
   ];
 
   const certifications = [
-    { name: "Cisco Ethical Hacker", issuer: "Cisco", year: "2025" },
-    { name: "Cisco Network Technician Career Path", issuer: "Cisco", year: "2025" },
-    { name: "Cisco Cyber Threat Management", issuer: "Cisco", year: "2025" },
-    { name: "TryHackMe - Cyber Security 101", issuer: "TryHackMe", year: "2025" },
+    { name: "IT Customer Support Basics", issuer: "Cisco", year: "2026" },
+    { name: "Ethical Hacker", issuer: "Cisco", year: "2026" },
+    { name: "Advent of Cyber Certificate", issuer: "TryHackMe", year: "2025" },
+    { name: "Cyber Security 101 Certificate", issuer: "TryHackMe", year: "2025" },
+    { name: "Gérer les risques cybersécurité avec l'ISO 27001", issuer: "LinkedIn", year: "2025" },
+    { name: "Préparer votre carrière dans la cybersécurité", issuer: "Microsoft", year: "2025" },
+    { name: "Aperçu des menaces de cybersécurité", issuer: "LinkedIn", year: "2025" },
+    { name: "Sensibilisation à la cybersécurité", issuer: "LinkedIn", year: "2025" },
+    { name: "L'essentiel de MySQL", issuer: "LinkedIn", year: "2025" },
+    { name: "Introduction to the Threat Landscape 3.0", issuer: "Fortinet", year: "2025" },
+    { name: "La sécurité informatique et cybersécurité : Niveau avancé", issuer: "LinkedIn", year: "2025" },
+    { name: "Introduction to Personal Digital Security", issuer: "Codecademy", year: "2025" },
+    { name: "Les fondements des réseaux : Le routage TCP/IP", issuer: "LinkedIn", year: "2025" },
+    { name: "Pre Security Certificate", issuer: "TryHackMe", year: "2025" },
+    { name: "Les fondements de la sécurité informatique", issuer: "LinkedIn", year: "2025" },
+    { name: "Linux : La sécurité", issuer: "LinkedIn", year: "2024" },
+    { name: "Les fondements des réseaux : La sécurité", issuer: "LinkedIn", year: "2025" },
+    { name: "La sécurité des applications et des protocoles réseau", issuer: "LinkedIn", year: "2025" },
+    { name: "Microsoft Sentinel : Déploiement et gestion du SIEM", issuer: "LinkedIn", year: "2025" },
+    { name: "Comprendre et configurer un firewall", issuer: "LinkedIn", year: "2025" },
+    { name: "Network Technician Career Path", issuer: "Cisco", year: "2025" },
+    { name: "Python Essentials 1", issuer: "Cisco", year: "2024" },
+    { name: "Computer Hardware Basics", issuer: "Cisco", year: "2024" },
+    { name: "Operating Systems Basics", issuer: "Cisco", year: "2024" },
+    { name: "Cyber Threat Management", issuer: "Cisco", year: "2024" },
+    { name: "Networking Devices and Initial Configuration", issuer: "Cisco", year: "2024" },
+    { name: "Networking Basics", issuer: "Cisco", year: "2024" },
+    { name: "Introduction to Cybersecurity", issuer: "Cisco", year: "2024" },
+    { name: "L'essentiel de Kali Linux", issuer: "LinkedIn", year: "2024" },
   ];
 
   return (
@@ -133,7 +158,7 @@ export default function Home() {
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="animate-fade-in-up">
               <h1 className="text-5xl md:text-6xl font-bold text-primary mb-6">Ismael Baby</h1>
-              <p className="text-2xl text-accent mb-4">Étudiant en Cybersécurité</p>
+              <p className="text-2xl text-accent mb-4">Technicien Réseaux et Infrastructures TI | Support Informatique & Cybersécurité</p>
               <p className="text-lg text-foreground/80 mb-8 leading-relaxed">
                 Support informatique | Réseaux et infrastructures TI | Spécialisé en systèmes de détection d'intrusion et architecture de sécurité d'entreprise.
               </p>
