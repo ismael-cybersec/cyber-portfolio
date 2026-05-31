@@ -211,17 +211,17 @@ export default function Home() {
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="space-y-4">
               <p className="text-lg text-foreground/80 leading-relaxed">
-                Je suis un étudiant passionné en cybersécurité avec une expérience pratique approfondie en infrastructure réseau, virtualisation et sécurité informatique. Mes compétences couvrent le support informatique, les réseaux d'entreprise, la virtualisation avec Proxmox VE et les systèmes de détection d'intrusion avancés.
+                Je suis un Technicien Réseaux et Infrastructures TI avec une expérience pratique approfondie en infrastructure réseau, virtualisation et sécurité informatique. Mes compétences couvrent le support informatique, les réseaux d'entreprise, la virtualisation avec Proxmox VE et les systèmes de détection d'intrusion avancés.
               </p>
               <p className="text-lg text-foreground/80 leading-relaxed">
-                Actuellement, je me concentre sur le développement de solutions de sécurité robustes et l'apprentissage des techniques avancées de test de pénétration. Mon objectif est de devenir un expert en cybersécurité et de contribuer à la protection des infrastructures critiques.
+                Je me concentre sur le développement et la maintenance de solutions de sécurité robustes, l'implémentation de bonnes pratiques en cybersécurité et l'application des techniques avancées de test de pénétration. Mon objectif est de devenir un expert reconnu en cybersécurité et de contribuer à la protection des infrastructures critiques.
               </p>
             </div>
             <div className="space-y-4">
               <div className="flex items-center gap-4">
-                <div className="text-4xl font-bold text-accent">2</div>
+                <div className="text-4xl font-bold text-accent">2+</div>
                 <div>
-                  <p className="text-sm text-foreground/60">Ans d'études</p>
+                  <p className="text-sm text-foreground/60">Ans d'expérience</p>
                   <p className="text-foreground">En cybersécurité</p>
                 </div>
               </div>
