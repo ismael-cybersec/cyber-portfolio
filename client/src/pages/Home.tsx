@@ -196,7 +196,7 @@ export default function Home() {
                 <img
                   src="/cyber-portfolio/moi.png"
                   alt="Ismael Baby"
-                  className="w-full h-full object-cover object-top rounded-full shadow-2xl shadow-accent/20"
+                  className="w-full h-full object-cover object-top rounded-2xl shadow-2xl shadow-accent/20"
                 />
               </div>
             </div>
