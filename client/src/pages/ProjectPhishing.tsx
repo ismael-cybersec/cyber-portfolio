@@ -191,6 +191,7 @@ export default function ProjectPhishing() {
           </div>
           
       
+      </section>
 
       <Footer />
     </div>
