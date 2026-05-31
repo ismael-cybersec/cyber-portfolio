@@ -53,12 +53,12 @@ export default function ProjectVortexCore() {
             <p className="text-foreground/80 leading-relaxed mb-4">
               L'architecture de VortexCore repose sur un cluster Proxmox VE composé de 3 nœuds physiques interconnectés via une infrastructure réseau redondante. Chaque nœud est équipé de ressources matérielles robustes incluant des processeurs multi-cœurs haute performance (Intel Xeon Gold 6526Y — 64 cœurs), 251 GiB de RAM par nœud, et des connexions réseau redondantes pour assurer la continuité de service en cas de défaillance.
             </p>
-            <img src="/cyber-portfolio/Screenshot_2026-05-30_203029.png" alt="Installation de Proxmox VE sur un nœud du cluster" className="w-full rounded-lg border border-accent/30 my-6" />
+          
             <p className="text-foreground/80 leading-relaxed mb-4">
               La topologie réseau du cluster est conçue avec une redondance complète. Les nœuds sont interconnectés via des liens réseau multiples pour éviter un point de défaillance unique. Le cluster utilise également un réseau de gestion séparé pour les communications de cluster, isolé du trafic des machines virtuelles.
             </p>
             <img src="/cyber-portfolio/20.png" alt="Topologie réseau du cluster VortexCore — Nodes 1, 2, 3 + UNAS Stockage" className="w-full rounded-lg border border-accent/30 my-6" />
-            <img src="/cyber-portfolio/19b.png" alt="Interface Proxmox — vue cluster avec commande pvecm nodes" className="w-full rounded-lg border border-accent/30 my-6" />
+          
 
             <h3 className="text-2xl font-bold text-primary mb-4 mt-8">Stockage Distribué et RAID</h3>
             <p className="text-foreground/80 leading-relaxed mb-4">
@@ -85,8 +85,7 @@ export default function ProjectVortexCore() {
               <li><strong>Services</strong> — VMs 120-125, 1000 (vortexservices) : iRedmail, SRV-file, Bastion-SSH, Graylog, Vitrine-web, Rev-Poxy, template Debian12.</li>
             </ul>
             <img src="/cyber-portfolio/19.png" alt="Liste complète des machines virtuelles par nœud avec leurs équipes" className="w-full rounded-lg border border-accent/30 my-6" />
-            <img src="/cyber-portfolio/16.png" alt="Vue condensée des VMs sur node2 et node3 du cluster" className="w-full rounded-lg border border-accent/30 my-6" />
-
+           
             <h3 className="text-2xl font-bold text-primary mb-4 mt-8">Défis Techniques Rencontrés et Solutions</h3>
             <p className="text-foreground/80 leading-relaxed mb-4">
               <strong>1. Défaillance Matérielle et Récupération :</strong> Une défaillance matérielle sur l'un des nœuds a causé une perte de synchronisation du cluster. La solution a impliqué la reconfiguration complète du nœud, la réinstallation du système d'exploitation, et la resynchronisation des données via NFS.
