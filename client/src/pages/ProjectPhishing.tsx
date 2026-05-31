@@ -170,27 +170,45 @@ export default function ProjectPhishing() {
           </div>
 
           {/* Screenshots Section */}
-          <div className="space-y-6 mt-12 pt-8 border-t border-border">
-            <h2 className="text-3xl font-bold text-foreground mb-6">Captures d'Écran et Annexes</h2>
+                   <div className="space-y-6 mt-12 pt-8 border-t border-border">
+            <h2 className="text-3xl font-bold text-foreground mb-6">
+              Captures d'Écran et Annexes
+            </h2>
 
             <div className="p-6 bg-card rounded-lg border border-border">
-              <h3 className="text-xl font-semibold text-accent mb-2">Courriel de Phishing Envoyé</h3>
+              <h3 className="text-xl font-semibold text-accent mb-2">
+                Courriel de Phishing Envoyé
+              </h3>
               <p className="text-sm text-muted-foreground mb-4">
-                Courriel simulant une communication officielle du CCNB — expéditeur externe détecté par Outlook, logo et couleurs institutionnelles, lien malveillant dissimulé.
+                Courriel simulant une communication officielle du CCNB —
+                expéditeur externe détecté par Outlook, logo et couleurs
+                institutionnelles, lien malveillant dissimulé.
               </p>
-              <img src="/cyber-portfolio/20.png" alt="Courriel de phishing - Problème avec Ardoise" className="w-full rounded-lg border border-accent/30" />
+              <img
+                src="/cyber-portfolio/20.png"
+                alt="Courriel de phishing - Problème avec Ardoise"
+                className="w-full rounded-lg border border-accent/30"
+              />
             </div>
 
             <div className="p-6 bg-card rounded-lg border border-border">
-              <h3 className="text-xl font-semibold text-accent mb-2">Fausse Page de Connexion Microsoft</h3>
+              <h3 className="text-xl font-semibold text-accent mb-2">
+                Fausse Page de Connexion Microsoft
+              </h3>
               <p className="text-sm text-muted-foreground mb-4">
-                Page de connexion Microsoft réaliste avec logo CCNB en arrière-plan — reproduit les techniques modernes de spear-phishing et de typosquatting.
+                Page de connexion Microsoft réaliste avec logo CCNB en
+                arrière-plan — reproduit les techniques modernes de
+                spear-phishing et de typosquatting.
               </p>
-              <img src="/cyber-portfolio/21.png" alt="Fausse page de connexion Microsoft avec logo CCNB" className="w-full rounded-lg border border-accent/30" />
+              <img
+                src="/cyber-portfolio/21.png"
+                alt="Fausse page de connexion Microsoft avec logo CCNB"
+                className="w-full rounded-lg border border-accent/30"
+              />
             </div>
           </div>
-          
-      
+
+        </div>
       </section>
 
       <Footer />
