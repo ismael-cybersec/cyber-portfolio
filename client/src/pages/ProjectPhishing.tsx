@@ -172,36 +172,23 @@ export default function ProjectPhishing() {
           {/* Screenshots Section */}
           <div className="space-y-6 mt-12 pt-8 border-t border-border">
             <h2 className="text-3xl font-bold text-foreground mb-6">Captures d'Écran et Annexes</h2>
-            
+
             <div className="p-6 bg-card rounded-lg border border-border">
-              <h3 className="text-xl font-semibold text-accent mb-2">Capture d'Écran du Courriel de Phishing</h3>
+              <h3 className="text-xl font-semibold text-accent mb-2">Courriel de Phishing Envoyé</h3>
               <p className="text-sm text-muted-foreground mb-4">
-                [Insérez ici la capture d'écran du courriel de phishing envoyé aux étudiants]
+                Courriel simulant une communication officielle du CCNB — expéditeur externe détecté par Outlook, logo et couleurs institutionnelles, lien malveillant dissimulé.
               </p>
-              <div className="w-full h-64 bg-background border border-dashed border-border rounded flex items-center justify-center">
-                <span className="text-muted-foreground">Emplacement pour capture d'écran</span>
-              </div>
+              <img src="/cyber-portfolio/20.png" alt="Courriel de phishing - Problème avec Ardoise" className="w-full rounded-lg border border-accent/30" />
             </div>
 
             <div className="p-6 bg-card rounded-lg border border-border">
-              <h3 className="text-xl font-semibold text-accent mb-2">Capture d'Écran de la Fausse Page de Connexion</h3>
+              <h3 className="text-xl font-semibold text-accent mb-2">Fausse Page de Connexion Microsoft</h3>
               <p className="text-sm text-muted-foreground mb-4">
-                [Insérez ici la capture d'écran de la fausse page de connexion Microsoft avec logo CCNB]
+                Page de connexion Microsoft réaliste avec logo CCNB en arrière-plan — reproduit les techniques modernes de spear-phishing et de typosquatting.
               </p>
-              <div className="w-full h-64 bg-background border border-dashed border-border rounded flex items-center justify-center">
-                <span className="text-muted-foreground">Emplacement pour capture d'écran</span>
-              </div>
+              <img src="/cyber-portfolio/21.png" alt="Fausse page de connexion Microsoft avec logo CCNB" className="w-full rounded-lg border border-accent/30" />
             </div>
-
-            <div className="p-6 bg-card rounded-lg border border-border">
-              <h3 className="text-xl font-semibold text-accent mb-2">Statistiques de Réponse à la Campagne</h3>
-              <p className="text-sm text-muted-foreground mb-4">
-                [Insérez ici les graphiques et statistiques de réponse à la campagne]
-              </p>
-              <div className="w-full h-64 bg-background border border-dashed border-border rounded flex items-center justify-center">
-                <span className="text-muted-foreground">Emplacement pour statistiques</span>
-              </div>
-            </div>
+          </div>
           </div>
         </div>
       </section>
