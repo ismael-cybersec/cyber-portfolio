@@ -189,9 +189,8 @@ export default function ProjectPhishing() {
               <img src="/cyber-portfolio/21.png" alt="Fausse page de connexion Microsoft avec logo CCNB" className="w-full rounded-lg border border-accent/30" />
             </div>
           </div>
-          </div>
-        </div>
-      </section>
+          
+      
 
       <Footer />
     </div>
