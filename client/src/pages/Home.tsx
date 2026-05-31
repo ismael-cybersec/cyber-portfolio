@@ -159,9 +159,7 @@ export default function Home() {
             <div className="animate-fade-in-up">
               <h1 className="text-5xl md:text-6xl font-bold text-foreground mb-6">Ismael Baby</h1>
               <p className="text-2xl text-accent mb-4">Technicien Réseaux et Infrastructures TI | Support Informatique & Cybersécurité</p>
-              <p className="text-lg text-foreground/80 mb-8 leading-relaxed">
-                Support informatique | Réseaux et infrastructures TI | Spécialisé en systèmes de détection d'intrusion et architecture de sécurité d'entreprise.
-              </p>
+
               <div className="flex flex-col sm:flex-row gap-4 mb-8">
                 <button
                   onClick={() => document.getElementById('projects')?.scrollIntoView({ behavior: 'smooth' })}
