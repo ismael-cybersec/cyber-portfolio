@@ -31,22 +31,23 @@ export default function ProjectStage() {
       <section className="py-20">
         <div className="container max-w-4xl mx-auto">
           <div className="prose prose-invert max-w-none space-y-8">
-            
-            {/* INTRODUCTION COMPLÈTE */}
+
+            {/* INTRODUCTION */}
             <div className="bg-secondary/20 p-8 rounded-lg border border-border">
               <h2 className="text-3xl font-bold text-foreground mb-4">Vue d'Ensemble Complète du Stage</h2>
               <p className="text-foreground/80 leading-relaxed mb-4">
                 Le stage au Laboratoire de Réseautique du Collège communautaire du Nouveau-Brunswick, Campus Dieppe, a constitué un projet majeur d'une durée de six semaines intensives, s'étendant du 27 avril 2026 au 5 juin 2026. Ce projet ambitieux visait à concevoir, mettre en place et configurer une infrastructure réseau d'entreprise complète et fonctionnelle, capable de supporter les besoins pédagogiques d'un établissement d'enseignement moderne. Le projet a englobé l'ensemble du cycle de vie d'une infrastructure réseau : de la planification initiale et l'évaluation des ressources disponibles, en passant par l'installation physique des équipements, le câblage structuré, la configuration logique des systèmes réseau, la mise en place de la sécurité, jusqu'à la validation complète et la documentation finale.
               </p>
               <p className="text-foreground/80 leading-relaxed mb-4">
-                Ce stage a impliqué une coordination complexe avec plusieurs départements de l'établissement, notamment les équipes de maintenance pour les travaux physiques, les équipes TI pour la connectivité Internet et l'infrastructure informatique, et les superviseurs du projet pour l'orientation stratégique. La gestion des contraintes physiques, telles que l'espace limité dans les salles de classe, la nécessité de préserver la continuité de service pour les utilisateurs existants, et les limitations d'alimentation électrique, a nécessité une planification minutieuse et une résolution créative de problèmes.
+                Ce stage a impliqué une coordination complexe avec plusieurs départements de l'établissement, notamment les équipes de maintenance pour les travaux physiques, les équipes TI pour la connectivité Internet et l'infrastructure informatique, et les superviseurs du projet pour l'orientation stratégique.
               </p>
               <p className="text-foreground/80 leading-relaxed mb-4">
-                L'objectif principal du stage était de créer un environnement de laboratoire pédagogique moderne, fonctionnel et opérationnel, capable de supporter les besoins des étudiants et des enseignants, tout en intégrant les meilleures pratiques en matière de sécurité informatique, de performance réseau, et de scalabilité pour la croissance future. Le projet devait également produire une documentation complète et professionnelle permettant la maintenance et l'évolution future de l'infrastructure.
+                L'objectif principal du stage était de créer un environnement de laboratoire pédagogique moderne, fonctionnel et opérationnel, capable de supporter les besoins des étudiants et des enseignants, tout en intégrant les meilleures pratiques en matière de sécurité informatique, de performance réseau, et de scalabilité pour la croissance future.
               </p>
-              <p className="text-foreground/80 leading-relaxed">
-                Ce stage a offert une expérience pratique inestimable dans la gestion de projets d'infrastructure complexes, la résolution de problèmes techniques sophistiqués, la coordination entre équipes multidisciplinaires, et la documentation professionnelle des systèmes informatiques. Les compétences acquises couvrent l'ensemble du spectre de la gestion d'infrastructure réseau, depuis la planification stratégique jusqu'à la mise en service opérationnelle et la documentation de maintenance.
+              <p className="text-foreground/80 leading-relaxed mb-4">
+                Ce stage a offert une expérience pratique inestimable dans la gestion de projets d'infrastructure complexes, la résolution de problèmes techniques sophistiqués, la coordination entre équipes multidisciplinaires, et la documentation professionnelle des systèmes informatiques.
               </p>
+              <img src="/cyber-portfolio/31.jpeg" alt="Ismael Baby dans le laboratoire de réseautique CCNB" className="w-full rounded-lg border border-accent/30 my-4" />
             </div>
 
             {/* SEMAINE 1 */}
@@ -62,7 +63,7 @@ export default function ProjectStage() {
                     La première étape du stage a consisté à effectuer une prise de connaissance complète et systématique des lieux, des équipements disponibles, et des contraintes physiques de l'environnement. Cette phase était cruciale pour établir une base solide pour toutes les phases ultérieures du projet. La prise de connaissance des salles de classe et du laboratoire a impliqué une exploration détaillée de chaque espace, l'identification des points d'accès potentiels, l'évaluation précise de l'espace disponible pour l'installation des racks, et la compréhension complète de la disposition générale des installations.
                   </p>
                   <p className="text-foreground/80 leading-relaxed mb-4">
-                    Cette reconnaissance préalable a permis d'identifier les contraintes architecturales spécifiques, telles que la présence de faux plafonds, les limitations d'espace dans certaines salles, les points d'accès aux services informatiques existants, et les opportunités d'optimisation de l'espace. La documentation photographique et les mesures précises ont été prises pour chaque espace, créant une base de données visuelle et métrique pour la planification ultérieure.
+                    Cette reconnaissance préalable a permis d'identifier les contraintes architecturales spécifiques, telles que la présence de faux plafonds, les limitations d'espace dans certaines salles, les points d'accès aux services informatiques existants, et les opportunités d'optimisation de l'espace.
                   </p>
                   <p className="text-foreground/80 leading-relaxed mb-4">
                     La prise de connaissance des équipements a compris une inspection détaillée et systématique de tout le matériel disponible, incluant les équipements réseau Cisco (switches, routeurs), les équipements Ubiquiti (points d'accès sans fil), les serveurs, les racks, les systèmes de stockage (SAN, DAS), les équipements d'alimentation (UPS), les équipements de gestion (KVM), et l'outillage divers.
@@ -79,10 +80,7 @@ export default function ProjectStage() {
                     L'organisation et l'inventaire global physique des équipements par type ont constitué une tâche fondamentale et chronophage pour assurer une gestion efficace des ressources tout au long du projet. Cette phase a impliqué le tri systématique et la catégorisation de tous les équipements disponibles, leur regroupement par type (switches réseau, routeurs, serveurs, câbles, accessoires, etc.), et l'établissement d'une base de données centralisée pour le suivi et la gestion.
                   </p>
                   <p className="text-foreground/80 leading-relaxed mb-4">
-                    L'inventaire détaillé avec numéro de série, marque et numéro d'inventaire pour chaque équipement a été une exigence critique pour la gestion des actifs informatiques et la conformité administrative de l'établissement. Chaque équipement a été documenté avec précision, incluant des informations détaillées telles que le fabricant exact, le modèle spécifique, le numéro de série unique, la date d'acquisition estimée, l'état général (neuf, bon, acceptable, défectueux), et les notes spéciales concernant l'historique de maintenance ou les problèmes connus.
-                  </p>
-                  <p className="text-foreground/80 leading-relaxed mb-4">
-                    Cette documentation détaillée a facilité le suivi des équipements tout au long du projet, la gestion des garanties et des contrats de maintenance, et la planification des remplacements futurs.
+                    L'inventaire détaillé avec numéro de série, marque et numéro d'inventaire pour chaque équipement a été une exigence critique pour la gestion des actifs informatiques et la conformité administrative de l'établissement. Chaque équipement a été documenté avec précision, incluant des informations détaillées telles que le fabricant exact, le modèle spécifique, le numéro de série unique, la date d'acquisition estimée, l'état général (neuf, bon, acceptable, défectueux), et les notes spéciales.
                   </p>
                   <p className="text-foreground/80 leading-relaxed">
                     La complétion de l'inventaire pour les serveurs, le KVM, les SAN et les UPS a été identifiée comme une priorité, car ces composants sont critiques pour l'infrastructure et nécessitent une documentation précise pour assurer la continuité de service.
@@ -100,6 +98,7 @@ export default function ProjectStage() {
                   <p className="text-foreground/80 leading-relaxed">
                     La vérification post-réinitialisation a confirmé que chaque équipement affichait le message de démarrage standard et était prêt pour la configuration initiale.
                   </p>
+                  <img src="/cyber-portfolio/30.jpeg" alt="Ismael Baby — configuration des serveurs via KVM" className="w-full rounded-lg border border-accent/30 my-4" />
                 </div>
 
                 <div className="bg-secondary/20 p-6 rounded-lg border border-border">
@@ -114,6 +113,8 @@ export default function ProjectStage() {
                     La mise à la terre des racks a été une exigence de sécurité critique pour prévenir les chocs électriques, les dommages aux équipements causés par les surtensions, et les risques d'incendie.
                   </p>
                   <img src="/cyber-portfolio/stage-rack-complet.jpeg" alt="Armoire complète avec équipements réseau" className="w-full rounded-lg border border-accent/30 my-4" />
+                  <img src="/cyber-portfolio/35.jpeg" alt="Ismael Baby devant le rack de serveurs installé" className="w-full rounded-lg border border-accent/30 my-4" />
+                  <img src="/cyber-portfolio/40.jpeg" alt="UPS Eaton installés dans le rack" className="w-full rounded-lg border border-accent/30 my-4" />
                 </div>
 
                 <div className="bg-secondary/20 p-6 rounded-lg border border-border">
@@ -203,6 +204,7 @@ export default function ProjectStage() {
                     Le déplacement de l'équipement Juniper vers le 1106-E a démontré la nécessité d'adapter la disposition physique des équipements en fonction des besoins de connectivité et de performance.
                   </p>
                   <img src="/cyber-portfolio/stage-rack-reseau.jpeg" alt="Baie de brassage avec câblage structuré" className="w-full rounded-lg border border-accent/30 my-4" />
+                  <img src="/cyber-portfolio/38.jpeg" alt="Rack Legrand avec équipements Cisco installés" className="w-full rounded-lg border border-accent/30 my-4" />
                 </div>
 
                 <div className="bg-secondary/20 p-6 rounded-lg border border-border">
@@ -289,6 +291,7 @@ export default function ProjectStage() {
                     L'intégration des équipements sans fil a impliqué l'installation physique des points d'accès Ubiquiti dans les salles de classe et leur connexion au réseau filé via les câbles Ethernet préalablement installés.
                   </p>
                   <img src="/cyber-portfolio/stage-rack-reseau.jpeg" alt="Rack réseau avec WatchGuard et Ubiquiti" className="w-full rounded-lg border border-accent/30 my-4" />
+                  <img src="/cyber-portfolio/39.jpeg" alt="SAN Dell PowerVault ME5012 et extension MD1400" className="w-full rounded-lg border border-accent/30 my-4" />
                 </div>
 
                 <div className="bg-secondary/20 p-6 rounded-lg border border-border">
@@ -303,6 +306,7 @@ export default function ProjectStage() {
                     La configuration des serveurs Proxmox a impliqué l'installation du système d'exploitation de virtualisation, la configuration de la mise en réseau pour l'intégration avec les VLANs, et la préparation des serveurs pour héberger les machines virtuelles pédagogiques.
                   </p>
                   <img src="/cyber-portfolio/stage-rack-proxmox.jpeg" alt="Rack de serveurs Proxmox" className="w-full rounded-lg border border-accent/30 my-4" />
+                  <img src="/cyber-portfolio/32.jpeg" alt="Rack réseau avec WatchGuard M270 et switches Ubiquiti — vue finale" className="w-full rounded-lg border border-accent/30 my-4" />
                 </div>
 
                 <div className="bg-secondary/20 p-6 rounded-lg border border-border">
@@ -427,9 +431,42 @@ export default function ProjectStage() {
               <p className="text-lg text-foreground/80 leading-relaxed mb-4">
                 La documentation complète et professionnelle de l'infrastructure a été un élément crucial du succès du projet. Une documentation claire et détaillée facilite la maintenance future, permet aux nouveaux administrateurs de comprendre rapidement l'infrastructure, et assure la continuité de service.
               </p>
-              <p className="text-lg text-foreground/80 leading-relaxed">
+              <p className="text-lg text-foreground/80 leading-relaxed mb-4">
                 Ce stage a démontré l'importance critique de la planification minutieuse, de la coordination efficace entre les équipes multidisciplinaires, et de la validation rigoureuse de tous les systèmes avant la mise en production. Les compétences acquises seront directement applicables pour une carrière réussie en informatique, en réseautique et en cybersécurité.
               </p>
+              <img src="/cyber-portfolio/37.jpeg" alt="Rack de serveurs final — infrastructure complète et opérationnelle" className="w-full rounded-lg border border-accent/30 mt-4" />
+            </div>
+
+            {/* MÉDIAS ET RAPPORT */}
+            <div className="bg-secondary/20 p-8 rounded-lg border border-accent/30">
+              <h2 className="text-3xl font-bold text-foreground mb-6">Vidéo du Laboratoire et Rapport Final</h2>
+
+              <div className="mb-8">
+                <h3 className="text-xl font-bold text-accent mb-4">Vidéo — Démonstration de l'Infrastructure</h3>
+                <video
+                  controls
+                  className="w-full rounded-lg border border-accent/30"
+                  style={{ maxHeight: '500px' }}
+                >
+                  <source src="/cyber-portfolio/34.mp4" type="video/mp4" />
+                  Votre navigateur ne supporte pas la lecture vidéo.
+                </video>
+              </div>
+
+              <div>
+                <h3 className="text-xl font-bold text-accent mb-4">Rapport Final de Stage</h3>
+                <p className="text-foreground/80 mb-4">
+                  Rapport complet de 16 pages couvrant toutes les tâches réalisées : inventaire physique, câblage structuré (~130 connexions RJ45), configuration Ubiquiti (RSTP, LAG LACP, VLANs, WPA2/WPA3), WatchGuard Firebox M270, Proxmox VE 9.1, et SAN Dell PowerVault ME5012 + MD1400.
+                </p>
+                
+                  href="/cyber-portfolio/ismaelbaby_rapport_final_de_stage.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 px-6 py-3 bg-accent text-background font-semibold rounded-lg hover:bg-accent/90 transition-colors duration-300"
+                >
+                  📄 Télécharger le Rapport Final (PDF)
+                </a>
+              </div>
             </div>
 
           </div>
