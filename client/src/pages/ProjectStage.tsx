@@ -453,20 +453,7 @@ export default function ProjectStage() {
                 </video>
               </div>
 
-              <div>
-                <h3 className="text-xl font-bold text-accent mb-4">Rapport Final de Stage</h3>
-                <p className="text-foreground/80 mb-4">
-                  Rapport complet de 16 pages couvrant toutes les tâches réalisées : inventaire physique, câblage structuré (~130 connexions RJ45), configuration Ubiquiti (RSTP, LAG LACP, VLANs, WPA2/WPA3), WatchGuard Firebox M270, Proxmox VE 9.1, et SAN Dell PowerVault ME5012 + MD1400.
-                </p>
-                
-                  href="/cyber-portfolio/ismaelbaby_rapport_final_de_stage.pdf"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 px-6 py-3 bg-accent text-background font-semibold rounded-lg hover:bg-accent/90 transition-colors duration-300"
-                >
-                  📄 Télécharger le Rapport Final (PDF)
-                </a>
-              </div>
+          
             </div>
 
           </div>
